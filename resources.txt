@@ -1,0 +1,11 @@
+Designing with Progressive Enhancement:
+https://speakerdeck.com/jgarber/designing-with-progressive-enhancement
+
+Progressive Enhancement & Mobile
+https://speakerdeck.com/aarongustafson/progressive-enhancement-mobile
+
+Progressive enhancement in practice
+https://speakerdeck.com/rstrangh/progressive-enhancement-in-practice
+
+Progressive enhancement
+https://www.gov.uk/service-manual/making-software/progressive-enhancement.html
