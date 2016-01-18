@@ -9,3 +9,6 @@ https://speakerdeck.com/rstrangh/progressive-enhancement-in-practice
 
 Progressive enhancement
 https://www.gov.uk/service-manual/making-software/progressive-enhancement.html
+
+ARIA Examples
+http://heydonworks.com/practical_aria_examples/
