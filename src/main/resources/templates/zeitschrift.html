@@ -3,17 +3,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
 	  xmlns:th="http://www.thymeleaf.org">
 
+<head th:replace="header :: header(${one.name})"></head>
 
-<head>
-	<meta charset="UTF-8"/>
-	<title>Kultpower.org - Zeitschriften</title>
-
-	<meta name="viewport" content="width=device-width, initial-scale=1"/>
-	<link href="/style.css" rel="stylesheet" media="all"/>
-	<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css"/>
-
-
-</head>
 <body>
 
 <h1><span th:text="${one.name}">Zeitschrift-Name</span>
@@ -28,6 +19,8 @@
 		</a>
 
 </div>
+
+<div th:include="footer :: copy"></div>
 
 </body>
 </html>

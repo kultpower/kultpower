@@ -95,8 +95,10 @@ public class ZeitschriftenController {
 			@PathVariable String ausgabeId,
 			Model model) {
 
-		model.addAttribute("zeitschrift", zeitschriftId);
+//		model.addAttribute("zeitschrift", zeitschriftId);
 		model.addAttribute("ausgabeId", ausgabeId);
+
+		model.addAttribute("zeitschrift", repo.findOne(zeitschriftId));
 
 		Ausgabe ausgabe = ausgabenRepo.findOne(ausgabeId);
 		model.addAttribute("ausgabe", ausgabe);

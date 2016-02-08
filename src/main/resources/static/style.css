@@ -10,6 +10,13 @@ div {
     display: inline;
 }
 
+div.footer {
+    display: block;
+    width: 100%;
+    font-size: 70%;
+    color: #666666;
+}
+
 .zeitschrift_button {
     width: 48%;
     min-width:150px;
