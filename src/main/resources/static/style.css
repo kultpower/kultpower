@@ -1,0 +1,43 @@
+body {
+    font-size: 12px;
+    line-height: 250%;
+    padding: 10px;
+    max-width: 500px;
+    min-width: 330px;
+}
+
+div {
+    display: inline;
+}
+
+.zeitschrift_button {
+    width: 48%;
+    min-width:150px;
+}
+
+.zeitschrift_ausgabe {
+    width: 28%;
+}
+
+.small {
+    font-size: 12px; /* 75% of the baseline */
+}
+.large {
+    font-size: 20px; /* 125% of the baseline */
+}
+
+
+@media (min-width: 600px) {
+    body {
+        font-size: 16px;
+        max-width: 900px;
+    }
+
+    .zeitschrift_button {
+        width: 32%;
+    }
+
+    .zeitschrift_ausgabe {
+        width: inherit;
+    }
+}

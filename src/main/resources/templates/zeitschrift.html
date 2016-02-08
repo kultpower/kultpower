@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	  xmlns:th="http://www.thymeleaf.org">
+
+
+<head>
+	<meta charset="UTF-8"/>
+	<title>Kultpower.org - Zeitschriften</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<link href="/style.css" rel="stylesheet" media="all"/>
+	<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css"/>
+
+
+</head>
+<body>
+
+<h1><span th:text="${one.name}">Zeitschrift-Name</span>
+	<a th:href="@{${URL_ZEITSCHRIFTEN}}" style="font-size:50%;font-weight: normal;">zur&uuml;ck</a>
+</h1>
+
+
+<div th:each="ausgabe : ${one.ausgaben}">
+		<!--<span th:text="${ausgabe.shortname}"></span>-->
+		<a th:href="@{${#httpServletRequest.requestURI} + '/'+${ausgabe.id}}">
+			<img class="zeitschrift_ausgabe" th:src="'/ext/zeitschriften/' + ${one.id} + '/cover/100/'+ ${ausgabe.coverfile}" th:title="${ausgabe.coverfile}"/>
+		</a>
+
+</div>
+
+</body>
+</html>
