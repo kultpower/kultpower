@@ -32,7 +32,10 @@ public class Ausgabe
 	private Integer jahr;
 
 	@Column
-	private Number nummmer;
+	private Integer nummer;
+
+	@Column
+	private String shortname;
 
 	@Column
 	private String name;
@@ -69,14 +72,6 @@ public class Ausgabe
 		this.jahr = jahr;
 	}
 
-	public Number getNummmer() {
-		return nummmer;
-	}
-
-	public void setNummmer(Number nummmer) {
-		this.nummmer = nummmer;
-	}
-
 	public String getCoverfile() {
 		return coverfile;
 	}
@@ -93,27 +88,21 @@ public class Ausgabe
 		this.name = name;
 	}
 
-//	public String getShortname() {
-//		return shortname;
-//	}
-//
-//	public void setShortname(String shortname) {
-//		this.shortname = shortname;
-//	}
-//
-//
-//	@Override
-//	public int compareTo(Ausgabe o) {
-//		return this.shortname.compareTo(o.getShortname());
-//	}
-//
-//	@Override
-//	public boolean equals(Object a) {
-//		if (!(a instanceof Ausgabe)) {
-//			return false;
-//		}
-//		return this.shortname.equals(((Ausgabe) a).getShortname());
-//	}
+	public String getShortname() {
+		return shortname;
+	}
+
+	public void setShortname(String shortname) {
+		this.shortname = shortname;
+	}
+
+	public Integer getNummer() {
+		return nummer;
+	}
+
+	public void setNummer(Integer nummer) {
+		this.nummer = nummer;
+	}
 
 	@Override
 	public String toString() {
