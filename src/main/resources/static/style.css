@@ -1,6 +1,6 @@
 body {
     font-size: 12px;
-    line-height: 250%;
+    line-height: 200%;
     padding: 4px;
     max-width: 500px;
     min-width: 330px;
@@ -58,6 +58,7 @@ div.footer {
     body {
         font-size: 14px;
         max-width: 900px;
+        line-height: 150%;
     }
 
     .zeitschrift_button {
