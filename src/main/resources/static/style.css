@@ -1,6 +1,6 @@
 body {
     font-size: 12px;
-    line-height: 200%;
+    line-height: 250%;
     padding: 4px;
     max-width: 500px;
     min-width: 330px;
@@ -42,6 +42,10 @@ div.footer {
     border: 1px solid #aaaaaa;
 }
 
+.ausgabe_coverpreview {
+    width: 100%;
+}
+
 .image_subtitle {
     line-height: 100%;
 }
@@ -58,7 +62,6 @@ div.footer {
     body {
         font-size: 14px;
         max-width: 900px;
-        line-height: 150%;
     }
 
     .zeitschrift_button {

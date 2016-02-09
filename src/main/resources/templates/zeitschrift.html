@@ -1,26 +1,27 @@
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml"
-	  xmlns:th="http://www.thymeleaf.org">
+      xmlns:th="http://www.thymeleaf.org">
 
 <head th:replace="header :: header(${one.name})"></head>
 
 <body>
 
 <h1><span th:text="${one.name}">Zeitschrift-Name</span>
-	<a th:href="@{${URL_ZEITSCHRIFTEN}}" style="font-size:50%;font-weight: normal;">zur&uuml;ck</a>
+    <a th:href="@{${URL_ZEITSCHRIFTEN}}" style="font-size:50%;font-weight: normal;">zur&uuml;ck</a>
 </h1>
 
 <hr/>
 
 
 <div class="zeitschrift_ausgabe" th:each="ausgabe : ${one.ausgaben}">
-		<!--<span th:text="${ausgabe.shortname}"></span>-->
-		<a th:href="@{${#httpServletRequest.requestURI} + '/'+${ausgabe.id}}"
-		><img style="width: 100%;" th:src="'/ext/zeitschriften/' + ${one.id} + '/cover/150/'+ ${ausgabe.coverfile}" th:title="${ausgabe.coverfile}"
-		/></a>
-	<br/>
-	<span class="image_subtitle" th:text="${ausgabe.nummer} + '/' + ${ausgabe.jahr}">Ausgabe 1</span>
+    <span class="image_subtitle" th:text="${ausgabe.nummer} + '/' + ${ausgabe.jahr}">Ausgabe 1</span>
+    <br/>
+    <a th:href="@{${#httpServletRequest.requestURI} + '/'+${ausgabe.id}}"
+    ><img class="ausgabe_coverpreview" th:src="'/ext/zeitschriften/' + ${one.id} + '/cover/150/'+ ${ausgabe.coverfile}"
+          th:title="${ausgabe.coverfile}"
+    /></a>
+
 
 </div>
 
