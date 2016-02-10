@@ -1,9 +1,49 @@
 body {
     font-size: 12px;
-    line-height: 250%;
     padding: 4px;
     max-width: 500px;
     min-width: 330px;
+    font-family: Tahoma, Geneva, sans-serif;
+}
+
+nav.navigation {
+    padding: 0px;
+    line-height: 100%;
+    font-size: 150%;
+}
+
+ul.navigation {
+    list-style-type: none;
+    color: white;
+    padding: 0px;
+}
+
+ul.navigation li a {
+    color: black;
+}
+
+ul.navigation li {
+    display: inline;
+    color: black;
+    border: 1px solid #dddddd;
+    padding: 5px;
+}
+
+ul.navigation li:hover {
+    background-color: #bbbbbb;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+
+}
+
+a:hover {
+    text-decoration: none;
 }
 
 div {
@@ -22,10 +62,11 @@ div.footer {
 }
 
 .zeitschrift_button {
-    width: 48%;
-    min-width:150px;
+    width: 47%;
+    min-width: 150px;
+    margin-right: 2px;
+    margin-bottom: 5px;
 }
-
 
 .zeitschrift_ausgabe {
     width: 30%;
@@ -33,7 +74,6 @@ div.footer {
     background-color: #ffffff;
     padding: 2px;
     margin-bottom: 2px;
-    line-height: 100%;
     text-align: center;
 }
 
@@ -53,15 +93,15 @@ div.footer {
 .small {
     font-size: 12px; /* 75% of the baseline */
 }
+
 .large {
     font-size: 20px; /* 125% of the baseline */
 }
 
-
-@media (min-width: 600px) {
+@media (min-width: 500px) {
     body {
         font-size: 14px;
-        max-width: 900px;
+        max-width: 700px;
     }
 
     .zeitschrift_button {
@@ -72,3 +112,22 @@ div.footer {
         width: auto;
     }
 }
+
+
+@media (min-width: 700px) {
+    body {
+        font-size: 16px;
+        max-width: 900px;
+    }
+
+    .zeitschrift_button {
+        width: 23%;
+    }
+
+    .zeitschrift_ausgabe {
+        width: auto;
+    }
+}
+
+
+

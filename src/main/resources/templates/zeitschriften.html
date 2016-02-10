@@ -6,15 +6,7 @@
 <head th:replace="header :: header('')"></head>
 
 <body>
-
-<!--
-<span th:each="zeitschrift : ${all}">
-	<a th:href="@{'/zeitschriften/'+${zeitschrift.id}}">
-		<span th:text="${zeitschrift.name}"></span>
-	</a>
-	&nbsp;&nbsp; &nbsp;
-</span>
--->
+<nav th:replace="navigation :: navigation"></nav>
 
 
 <a class="pure-button zeitschrift_button"
@@ -22,6 +14,7 @@
    th:text="${zeitschrift.name}" th:href="@{'/zeitschriften/'+${zeitschrift.id}}">zeitschrift
 </a>
 
+<br clear="all"/>
 <div th:include="footer :: copy"></div>
 
 </body>

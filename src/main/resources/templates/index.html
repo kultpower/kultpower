@@ -1,50 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8"/>
-	<title>Kultpower.org</title>
 
-	<link href="css/main.css" rel="stylesheet" media="all"/>
-	<link href="css/aria.css" rel="stylesheet" media="all"/>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	  xmlns:th="http://www.thymeleaf.org">
 
-	<meta name="viewport" content="width=device-width, initial-scale=1"/>
-
-</head>
+<head th:replace="header :: header('Startseite')"></head>
 <body>
 
+<nav th:replace="navigation :: navigation"></nav>
 
-<nav role="navigation" aria-label="navigation" style="width: 100%;">
-	<ul class="with-dropdowns">
-		<li><a href="#">Home</a></li>
-		<li>
-			<a href="/zeitschriften" aria-haspopup="true">Zeitschriften</a>
-			<ul aria-hidden="true" aria-label="submenu">
-				<li><a href="/zeitschriften/powerplay">Power Play</a></li>
-				<li><a href="/zeitschriften/videogames">Video Games</a></li>
-				<li><a href="/zeitschriften/asm">ASM</a></li>
-				<li><a href="/zeitschriften/amigajoker">Amiga Joker</a></li>
-				<li><a href="/zeitschriften">alle Zeitschriften</a></li>
-			</ul>
-		</li>
-		<li><a href="#">Interviews</a></li>
-	</ul>
-</nav>
 
+
+<!--
 <div role="search">
 	<label>Suche:</label>
 	<input role="textbox"/>
 </div>
-
+-->
 
 <hr/>
-
-<div role="main">Lorem ipsum ...
-
-	<a href="">Link</a>
-</div>
-
-<script src="http://code.jquery.com/jquery-latest.min.js"></script>
-<script src="js/a11y.js"></script>
 
 </body>
 </html>
