@@ -6,13 +6,12 @@
 <head th:replace="header :: header(${one.name})"></head>
 
 <body>
-<nav th:replace="navigation :: navigation"></nav>
+<nav th:replace="navigation :: navigation(URL_ZEITSCHRIFTEN)"></nav>
 
-<h1><span th:text="${one.name}">Zeitschrift-Name</span>
-    <a th:href="@{${URL_ZEITSCHRIFTEN}}" style="font-size:50%;font-weight: normal;">zur&uuml;ck</a>
+<h1>
+    <a th:href="@{${URL_ZEITSCHRIFTEN}}"><i class="fa fa-chevron-circle-left"></i></a>
+    <span th:text="${one.name}">Zeitschrift-Name</span>
 </h1>
-
-<hr/>
 
 
 <div class="zeitschrift_ausgabe" th:each="ausgabe : ${one.ausgaben}">
@@ -26,7 +25,7 @@
 
 </div>
 
-<hr/>
+<br/>
 <div th:include="footer :: copy"></div>
 
 </body>

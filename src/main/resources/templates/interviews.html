@@ -6,12 +6,10 @@
 <head th:replace="header :: header('Interviews')"></head>
 
 <body>
-<nav th:replace="navigation :: navigation"></nav>
-<hr/>
+<nav th:replace="navigation :: navigation(URL_INTERVIEWS)"></nav>
 
 
 
-<hr/>
 <div th:include="footer :: copy"></div>
 
 </body>

@@ -6,18 +6,11 @@
 <head th:replace="header :: header('Startseite')"></head>
 <body>
 
-<nav th:replace="navigation :: navigation"></nav>
+<nav th:replace="navigation :: navigation('index')"></nav>
 
 
 
-<!--
-<div role="search">
-	<label>Suche:</label>
-	<input role="textbox"/>
-</div>
--->
-
-<hr/>
+<div th:include="footer :: copy"></div>
 
 </body>
 </html>

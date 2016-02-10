@@ -1,6 +1,6 @@
 body {
     font-size: 12px;
-    padding: 4px;
+    padding: 2px;
     max-width: 500px;
     min-width: 330px;
     font-family: Tahoma, Geneva, sans-serif;
@@ -8,25 +8,42 @@ body {
 
 nav.navigation {
     padding: 0px;
-    line-height: 100%;
     font-size: 150%;
+    /*border-bottom: 2px solid #dddddd;*/
+    line-height: 200%;
+    margin-bottom: 20px;
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
 }
 
 ul.navigation {
     list-style-type: none;
     color: white;
-    padding: 0px;
+    padding-bottom: 5px;
+    padding-top: 10px;
+    text-align: center;
 }
 
 ul.navigation li a {
     color: black;
+    ;
 }
+
+
 
 ul.navigation li {
     display: inline;
     color: black;
-    border: 1px solid #dddddd;
     padding: 5px;
+    padding-bottom:10px;
+    margin: 0px;
+}
+
+ul.navigation li.active {
+    border-bottom: 2px solid #666666
 }
 
 ul.navigation li:hover {
@@ -35,6 +52,7 @@ ul.navigation li:hover {
 
 a {
     text-decoration: none;
+    color: black;
 }
 
 a:visited {
@@ -59,6 +77,8 @@ div.footer {
     width: 100%;
     font-size: 70%;
     color: #666666;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .zeitschrift_button {
@@ -104,12 +124,19 @@ div.footer {
         max-width: 700px;
     }
 
+    ul.navigation {
+    }
+
+    ul.navigation li {
+        margin-right: 20px;
+    }
+
     .zeitschrift_button {
         width: 32%;
     }
 
     .zeitschrift_ausgabe {
-        width: auto;
+        width: 22%;
     }
 }
 

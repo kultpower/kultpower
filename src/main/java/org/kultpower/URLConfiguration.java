@@ -15,6 +15,7 @@ public class URLConfiguration {
 	enum URLS {
 		ZEITSCHRIFTEN("/zeitschriften")
 		,ZEITSCHRIFTEN_AUSGABE("/zeitschriften/ausgabe")
+		,INTERVIEWS("/interviews")
 		,HOME("/")
 		,PROFIL("/profil")
 		;

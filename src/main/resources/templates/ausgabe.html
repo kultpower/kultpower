@@ -6,10 +6,11 @@
 <head th:replace="header :: header('')"></head>
 
 <body>
-<nav th:replace="navigation :: navigation"></nav>
+<nav th:replace="navigation :: navigation(URL_ZEITSCHRIFTEN)"></nav>
 
-<h1><span th:text="${zeitschrift.name} + ' / ' + ${ausgabe.shortname}">Zeitschrift-Name</span>
-	<a th:href="@{${URL_ZEITSCHRIFTEN} + '/' + ${zeitschrift.id}}	" style="font-size:50%;font-weight: normal;">zur&uuml;ck</a>
+<h1>
+	<a th:href="@{${URL_ZEITSCHRIFTEN} + '/' + ${zeitschrift.id}}"><i class="fa fa-chevron-circle-left"></i></a>
+	<span th:text="${zeitschrift.name} + ' / ' + ${ausgabe.shortname}">Zeitschrift-Name</span>
 </h1>
 
 <img th:title="${ausgabe.coverfile}" th:src="'/ext/zeitschriften/' + ${zeitschrift.id} + '/cover/' + ${ausgabe.coverfile}"/>
