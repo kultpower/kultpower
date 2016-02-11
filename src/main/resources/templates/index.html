@@ -1,14 +1,34 @@
 <!DOCTYPE html>
 
 <html lang="de" xmlns="http://www.w3.org/1999/xhtml"
-	  xmlns:th="http://www.thymeleaf.org">
+      xmlns:th="http://www.thymeleaf.org">
 
 <head th:replace="header :: header('Startseite')"></head>
 <body>
 
 <nav th:replace="navigation :: navigation('index')"></nav>
 
+<br/>
+<br/>
 
+<div class="text">
+    <div>
+        <b>Kultpower.org</b>
+        <br/><br/>
+        <ul>
+            <li>Mobile-First <br/>(unbedingt mit Smartphone und Tablet ausprobieren)</li>
+            <li>Open Source (<a target="blank" href="https://github.com/kultpower/kultpower.org">hier</a>)</li>
+            <li>kein Flash mehr notwendig</li>
+            <li>Java Script optional - Progressive Enhancement (TODO)</li>
+            <li>benutzbar mit <a target="_blank" href="http://lynx.browser.org/">lynx</a> :-)</li>
+        </ul>
+        <br/>
+        <br/>
+        <i>...work in progress...</i>
+    </div>
+</div>
+
+<br/><br/>
 
 <div th:include="footer :: copy"></div>
 

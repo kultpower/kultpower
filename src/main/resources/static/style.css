@@ -124,6 +124,23 @@ div.footer {
     font-size: 20px; /* 125% of the baseline */
 }
 
+div.text {
+    text-align: center;
+    width: 80%;
+}
+
+div.text div {
+    text-align: left;
+}
+
+div.text a {
+    text-decoration: underline;
+}
+
+div.text ul {
+    padding: 20px;
+}
+
 @media (min-width: 500px) {
     body {
         font-size: 14px;
