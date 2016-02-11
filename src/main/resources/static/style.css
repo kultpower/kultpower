@@ -4,14 +4,17 @@ body {
     max-width: 500px;
     min-width: 330px;
     font-family: Tahoma, Geneva, sans-serif;
+    font-family: "Fakt",AvenirNext-Medium,"Segoe UI",sans-serif;
 }
 
 nav.navigation {
     padding: 0px;
-    font-size: 150%;
+    font-size: 120%;
     /*border-bottom: 2px solid #dddddd;*/
     line-height: 200%;
     margin-bottom: 20px;
+    font-family: "Fakt",AvenirNext-Medium,"Segoe UI",sans-serif;
+    text-transform: uppercase;
 }
 
 ul {
@@ -25,6 +28,7 @@ ul.navigation {
     padding-bottom: 5px;
     padding-top: 10px;
     text-align: center;
+    border: 0px solid green;
 }
 
 ul.navigation li a {
@@ -40,6 +44,7 @@ ul.navigation li {
     padding: 5px;
     padding-bottom:10px;
     margin: 0px;
+    border: 0px solid red;
 }
 
 ul.navigation li.active {
@@ -47,7 +52,7 @@ ul.navigation li.active {
 }
 
 ul.navigation li:hover {
-    background-color: #bbbbbb;
+    border-bottom: 2px solid #dddddd;
 }
 
 a {
@@ -85,6 +90,7 @@ div.footer {
     width: 47%;
     min-width: 150px;
     margin-right: 2px;
+    margin-left: 2px;
     margin-bottom: 5px;
 }
 
