@@ -151,6 +151,8 @@ div.footer {
     body {
         font-size: 16px;
         max-width: 1000px;
+        padding-left: 20px;
+        border-right: 1px solid #eeeeee;
     }
 
     .zeitschrift_button {
