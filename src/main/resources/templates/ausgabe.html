@@ -15,7 +15,7 @@
 
 <img th:title="${ausgabe.coverfile}" th:src="'/ext/zeitschriften/' + ${zeitschrift.id} + '/cover/' + ${ausgabe.coverfile}"/>
 
-
-<div th:include="footer :: copy"></div>
+<br clear="all"/>
+<div th:replace="footer :: copy"></div>
 </body>
 </html>

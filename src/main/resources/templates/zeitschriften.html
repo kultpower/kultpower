@@ -14,8 +14,7 @@
    th:text="${zeitschrift.name}" th:href="@{'/zeitschriften/'+${zeitschrift.id}}">zeitschrift
 </a>
 
-<br clear="all"/>
-<div th:include="footer :: copy"></div>
+<div th:replace="footer :: copy"></div>
 
 </body>
 </html>
