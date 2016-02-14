@@ -8,10 +8,10 @@
 <body>
 <nav th:replace="navigation :: navigation(URL_ZEITSCHRIFTEN)"></nav>
 
-<h2>
+<h1>
 	<a th:href="@{${URL_ZEITSCHRIFTEN} + '/' + ${zeitschrift.id}}"><i class="fa fa-chevron-circle-left"></i></a>
 	<span th:text="${zeitschrift.name} + ' / ' + ${ausgabe.shortname}">Zeitschrift-Name</span>
-</h2>
+</h1>
 
 <img th:title="${ausgabe.coverfile}" th:src="'/ext/zeitschriften/' + ${zeitschrift.id} + '/cover/' + ${ausgabe.coverfile}"/>
 

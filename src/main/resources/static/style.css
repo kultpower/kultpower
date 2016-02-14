@@ -75,6 +75,8 @@ div {
 
 h1, h2, h3, h4, h5, h6 {
     margin: 0px;
+    margin-bottom: 5px;
+    margin-top: 12px;
 }
 
 div.footer {
@@ -107,6 +109,15 @@ div.footer {
 .zeitschrift_ausgabe:hover {
     font-weight: bold;
     border: 1px solid #aaaaaa;
+}
+
+.zeitschrift_jahrgang_header {
+    background-color: #eeeeee;
+    padding-left: 10px;
+}
+
+.zeitschrift_jahrgang {
+    display: block;
 }
 
 .ausgabe_coverpreview {
@@ -168,7 +179,7 @@ div.text ul {
 
 @media (min-width: 800px) {
     body {
-        font-size: 16px;
+        font-size: 14px;
         max-width: 1000px;
         padding-left: 20px;
         border-right: 1px solid #eeeeee;

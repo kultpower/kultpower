@@ -84,7 +84,7 @@ public class ZeitschriftenController {
 	public String zeigeZeitschrift(@PathVariable String zeitschriftId, Model model) {
 		Zeitschrift one = repo.findOne(zeitschriftId);
 		model.addAttribute("one", one);
-		System.out.println(one.getAusgaben().iterator().next());
+		//System.out.println(one.getAusgaben().iterator().next());
 
 		return "zeitschrift";
 	}
@@ -95,10 +95,10 @@ public class ZeitschriftenController {
 			@PathVariable String ausgabeId,
 			Model model) {
 
-//		model.addAttribute("zeitschrift", zeitschriftId);
 		model.addAttribute("ausgabeId", ausgabeId);
+		Zeitschrift zeitschrift = repo.findOne(zeitschriftId);
 
-		model.addAttribute("zeitschrift", repo.findOne(zeitschriftId));
+		model.addAttribute("zeitschrift", zeitschrift);
 
 		Ausgabe ausgabe = ausgabenRepo.findOne(ausgabeId);
 		model.addAttribute("ausgabe", ausgabe);
