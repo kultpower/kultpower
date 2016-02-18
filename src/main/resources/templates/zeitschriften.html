@@ -6,15 +6,30 @@
 <head th:replace="header :: header('Zeitschriften Übersicht')"></head>
 
 <body>
+
 <nav th:replace="navigation :: navigation(URL_ZEITSCHRIFTEN)"></nav>
 
 
 <a class="pure-button zeitschrift_button"
    th:each="zeitschrift : ${all}"
-   th:text="${zeitschrift.name}" th:href="@{'/zeitschriften/'+${zeitschrift.id}}">zeitschrift
-</a>
+   th:href="@{'/zeitschriften/'+${zeitschrift.id}}"
+   th:title="${zeitschrift.name + ' (' + zeitschrift.ausgaben.size() + ' Ausgabe' + (zeitschrift.ausgaben.size()==1?'':'n') + ')'}"
+><span>
+	<span th:text="${zeitschrift.name}">Zeitschrift</span>
+	<span class="ausgabe_anzahl" th:text="${' (' + zeitschrift.ausgaben.size() + ')'}"> (42)</span>
+	<span th:attr="data-preview-img='/ext/zeitschriften/_previews/(mq2=h80,mq3=h120)/' + ${zeitschrift.id} + '.png'"></span>
+</span></a>
 
 <div th:replace="footer :: copy"></div>
 
+<script language="JavaScript">
+	/*<![CDATA[*/
+/*	var buttons = document.querySelectorAll('[data-preview-img]');
+	for (var i = 0; i < buttons.length; i++) {
+		buttons[i].innerHTML = buttons[i].innerHTML + '<br/> <img src="' + buttons[i].getAttribute('data-preview-img') + '"/>';
+	}
+	*/
+	/*]]>*/
+</script>
 </body>
 </html>

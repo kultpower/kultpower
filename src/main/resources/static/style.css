@@ -1,3 +1,18 @@
+#getActiveMQ-watcher {
+    font-family: "0";
+}
+
+#debug {
+    position: fixed;
+    right: 0px;
+    top: 0px;
+    width: 80px;
+    background-color: #eeeeee;
+    font-size: 10px;
+    text-align: center;
+    display: none;
+}
+
 body {
     font-size: 12px;
     padding: 2px;
@@ -124,6 +139,11 @@ div.footer {
     width: 100%;
 }
 
+.ausgabe_anzahl {
+    color: #888888;
+    display: none;
+}
+
 .image_subtitle {
     line-height: 100%;
 }
@@ -154,10 +174,15 @@ div.text ul {
     padding: 20px;
 }
 
-@media (min-width: 500px) {
+@media (min-width: 35em) {
+
+    #getActiveMQ-watcher {
+        font-family: "1";
+    }
+
     body {
         font-size: 14px;
-        max-width: 700px;
+        max-width: 56em;
     }
 
     ul.navigation {
@@ -168,29 +193,76 @@ div.text ul {
     }
 
     .zeitschrift_button {
-        width: 32%;
+        width: 31%;
     }
 
     .zeitschrift_ausgabe {
         width: 18%;
     }
+
 }
 
 
-@media (min-width: 800px) {
+@media (min-width: 57em) {
+
+    #getActiveMQ-watcher {
+        font-family: "2";
+    }
+
     body {
         font-size: 14px;
-        max-width: 1000px;
+        max-width: 65em;
+        padding-left: 20px;
+        border-right: 1px solid #eeeeee;
+    }
+
+    .zeitschrift_button {
+        width: 24%;
+        background-color: transparent;
+        border: 1px solid transparent;
+    }
+
+    .zeitschrift_button:hover, .zeitschrift_button-hover, .zeitschrift_button:focus {
+        background-color: #eeeeee;
+        background-image: none;
+        border: 1px solid #444444;
+    }
+
+    .zeitschrift_ausgabe {
+        width: 15%;
+    }
+
+    .ausgabe_anzahl {
+        display: inline;
+    }
+}
+
+
+@media (min-width: 70em) {
+
+    #getActiveMQ-watcher {
+        font-family: "3";
+    }
+
+    body {
+        font-size: 16px;
+        max-width: 80em;
         padding-left: 20px;
         border-right: 1px solid #eeeeee;
     }
 
     .zeitschrift_button {
         width: 23%;
+        background-color: transparent;
+        border: 1px solid transparent;
     }
 
     .zeitschrift_ausgabe {
-        width: 15%;
+        width: 13%;
+    }
+
+    .ausgabe_anzahl {
+        display: inline;
     }
 }
 
