@@ -1,0 +1,1 @@
+find . -maxdepth 3 -type f -name "*.jpg" | grep 'cover/' | sed 's/\.\///' | sed 's/.*\///' | sort | uniq
