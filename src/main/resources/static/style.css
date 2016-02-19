@@ -13,6 +13,10 @@
     display: none;
 }
 
+.mindmap {
+    width: 100%;
+}
+
 body {
     font-size: 12px;
     padding: 2px;
@@ -185,6 +189,10 @@ div.text ul {
         max-width: 56em;
     }
 
+    .mindmap {
+        width: 35em;
+    }
+
     ul.navigation {
     }
 
@@ -215,6 +223,7 @@ div.text ul {
         padding-left: 20px;
         border-right: 1px solid #eeeeee;
     }
+
 
     .zeitschrift_button {
         width: 24%;
@@ -249,6 +258,10 @@ div.text ul {
         max-width: 80em;
         padding-left: 20px;
         border-right: 1px solid #eeeeee;
+    }
+
+    .mindmap {
+        width: 1043px;
     }
 
     .zeitschrift_button {
