@@ -15,18 +15,28 @@ import org.springframework.test.context.web.WebAppConfiguration;
 @RunWith(SpringJUnit4ClassRunner.class)
 @SpringApplicationConfiguration(classes = KultpowerApplication.class)
 @WebAppConfiguration
-@Ignore
 public class AusgabeTest {
 
 	@Autowired
 	AusgabenRepository repository;
 
 	@Test
-	public void sichern() {
+	@Ignore
+	public void lesen() {
 
-		Ausgabe ausgabe = new Ausgabe();
-		repository.save(ausgabe);
+		Iterable<Ausgabe> all = repository.findAll();
 
+		Assert.assertThat(all, Matchers.notNullValue());
 	}
 
+
+	@Test
+	public void lesen2() {
+
+		Ausgabe ausgabe = repository.findByZeitschriftAndShortname("powerplay", "1990-12");
+
+		Assert.assertThat(ausgabe, Matchers.notNullValue());
+
+		System.out.println(ausgabe);
+	}
 }

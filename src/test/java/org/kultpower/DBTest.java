@@ -26,7 +26,7 @@ public class DBTest {
 
 		Stopwatch timer = Stopwatch.createStarted();
 
-		Zeitschrift powerplay = zeitschriftenRepository.findOne("powerplay");
+		Zeitschrift powerplay = zeitschriftenRepository.findById("powerplay");
 
 		System.out.println("Method took: " + timer.stop());
 
