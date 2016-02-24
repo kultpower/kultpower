@@ -9,15 +9,15 @@
 <nav th:replace="navigation :: navigation(URL_INTERVIEWS)"></nav>
 
 <div class="text">
+
     <h1>Interviews</h1>
 
     <div>
         <i>...work in progress...</i>
         <br/>
-        <br/>
 
         <ul>
-            <li th:each="interview : ${interviews}">
+            <li th:each="interview : ${interviews}" class="interview">
                 <a th:href="@{${URL_INTERVIEWS} + '/' + ${interview.id}}" th:text="${interview.title}">
                     Titel des Interviews
                 </a>

@@ -179,6 +179,15 @@ div.text ul {
     padding: 20px;
 }
 
+li.interview {
+    padding: 10px;
+    list-style-type: none;
+}
+
+li.interview a {
+    font-size: 120%;
+}
+
 .interview div {
     display: block;
 }
