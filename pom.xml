@@ -73,6 +73,16 @@
 			<artifactId>guava</artifactId>
 			<version>19.0</version>
 		</dependency>
+		<dependency>
+			<groupId>joda-time</groupId>
+			<artifactId>joda-time</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.jadira.usertype</groupId>
+			<artifactId>usertype.core</artifactId>
+			<version>3.2.0.GA</version>
+		</dependency>
 
 
 
