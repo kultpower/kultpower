@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html lang="de" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="header :: header('Interview mit Michael Hengst (3/2001)')"></head>
+
+<body>
+<nav th:replace="navigation :: navigation(URL_INTERVIEWS)"></nav>
+
+
+<div class="text">
+
+    <h1>
+        <a th:href="@{${URL_INTERVIEWS}}"><i class="fa fa-chevron-circle-left"></i></a>
+        <span th:text="${interview.title}">Interview-Titel</span>
+        <br/>
+        <!--/*@thymesVar id="datum" type="org.kultpower.entities.Interview"*/-->
+    <span
+            style="font-size: 50%; font-weight: normal;"
+            th:text="${'Veröffentlicht am ' + interview.getDatum().toString('dd.MM.yyyy')}"
+    >Erschienen am: 1.1.1900</span>
+    </h1>
+
+
+    <div class="interview">
+        <div th:each="text : ${interview.texte}">
+
+            <span th:if="${text.prefix!=''}">
+                <div class="interviewprefix" th:text="${text.prefix + ':'}">Kultpower:</div>
+                <div class="interviewtext" th:text="${text.text}">text</div>
+            </span>
+            <div th:if="${text.prefix==''}" class="interviewother">
+                <span th:text="${text.text}">text</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div th:replace="footer :: copy"></div>
+
+</body>
+</html>
