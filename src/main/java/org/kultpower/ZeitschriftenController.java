@@ -29,9 +29,6 @@ public class ZeitschriftenController {
 	@Autowired
 	AusgabenRepository ausgabenRepo;
 
-//	@Autowired
-//	StaticResourceConfiguration staticResourceConfiguration;
-
 	@RequestMapping(method = RequestMethod.GET)
 	public String zeitschrift(Model model) {
 
@@ -82,7 +79,7 @@ public class ZeitschriftenController {
 
 	@RequestMapping(value = "/{zeitschriftId}", method = RequestMethod.GET)
 	public String zeigeZeitschrift(@PathVariable String zeitschriftId, Model model) {
-		Zeitschrift one = repo.findOne(zeitschriftId);
+		Zeitschrift one = repo.findById(zeitschriftId);
 		model.addAttribute("one", one);
 		//System.out.println(one.getAusgaben().iterator().next());
 
@@ -96,7 +93,7 @@ public class ZeitschriftenController {
 			Model model) {
 
 		model.addAttribute("ausgabeId", ausgabeId);
-		Zeitschrift zeitschrift = repo.findOne(zeitschriftId);
+		Zeitschrift zeitschrift = repo.findById(zeitschriftId);
 
 		model.addAttribute("zeitschrift", zeitschrift);
 

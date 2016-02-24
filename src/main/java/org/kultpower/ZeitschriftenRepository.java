@@ -14,4 +14,6 @@ public interface ZeitschriftenRepository extends CrudRepository<Zeitschrift, Str
 //	@EntityGraph(value = "Zeitschrift.ausgaben", type = EntityGraph.EntityGraphType.LOAD)
 //	Zeitschrift findByName(String name);
 
+	@EntityGraph(value = "Zeitschrift.ausgaben", type = EntityGraph.EntityGraphType.LOAD)
+	Zeitschrift findById(String id);
 }

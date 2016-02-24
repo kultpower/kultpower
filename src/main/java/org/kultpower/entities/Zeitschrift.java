@@ -23,7 +23,7 @@ public class Zeitschrift {
 	private String name;
 
 
-	@OneToMany(mappedBy = "zeitschrift", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+	@OneToMany(mappedBy = "zeitschrift", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
 	@OrderBy("shortname ASC")
 	private Set<Ausgabe> ausgaben = new TreeSet<>();
 

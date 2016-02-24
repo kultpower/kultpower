@@ -1,13 +1,11 @@
 package org.kultpower.entities;
 
 import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
-import org.apache.commons.lang3.builder.ToStringBuilder;
-import org.apache.commons.lang3.builder.ToStringStyle;
 import org.hibernate.annotations.GenericGenerator;
+import org.hibernate.annotations.Type;
+import org.joda.time.LocalDate;
 
 import javax.persistence.*;
-import java.time.LocalDate;
-import java.time.Year;
 
 /**
  * Created by sebastian on 28.01.16.
@@ -26,6 +24,7 @@ public class Ausgabe
 	private String id = null;
 
 	@Column
+	@Type(type = "org.jadira.usertype.dateandtime.joda.PersistentLocalDate")
 	private LocalDate erscheinungsdatum;
 
 	@Column
