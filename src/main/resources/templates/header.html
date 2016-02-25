@@ -3,10 +3,10 @@
 <html lang="de" xmlns="http://www.w3.org/1999/xhtml"
       xmlns:th="http://www.thymeleaf.org">
 
-<head th:fragment="header(title)">
+<head th:fragment="header">
 
         <meta charset="UTF-8"/>
-        <title th:text="${title} + '  - Kultpower.org'"></title>
+        <title th:text="${title + '  - Kultpower.org'}"></title>
 
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
@@ -19,8 +19,8 @@
 
         <!--<meta property="og:url"               th:content=""/>-->
         <meta property="og:type"               content="article" />
-        <meta property="og:title"              th:content="'Kultpower.org - ' + ${title}" />
-        <meta property="og:description"        content="Kult-Zeitschriften der 80er und 90er Jahre. Power Play, Video Games, Amiga Joker, ASM und mehr." />
+        <meta property="og:title"              th:content="${title} + ' - Kultpower.org'" />
+        <meta property="og:description"        th:content="${description ?: 'Kult-Zeitschriften der 80er und 90er Jahre. Power Play, Video Games, Amiga Joker, ASM und mehr.'}" />
         <meta property="og:image" content="http://www.kultpower.org/ext/zeitschriften/_previews/powerplay.png" />
 </head>
 

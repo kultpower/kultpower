@@ -6,6 +6,7 @@ import org.hibernate.annotations.Type;
 import org.joda.time.LocalDate;
 
 import javax.persistence.*;
+import java.util.Iterator;
 import java.util.Set;
 import java.util.TreeSet;
 
@@ -68,5 +69,18 @@ public class Interview {
 	@Override
 	public String toString() {
 		return ToStringBuilder.reflectionToString(this, ToStringStyle.MULTI_LINE_STYLE);
+	}
+
+
+	public String getIntroText() {
+		StringBuffer ret = new StringBuffer();
+		int count=0;
+		Iterator<InterviewText> iterator = getTexte().iterator();
+		while (iterator.hasNext() && count < 2) {
+			InterviewText text = iterator.next();
+			ret.append(text.getPrefix() + ": " + text.getText() + "\n");
+			count++;
+		}
+		return ret.toString();
 	}
 }

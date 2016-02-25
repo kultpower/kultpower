@@ -3,7 +3,7 @@
 <html lang="de" xmlns="http://www.w3.org/1999/xhtml"
 	  xmlns:th="http://www.thymeleaf.org">
 
-<head th:replace="header :: header('')"></head>
+<head th:include="header :: header"></head>
 
 <body>
 <nav th:replace="navigation :: navigation(URL_ZEITSCHRIFTEN)"></nav>

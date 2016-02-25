@@ -16,7 +16,7 @@ public class InterviewsController {
 
 	@RequestMapping(method = RequestMethod.GET)
 	public String interviews(Model model) {
-		model.addAttribute("interviews", repository.findAll());
+		model.addAttribute("interviews", repository.findAllByOrderByDatumAsc());
 		return "interviews";
 	}
 

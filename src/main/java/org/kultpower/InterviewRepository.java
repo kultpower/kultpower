@@ -6,6 +6,8 @@ import org.springframework.data.jpa.repository.EntityGraph;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
+import java.util.List;
+
 /**
  * Created by sebastian on 28.01.16.
  */
@@ -15,5 +17,7 @@ public interface InterviewRepository extends CrudRepository<Interview, String> {
 
 	@EntityGraph(value = "Interview.texte", type = EntityGraph.EntityGraphType.LOAD)
 	Interview findById(String id);
+
+	List<Interview> findAllByOrderByDatumAsc();
 
 }

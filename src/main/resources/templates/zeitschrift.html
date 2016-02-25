@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:th="http://www.thymeleaf.org">
 
-<head th:replace="header :: header(${one.name})"></head>
+<head th:include="header :: header" th:with="title=${one.name}"></head>
 
 <body>
 <nav th:replace="navigation :: navigation(URL_ZEITSCHRIFTEN)"></nav>
