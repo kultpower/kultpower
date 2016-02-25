@@ -1,0 +1,1 @@
+CREATE DATABASE `kultpower.org` DEFAULT CHARACTER SET = `utf8`;
