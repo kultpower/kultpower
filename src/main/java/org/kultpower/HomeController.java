@@ -16,9 +16,4 @@ public class HomeController {
 		return "index";
 	}
 
-
-	@RequestMapping("/disqus")
-	public String disqus(Model model) {
-		return "disqus";
-	}
 }
