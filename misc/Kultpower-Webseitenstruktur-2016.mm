@@ -70,34 +70,34 @@
 <edge STYLE="sharp_bezier" WIDTH="8"/>
 <font NAME="SansSerif" SIZE="18"/>
 </node>
-<node COLOR="#000000" CREATED="1451636942214" ID="ID_942801187" MODIFIED="1455568153421" POSITION="right" STYLE="fork" TEXT="Interviews">
+<node BACKGROUND_COLOR="#00cc00" COLOR="#000000" CREATED="1451636942214" ID="ID_942801187" MODIFIED="1456505074537" POSITION="right" STYLE="fork" TEXT="Interviews">
 <edge STYLE="sharp_bezier" WIDTH="8"/>
 <font NAME="SansSerif" SIZE="18"/>
-<node COLOR="#000000" CREATED="1451638986978" ID="ID_576948997" MODIFIED="1455568153421" STYLE="fork" TEXT="Interview mit Michael Hengst vom 27.3.2001">
+<node BACKGROUND_COLOR="#00cc00" COLOR="#000000" CREATED="1451638986978" ID="ID_576948997" MODIFIED="1456505066783" STYLE="fork" TEXT="Interview mit Michael Hengst vom 27.3.2001">
 <edge STYLE="bezier" WIDTH="thin"/>
 <font NAME="SansSerif" SIZE="16"/>
 </node>
-<node COLOR="#000000" CREATED="1451638999360" ID="ID_545608214" MODIFIED="1455568153421" STYLE="fork" TEXT="Interview mit Winnie Forster vom 6.1.2003">
+<node BACKGROUND_COLOR="#00cc00" COLOR="#000000" CREATED="1451638999360" ID="ID_545608214" MODIFIED="1456505066807" STYLE="fork" TEXT="Interview mit Winnie Forster vom 6.1.2003">
 <edge STYLE="bezier" WIDTH="thin"/>
 <font NAME="SansSerif" SIZE="16"/>
 </node>
-<node COLOR="#000000" CREATED="1451639084645" ID="ID_740911125" MODIFIED="1455568153420" STYLE="fork" TEXT="Interview mit Winnie Forster, Juni 2005">
+<node BACKGROUND_COLOR="#00cc00" COLOR="#000000" CREATED="1451639084645" ID="ID_740911125" MODIFIED="1456505066806" STYLE="fork" TEXT="Interview mit Winnie Forster, Juni 2005">
 <edge STYLE="bezier" WIDTH="thin"/>
 <font NAME="SansSerif" SIZE="16"/>
 </node>
-<node COLOR="#000000" CREATED="1451639220236" ID="ID_1733761531" MODIFIED="1455568153413" STYLE="fork" TEXT="Interview mit Harald Horchler - Der Herausgeber der &#xa;Starkiller-B&#xfc;cher im Gespr&#xe4;ch mit Kultpower.de (Mai 2006) ">
+<node BACKGROUND_COLOR="#00cc00" COLOR="#000000" CREATED="1451639220236" ID="ID_1733761531" MODIFIED="1456505066796" STYLE="fork" TEXT="Interview mit Harald Horchler - Der Herausgeber der &#xa;Starkiller-B&#xfc;cher im Gespr&#xe4;ch mit Kultpower.de (Mai 2006) ">
 <edge STYLE="bezier" WIDTH="thin"/>
 <font NAME="SansSerif" SIZE="16"/>
 </node>
-<node COLOR="#000000" CREATED="1451639297390" ID="ID_1918591071" MODIFIED="1455568153407" STYLE="fork" TEXT="Interview mit Rolf Boyke - Der Zeichner der Starkiller-Comics &#xa;im Gespr&#xe4;ch mit Kultpower.de (Mai 2006)">
+<node BACKGROUND_COLOR="#00cc00" COLOR="#000000" CREATED="1451639297390" ID="ID_1918591071" MODIFIED="1456505066791" STYLE="fork" TEXT="Interview mit Rolf Boyke - Der Zeichner der Starkiller-Comics &#xa;im Gespr&#xe4;ch mit Kultpower.de (Mai 2006)">
 <edge STYLE="bezier" WIDTH="thin"/>
 <font NAME="SansSerif" SIZE="16"/>
 </node>
-<node COLOR="#000000" CREATED="1451639118840" ID="ID_15432644" MODIFIED="1455568153407" STYLE="fork" TEXT="Interview mit Winnie Forster, Dezember 2008 ">
+<node BACKGROUND_COLOR="#00cc00" COLOR="#000000" CREATED="1451639118840" ID="ID_15432644" MODIFIED="1456505066791" STYLE="fork" TEXT="Interview mit Winnie Forster, Dezember 2008 ">
 <edge STYLE="bezier" WIDTH="thin"/>
 <font NAME="SansSerif" SIZE="16"/>
 </node>
-<node COLOR="#000000" CREATED="1451639166338" ID="ID_1960099873" MODIFIED="1455568153401" STYLE="fork" TEXT="Interview mit Winnie Forster, M&#xe4;rz 2011 - &#xa;Die Story hinter &quot;Volkscomputer&quot;">
+<node BACKGROUND_COLOR="#00cc00" COLOR="#000000" CREATED="1451639166338" ID="ID_1960099873" MODIFIED="1456505066784" STYLE="fork" TEXT="Interview mit Winnie Forster, M&#xe4;rz 2011 - &#xa;Die Story hinter &quot;Volkscomputer&quot;">
 <edge STYLE="bezier" WIDTH="thin"/>
 <font NAME="SansSerif" SIZE="16"/>
 </node>
