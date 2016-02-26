@@ -16,4 +16,11 @@ public class HomeController {
 		return "index";
 	}
 
+	@RequestMapping("/discussion")
+	public String discussion(Model model) {
+		return "discussion";
+	}
+
+
+
 }

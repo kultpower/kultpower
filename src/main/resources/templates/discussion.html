@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html lang="de" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+
+<head th:include="header :: header" th:with="title='Startseite'"></head>
+<body>
+
+<nav th:replace="navigation :: navigation('index')"></nav>
+
+<br/>
+<br/>
+
+
+<p id="disqus_fallback">
+<noscript>
+    You can head over to the discussion at
+    <a rel="nofollow" href="https://disqus.com/home/discussion/roca-style/roca_resource_oriented_client_architecture_discussion/">Disqus</a>.
+</noscript>
+Please also make sure to check out the <a href='/faq.html'>FAQ</a>.
+</p>
+
+<div id="disqus_thread"></div>
+
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    // Required: on line below, replace text in quotes with your forum shortname
+    var disqus_shortname = 'kultpower';
+    var disqus_url = "http://kultpower.org/discussion"; // Important to show the correct thread
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+
+<br/><br/>
+
+
+<div th:replace="footer :: copy"></div>
+
+</body>
+</html>
+
+
+
