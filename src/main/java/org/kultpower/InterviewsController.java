@@ -1,5 +1,6 @@
 package org.kultpower;
 
+import org.kultpower.entities.Interview;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -25,7 +26,16 @@ public class InterviewsController {
 	public String singleInterview(
 			@PathVariable String interviewId,
 			Model model) {
-		model.addAttribute("interview", repository.findOne(interviewId));
+		Interview interview = repository.findOne(interviewId);
+		model.addAttribute("interview", interview);
+		model.addAttribute("disqus",
+				new Disqus(
+						URLConfiguration.getBaseUrl() + URLConfiguration.URLS.INTERVIEWS.value + "/" + interview.getId(),
+						URLConfiguration.URLS.INTERVIEWS.value + "/" + interview.getId(),
+						interview.getTitle()
+				)
+		);
+
 		return "interview";
 	}
 

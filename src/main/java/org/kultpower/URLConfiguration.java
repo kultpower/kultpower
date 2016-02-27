@@ -37,4 +37,8 @@ public class URLConfiguration {
 		}
 		return urls;
 	}
+
+	public static String getBaseUrl() {
+		return "http://www.kultpower.org/";
+	}
 }
