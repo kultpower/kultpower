@@ -23,7 +23,7 @@
         <meta property="og:type"               content="article" />
         <meta property="og:title"              th:content="${title} + ' - Kultpower.org'" />
         <meta property="og:description"        th:content="${description ?: 'Kult-Zeitschriften der 80er und 90er Jahre. Power Play, Video Games, Amiga Joker, ASM und mehr.'}" />
-        <meta property="og:image" content="http://www.kultpower.org/ext/zeitschriften/_previews/powerplay.png" />
+        <meta property="og:image" th:content="${image ?: 'http://www.kultpower.org/ext/zeitschriften/_previews/powerplay.png'}" />
 </head>
 
 <body>
