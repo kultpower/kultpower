@@ -2,6 +2,15 @@
     font-family: "0";
 }
 
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
 #debug {
     position: fixed;
     right: 0px;
@@ -17,13 +26,21 @@
     width: 100%;
 }
 
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
 body {
     font-size: 12px;
-    padding: 2px;
-    max-width: 500px;
-    min-width: 330px;
+    padding-left: 10px;
+    padding-right: 10px;
+    min-width: 320px;
     font-family: Tahoma, Geneva, sans-serif;
-    font-family: "Fakt",AvenirNext-Medium,"Segoe UI",sans-serif;
+    font-family: "Fakt", AvenirNext-Medium, "Segoe UI", sans-serif;
 }
 
 nav.navigation {
@@ -32,7 +49,7 @@ nav.navigation {
     /*border-bottom: 2px solid #dddddd;*/
     line-height: 200%;
     margin-bottom: 20px;
-    font-family: "Fakt",AvenirNext-Medium,"Segoe UI",sans-serif;
+    font-family: "Fakt", AvenirNext-Medium, "Segoe UI", sans-serif;
     text-transform: uppercase;
 }
 
@@ -51,17 +68,14 @@ ul.navigation {
 }
 
 ul.navigation li a {
-    color: black;
-    ;
+    color: black;;
 }
-
-
 
 ul.navigation li {
     display: inline;
     color: black;
     padding: 5px;
-    padding-bottom:10px;
+    padding-bottom: 10px;
     margin: 0px;
     border: 0px solid red;
 }
@@ -88,9 +102,9 @@ a:hover {
     text-decoration: none;
 }
 
-div {
-    display: inline-block;
-}
+/*div {*/
+/*display: inline-block;*/
+/*}*/
 
 #disqus_thread {
     display: block;
@@ -113,21 +127,10 @@ div.footer {
     padding-left: 2em;
 }
 
-.zeitschrift_button {
-    width: 47%;
-    min-width: 150px;
-    margin-right: 2px;
-    margin-left: 2px;
-    margin-bottom: 5px;
-}
-
-.zeitschrift_ausgabe {
-    width: 30%;
-    border: 1px solid white;
-    background-color: #ffffff;
-    padding: 2px;
-    margin-bottom: 2px;
-    text-align: center;
+.ausgabe_anzahl {
+    color: #888888;
+    display: none;
+    font-size: 80%;
 }
 
 .zeitschrift_ausgabe:hover {
@@ -148,27 +151,11 @@ div.footer {
     width: 100%;
 }
 
-.ausgabe_anzahl {
-    color: #888888;
-    display: none;
-}
-
-.image_subtitle {
-    line-height: 100%;
-}
-
-.small {
-    font-size: 12px; /* 75% of the baseline */
-}
-
-.large {
-    font-size: 20px; /* 125% of the baseline */
-}
 
 div.text {
     text-align: left;
-    width: 90%;
-    padding-left: 20px;
+    width: 95%;
+    padding-left: 10px;
 }
 
 div.text div {
@@ -212,73 +199,39 @@ li.interview a {
     margin-bottom: 20px;
 }
 
-.interviewother:before
-{
+.interviewother:before {
     content: open-quote;
 }
 
-.interviewother:after
-{
+.interviewother:after {
     content: close-quote;
 }
 
+@media (min-width: 25em) {
 
-@media (min-width: 35em) {
+    body {
+        font-size: 13px;
+    }
+
+    .ausgabe_anzahl {
+        display: inherit;
+    }
 
     #getActiveMQ-watcher {
         font-family: "1";
     }
 
-    body {
-        font-size: 14px;
-        max-width: 56em;
-    }
-
-    .mindmap {
-        width: 35em;
-    }
-
-    ul.navigation {
-    }
-
-    ul.navigation li {
-        margin-right: 20px;
-    }
-
-    .zeitschrift_button {
-        width: 31%;
-    }
-
-    .zeitschrift_ausgabe {
-        width: 18%;
-    }
-
 }
 
-
-@media (min-width: 57em) {
+@media (min-width: 35.5em) {
 
     #getActiveMQ-watcher {
         font-family: "2";
     }
 
-    body {
-        font-size: 14px;
-        max-width: 65em;
-        padding-left: 20px;
-        border-right: 1px solid #eeeeee;
-    }
-
-    ul.navigation {
-        text-align: left;
-        padding-left: 4em;
-    }
-
-
     .zeitschrift_button {
-        width: 24%;
-        background-color: transparent;
         border: 1px solid transparent;
+        background-image: none;
     }
 
     .zeitschrift_button:hover, .zeitschrift_button-hover, .zeitschrift_button:focus {
@@ -287,45 +240,48 @@ li.interview a {
         border: 1px solid #444444;
     }
 
-    .zeitschrift_ausgabe {
-        width: 15%;
-    }
 
-    .ausgabe_anzahl {
-        display: inline;
-    }
 }
 
-
-@media (min-width: 70em) {
+@media (min-width: 48em) {
 
     #getActiveMQ-watcher {
         font-family: "3";
     }
 
     body {
-        font-size: 16px;
-        max-width: 80em;
-        padding-left: 20px;
-        border-right: 1px solid #eeeeee;
-    }
-
-
-
-    .zeitschrift_button {
-        width: 23%;
-        background-color: transparent;
-        border: 1px solid transparent;
-    }
-
-    .zeitschrift_ausgabe {
-        width: 13%;
-    }
-
-    .ausgabe_anzahl {
-        display: inline;
+        font-size: 14px;
     }
 }
 
+@media (min-width: 64em) {
 
+    #getActiveMQ-watcher {
+        font-family: "4";
+    }
 
+    body {
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 80em) {
+
+    #getActiveMQ-watcher {
+        font-family: "5";
+    }
+
+    body {
+        font-size: 16px;
+    }
+
+}
+
+/*
+Key	CSS Media Query	Applies	Classname
+None	None	Always	.pure-u-*
+sm	@media screen and (min-width: 35.5em)	≥ 568px	.pure-u-sm-*
+md	@media screen and (min-width: 48em)	    ≥ 768px	.pure-u-md-*
+lg	@media screen and (min-width: 64em) 	≥ 1024px	.pure-u-lg-*
+xl	@media screen and (min-width: 80em)	    ≥ 1280px	.pure-u-xl-*
+*/

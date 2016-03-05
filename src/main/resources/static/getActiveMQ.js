@@ -63,12 +63,15 @@ window.getActiveMQ = function () {
         };
     }
     var mq = window.getActiveMQ();
+
     return mq;
 };
 
 if (window.watchResize) {
     window.watchResize(function () {
+
             var activeMQ = getActiveMQ();
+            console.log('activeMQ: ' + activeMQ);
 
             var width_em = window.innerWidth / parseFloat(window.getComputedStyle(document.body).getPropertyValue("font-size"));
             document.getElementById('debug').innerHTML = activeMQ + ' / ' + width_em.toFixed(1) + 'em';
@@ -78,19 +81,18 @@ if (window.watchResize) {
             for (var i = 0; i < previewElements.length; i++) {
 
                 var s = previewElements[i].getAttribute('data-preview-img');
-                console.log(s);
+                //console.log(s);
                 var pattern = new RegExp('mq([0-9])=([hw]+[0-9]+)', 'g');
                 var updated=false;
 
                 var result;
-                while((result = pattern.exec(s)) !== null) {
-                    if (i<2) console.log(JSON.stringify(result));
+                var count=0;
+
+                while((result = pattern.exec(s))) {
+                    count++;
                     var mq = result[1];
-                    if (i<2) console.log('mq=' + mq + ': dir=' + result[2]);
                     if (activeMQ==mq) {
-                        console.log('Preview anzeigen: ' + s);
                         s = s.replace(/\(mq[0-9]=.*\)/g,result[2]);
-                        console.log(s);
                         previewElements[i].innerHTML = '<br/> <img src="' + s + '"/>';
                         updated=true;
                     }
