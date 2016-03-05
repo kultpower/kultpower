@@ -42,41 +42,6 @@ public class ZeitschriftenController {
 		return "zeitschriften";
 	}
 
-	/*
-	@RequestMapping(value = "/files/{id}", method = RequestMethod.GET)
-	public String findOne(@PathVariable String id, Model model) {
-		Zeitschrift one = repo.findOne(id);
-		model.addAttribute("one", one);
-		System.out.println(one.getName());
-
-		//staticResourceConfiguration
-		String folder = staticResourceConfiguration.getStaticResources() + "/zeitschriften/" + id + "/cover/150/";
-		Path path= Paths.get(folder);
-		final List<Path> files=new ArrayList<>();
-		final List<String> filenames=new ArrayList<>();
-		try {
-			Files.walkFileTree(path, new SimpleFileVisitor<Path>(){
-				@Override
-				public FileVisitResult visitFile(Path file, BasicFileAttributes attrs) throws IOException {
-					if(!attrs.isDirectory()){
-						files.add(file);
-						String s = file.toAbsolutePath().toString().replaceFirst(staticResourceConfiguration.getStaticResources(), "");
-						//System.out.println(file.toAbsolutePath());
-						//System.out.println(s);
-						filenames.add(s);
-					}
-					return FileVisitResult.CONTINUE;
-				}
-			});
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-
-		model.addAttribute("filenames", filenames);
-		return "zeitschrift_files";
-	}
-	*/
-
 	@RequestMapping(value = "/{zeitschriftId}", method = RequestMethod.GET)
 	public String zeigeZeitschrift(@PathVariable String zeitschriftId, Model model) {
 		Zeitschrift one = repo.findById(zeitschriftId);
