@@ -4,7 +4,7 @@
 	  xmlns:th="http://www.thymeleaf.org">
 
 <head th:include="header :: header"
-	th:with="title=${zeitschrift.name} + ' / ' + ${ausgabe.shortname}, image=${'/ext/zeitschriften/' + zeitschrift.id + '/cover/200/'+ ausgabe.coverfile}"
+	th:with="title=${zeitschrift.name} + ' / ' + ${ausgabe.shortname}, image=${'http://kultpower.org/ext/zeitschriften/' + zeitschrift.id + '/cover/200/'+ ausgabe.coverfile}"
 ></head>
 
 <body>
