@@ -36,7 +36,7 @@
                 >Ausgabe 1</span>
             </span>
         <br/>
-        <a th:href="@{${#httpServletRequest.requestURI} + '/'+${ausgabe.id}}"
+        <a th:href="@{${#httpServletRequest.requestURI} + '/'+${ausgabe.shortname}}"
         ><img style="width: 97%; height: auto;"
               th:src="'/ext/zeitschriften/' + ${one.id} + '/cover/200/'+ ${ausgabe.coverfile}"
         /></a>

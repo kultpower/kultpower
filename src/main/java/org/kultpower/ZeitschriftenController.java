@@ -51,7 +51,24 @@ public class ZeitschriftenController {
 		return "zeitschrift";
 	}
 
-	@RequestMapping(value = "/{zeitschriftId}/{ausgabeId}", method = RequestMethod.GET)
+	@RequestMapping(value = "/{zeitschriftId}/{ausgabeShortname}", method = RequestMethod.GET)
+	public String zeigeAusgabeNeu(
+			@PathVariable String zeitschriftId,
+			@PathVariable String ausgabeShortname,
+			Model model) {
+
+		model.addAttribute("ausgabeId", ausgabeShortname);
+		Zeitschrift zeitschrift = repo.findOne(zeitschriftId);
+
+		model.addAttribute("zeitschrift", zeitschrift);
+
+		Ausgabe ausgabe = ausgabenRepo.findByZeitschriftAndShortname(zeitschrift, ausgabeShortname);
+		model.addAttribute("ausgabe", ausgabe);
+
+		return "ausgabe";
+	}
+
+	//@RequestMapping(value = "/{zeitschriftId}/{ausgabeId}", method = RequestMethod.GET)
 	public String zeigeAusgabe(
 			@PathVariable String zeitschriftId,
 			@PathVariable String ausgabeId,

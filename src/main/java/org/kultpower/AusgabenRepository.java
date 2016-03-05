@@ -13,7 +13,7 @@ import org.springframework.stereotype.Repository;
 public interface AusgabenRepository extends CrudRepository<Ausgabe, String> {
 
 
-	Ausgabe findByZeitschriftAndShortname(String zeitschrift, String shortname);
+	Ausgabe findByZeitschriftAndShortname(Zeitschrift zeitschrift, String shortname);
 
 
 }

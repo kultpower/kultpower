@@ -20,6 +20,9 @@ public class AusgabeTest {
 	@Autowired
 	AusgabenRepository repository;
 
+	@Autowired
+	ZeitschriftenRepository zeitschriftenRepository;
+
 	@Test
 	@Ignore
 	public void lesen() {
@@ -32,8 +35,8 @@ public class AusgabeTest {
 
 	@Test
 	public void lesen2() {
-
-		Ausgabe ausgabe = repository.findByZeitschriftAndShortname("powerplay", "1990-12");
+		Zeitschrift powerplay = zeitschriftenRepository.findOne("powerplay");
+		Ausgabe ausgabe = repository.findByZeitschriftAndShortname(powerplay, "1990-12");
 
 		Assert.assertThat(ausgabe, Matchers.notNullValue());
 

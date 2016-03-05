@@ -151,6 +151,11 @@ div.footer {
     width: 100%;
 }
 
+.image_subtitle {
+    line-height: 100%;
+}
+
+
 
 div.text {
     text-align: left;
@@ -213,13 +218,20 @@ li.interview a {
         font-size: 13px;
     }
 
+    #getActiveMQ-watcher {
+        font-family: "1";
+    }
+
+
+    .mindmap {
+        width: 35em;
+    }
+
+
     .ausgabe_anzahl {
         display: inherit;
     }
 
-    #getActiveMQ-watcher {
-        font-family: "1";
-    }
 
 }
 
