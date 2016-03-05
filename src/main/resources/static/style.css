@@ -231,7 +231,7 @@ li.interview a {
 
     .zeitschrift_button {
         border: 1px solid transparent;
-        background-image: none;
+        background-color: transparent;
     }
 
     .zeitschrift_button:hover, .zeitschrift_button-hover, .zeitschrift_button:focus {
