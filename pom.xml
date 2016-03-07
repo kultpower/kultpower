@@ -97,5 +97,35 @@
 		</plugins>
 	</build>
 
+	<profiles>
+		<profile>
+			<id>less</id>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>biz.gabrys.maven.plugins</groupId>
+						<artifactId>lesscss-maven-plugin</artifactId>
+						<version>1.1</version>
+						<executions>
+							<execution>
+								<id>default-lesscss</id>
+								<phase>process-sources</phase> <!-- When omitted defaults to 'generate-sources' -->
+								<goals>
+									<goal>compile</goal>
+								</goals>
+								<configuration>
+									<sourceDirectory>${project.basedir}/src/main/resources/less</sourceDirectory>
+									<outputDirectory>${project.basedir}/src/main/resources/static</outputDirectory>
+									<watch>false</watch>
+									<!-- put your configurations here -->
+								</configuration>
+							</execution>
+						</executions>
+					</plugin>
+
+				</plugins>
+			</build>
+		</profile>
+	</profiles>
 
 </project>
