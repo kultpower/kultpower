@@ -12,7 +12,7 @@
 <div class="content">
 
     <h1>
-        <a th:href="@{${URL_INTERVIEWS}}"><i class="fa fa-chevron-circle-left"></i></a>
+        <a th:href="@{${URL_INTERVIEWS}}"><i class="fa fa-chevron-circle-left color-primary-0"></i></a>
         <span th:text="${interview.title}">Interview-Titel</span>
         <br/>
         <!--/*@thymesVar id="datum" type="org.kultpower.entities.Interview"*/-->
@@ -27,7 +27,7 @@
         <div th:each="text : ${interview.texte}">
 
             <span th:if="${text.prefix!=''}">
-                <div class="interviewprefix" th:text="${text.prefix + ':'}">Kultpower:</div>
+                <div class="interviewprefix"><span th:text="${text.prefix + ':'}">Kultpower:</span></div>
                 <div class="interviewtext" th:utext="${#strings.replace(text.text,T(java.lang.System).getProperty('line.separator'),'&lt;br /&gt;')}">text</div>
             </span>
             <div th:if="${text.prefix==''}" class="interviewother">
