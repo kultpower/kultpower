@@ -32,6 +32,9 @@ html {
 *:after {
   box-sizing: inherit;
 }
+#logo {
+  display: none;
+}
 #debug {
   position: fixed;
   right: 0px;
@@ -61,13 +64,10 @@ nav.navigation {
   font-size: 110%;
   /*border-bottom: 2px solid #dddddd;*/
   line-height: 200%;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   font-family: "Fakt", AvenirNext-Medium, "Segoe UI", sans-serif;
   text-transform: uppercase;
   border-bottom: 1px solid #081947;
-}
-ul.navigation li.active {
-  border-bottom: 3px solid #92db01;
 }
 ul {
   margin: 0px;
@@ -76,12 +76,13 @@ ul {
 ul.navigation {
   list-style-type: none;
   color: white;
-  padding-bottom: 5px;
+  padding-bottom: 8px;
   padding-top: 10px;
   padding-left: 5px;
   text-align: left;
   border: 0px solid green;
   width: 100%;
+  vertical-align: bottom;
 }
 ul.navigation li a {
   color: white;
@@ -90,10 +91,11 @@ ul.navigation li {
   display: inline;
   color: black;
   padding: 5px;
-  padding-bottom: 8px;
+  padding-bottom: 2px;
   padding-right: 10px;
-  margin: 0px;
-  border: 0px solid red;
+}
+ul.navigation li.active {
+  border-bottom: 3px solid #92db01;
 }
 ul.navigation li:hover {
   border-bottom: 3px solid #92db01;
@@ -213,6 +215,16 @@ li.interview a i {
 .interviewother:after {
   content: close-quote;
 }
+/*
+=============================
+     _           __
+    (_)         /  |
+ ___ _ _______  `| |
+/ __| |_  / _ \  | |
+\__ | |/ |  __/ _| |_
+|___|_/___\___| \___/
+=============================
+*/
 @media (min-width: 25em) {
   body {
     font-size: 13px;
@@ -230,9 +242,38 @@ li.interview a i {
     display: inherit;
   }
 }
+/*
+=============================
+     _           _____
+    (_)         / __  \
+ ___ _ _______  `' / /'
+/ __| |_  / _ \   / /
+\__ | |/ |  __/ ./ /___
+|___|_/___\___| \_____/
+
+=============================
+*/
 @media (min-width: 35.5em) {
   #getActiveMQ-watcher {
     font-family: "2";
+  }
+  #logo {
+    position: fixed;
+    display: block;
+    top: 10px;
+    left: 15px;
+  }
+  #logo img {
+    height: 50px;
+  }
+  ul.navigation {
+    padding-left: 50px;
+    padding-top: 25px;
+    height: 65px;
+    vertical-align: bottom;
+  }
+  ul.navigation li:first-child {
+    display: none;
   }
   .interviewother span {
     border-top: 2px solid #92db01;
@@ -249,6 +290,17 @@ li.interview a i {
     border: 3px solid #92db01;
   }
 }
+/*
+=============================
+     _           _____
+    (_)         |____ |
+ ___ _ _______      / /
+/ __| |_  / _ \     \ \
+\__ | |/ |  __/ .___/ /
+|___|_/___\___| \____/
+
+=============================
+*/
 @media (min-width: 48em) {
   #getActiveMQ-watcher {
     font-family: "3";
@@ -257,6 +309,16 @@ li.interview a i {
     font-size: 14px;
   }
 }
+/*
+=============================
+     _             ___
+    (_)           /   |
+ ___ _ _______   / /| |
+/ __| |_  / _ \ / /_| |
+\__ | |/ |  __/ \___  |
+|___|_/___\___|     |_/
+=============================
+*/
 @media (min-width: 64em) {
   #getActiveMQ-watcher {
     font-family: "4";
@@ -265,6 +327,16 @@ li.interview a i {
     font-size: 15px;
   }
 }
+/*
+=============================
+     _           _____
+    (_)         |  ___|
+ ___ _ _______  |___ \
+/ __| |_  / _ \     \ \
+\__ | |/ |  __/ /\__/ /
+|___|_/___\___| \____/
+=============================
+*/
 @media (min-width: 80em) {
   #getActiveMQ-watcher {
     font-family: "5";

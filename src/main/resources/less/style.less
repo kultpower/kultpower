@@ -68,7 +68,6 @@
   color: @color-primary-0;
 }
 
-
 #getActiveMQ-watcher {
   font-family: "0";
 }
@@ -80,6 +79,10 @@ html {
 
 *, *:before, *:after {
   box-sizing: inherit;
+}
+
+#logo {
+  display: none;
 }
 
 #debug {
@@ -113,15 +116,10 @@ nav.navigation {
   font-size: 110%;
   /*border-bottom: 2px solid #dddddd;*/
   line-height: 200%;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   font-family: "Fakt", AvenirNext-Medium, "Segoe UI", sans-serif;
   text-transform: uppercase;
   border-bottom: 1px solid @color-primary-3;
-
-}
-
-ul.navigation li.active {
-  border-bottom: 3px solid @color-secondary-2-1;
 
 }
 
@@ -133,12 +131,13 @@ ul {
 ul.navigation {
   list-style-type: none;
   color: white;
-  padding-bottom: 5px;
+  padding-bottom: 8px;
   padding-top: 10px;
   padding-left: 5px;
   text-align: left;
   border: 0px solid green;
   width: 100%;
+  vertical-align: bottom;
 }
 
 ul.navigation li a {
@@ -149,10 +148,12 @@ ul.navigation li {
   display: inline;
   color: black;
   padding: 5px;
-  padding-bottom: 8px;
+  padding-bottom: 2px;
   padding-right: 10px;
-  margin: 0px;
-  border: 0px solid red;
+}
+
+ul.navigation li.active {
+  border-bottom: 3px solid @color-secondary-2-1;
 }
 
 ul.navigation li:hover {
@@ -298,6 +299,17 @@ li.interview a i {
   content: close-quote;
 }
 
+/*
+=============================
+     _           __
+    (_)         /  |
+ ___ _ _______  `| |
+/ __| |_  / _ \  | |
+\__ | |/ |  __/ _| |_
+|___|_/___\___| \___/
+=============================
+*/
+
 @media (min-width: 25em) {
 
   body {
@@ -322,10 +334,44 @@ li.interview a i {
 
 }
 
+/*
+=============================
+     _           _____
+    (_)         / __  \
+ ___ _ _______  `' / /'
+/ __| |_  / _ \   / /
+\__ | |/ |  __/ ./ /___
+|___|_/___\___| \_____/
+
+=============================
+*/
+
 @media (min-width: 35.5em) {
 
   #getActiveMQ-watcher {
     font-family: "2";
+  }
+
+  #logo {
+    position: fixed;
+    display: block;
+    top: 10px;
+    left: 15px;
+  }
+
+  #logo img {
+    height: 50px;
+  }
+
+  ul.navigation {
+    padding-left: 50px;
+    padding-top: 25px;
+    height: 65px;
+    vertical-align: bottom;
+  }
+
+  ul.navigation li:first-child {
+    display: none;
   }
 
   .interviewother span {
@@ -345,6 +391,17 @@ li.interview a i {
 
 }
 
+/*
+=============================
+     _           _____
+    (_)         |____ |
+ ___ _ _______      / /
+/ __| |_  / _ \     \ \
+\__ | |/ |  __/ .___/ /
+|___|_/___\___| \____/
+
+=============================
+*/
 @media (min-width: 48em) {
 
   #getActiveMQ-watcher {
@@ -356,6 +413,16 @@ li.interview a i {
   }
 }
 
+/*
+=============================
+     _             ___
+    (_)           /   |
+ ___ _ _______   / /| |
+/ __| |_  / _ \ / /_| |
+\__ | |/ |  __/ \___  |
+|___|_/___\___|     |_/
+=============================
+*/
 @media (min-width: 64em) {
 
   #getActiveMQ-watcher {
@@ -367,6 +434,16 @@ li.interview a i {
   }
 }
 
+/*
+=============================
+     _           _____
+    (_)         |  ___|
+ ___ _ _______  |___ \
+/ __| |_  / _ \     \ \
+\__ | |/ |  __/ /\__/ /
+|___|_/___\___| \____/
+=============================
+*/
 @media (min-width: 80em) {
 
   #getActiveMQ-watcher {
