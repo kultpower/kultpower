@@ -5,14 +5,13 @@
 
 
 <nav th:fragment="navigation(activeUrl)" role="navigation" aria-label="navigation" class="navigation">
+    <a href="/" id="logo"><img src="/ext/images/kp-logo_s.png"/></a>
     <ul class="navigation">
         <li th:class="${activeUrl}=='index' ? 'active' : ''" id="navHome"><a href="/"
         >Home</a></li>
         <li th:class="${activeUrl}==URL_ZEITSCHRIFTEN ? 'active' : ''"><a th:href="${URL_ZEITSCHRIFTEN}">Zeitschriften</a></li>
         <li th:class="${activeUrl}==URL_INTERVIEWS ? 'active' : ''"><a th:href="${URL_INTERVIEWS}">Interviews</a></li>
     </ul>
-
-    <a href="/" id="logo"><img src="/ext/images/kp-logo_s.png"/></a>
 </nav>
 
 

@@ -258,7 +258,7 @@ li.interview a i {
     font-family: "2";
   }
   #logo {
-    position: fixed;
+    position: absolute;
     display: block;
     top: 10px;
     left: 15px;
