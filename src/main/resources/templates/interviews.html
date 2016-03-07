@@ -18,9 +18,11 @@
     <div>
         <ul>
             <li th:each="interview : ${interviews}" class="interview">
-                <a th:href="@{${URL_INTERVIEWS} + '/' + ${interview.id}}" th:text="${interview.title}">
+
+                <a th:href="@{${URL_INTERVIEWS} + '/' + ${interview.id}}">
+                    <i class="fa fa-microphone color-primary-0"></i><span th:text="${interview.title}">
                     Titel des Interviews
-                </a>
+                    </span></a>
                 <span th:text="${'(' + interview.getDatum().toString('dd.MM.yyyy') + ')'}">1.1.2042</span>
             </li>
 
