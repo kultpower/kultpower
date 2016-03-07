@@ -201,7 +201,7 @@ li.interview a {
   width: auto;
 }
 .interviewother span {
-  border-top: 2px solid #92db01;
+  /*border-top: 2px solid @color-secondary-2-1;*/
   border-bottom: 2px solid #92db01;
 }
 .interviewother:before {
@@ -230,6 +230,9 @@ li.interview a {
 @media (min-width: 35.5em) {
   #getActiveMQ-watcher {
     font-family: "2";
+  }
+  .interviewother span {
+    border-top: 2px solid #92db01;
   }
   .zeitschrift_button {
     border: 3px solid transparent;
