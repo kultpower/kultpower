@@ -52,6 +52,17 @@
 
 </div>
 
+<!--
+<div th:each="rev : ${revisionList2}">
+    <span th:text="${rev.revisionNumber}"></span>:
+    <span th:text="${rev.entity.name}"></span>
+    <div th:each="ausgabe : ${rev.entity.ausgaben}">
+        <ul>
+            <li th:text="${ausgabe.shortname}"></li>
+        </ul>
+    </div>
+</div>
+-->
 
 <div th:replace="footer :: copy"></div>
 

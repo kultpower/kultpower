@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd">
+    <changeSet author="sebastian (generated)" id="1461945410351-1">
+        <createTable tableName="ausgabe">
+            <column name="id" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="coverfile" type="VARCHAR(255)"/>
+            <column name="erscheinungsdatum" type="date"/>
+            <column name="jahr" type="INT"/>
+            <column name="name" type="VARCHAR(255)"/>
+            <column name="nummer" type="INT"/>
+            <column name="shortname" type="VARCHAR(255)"/>
+            <column name="zeitschrift" type="VARCHAR(255)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="sebastian (generated)" id="1461945410351-2">
+        <createTable tableName="ausgabe_aud">
+            <column name="id" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="rev" type="INT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="revtype" type="TINYINT"/>
+            <column name="coverfile" type="VARCHAR(255)"/>
+            <column name="erscheinungsdatum" type="date"/>
+            <column name="jahr" type="INT"/>
+            <column name="name" type="VARCHAR(255)"/>
+            <column name="nummer" type="INT"/>
+            <column name="shortname" type="VARCHAR(255)"/>
+            <column name="zeitschrift" type="VARCHAR(255)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="sebastian (generated)" id="1461945410351-3">
+        <createTable tableName="interview">
+            <column name="id" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="datum" type="date"/>
+            <column name="title" type="VARCHAR(255)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="sebastian (generated)" id="1461945410351-4">
+        <createTable tableName="interviewtext">
+            <column name="id" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="position" type="INT"/>
+            <column name="prefix" type="VARCHAR(255)"/>
+            <column name="text" type="VARCHAR(255)"/>
+            <column name="interview" type="VARCHAR(255)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="sebastian (generated)" id="1461945410351-5">
+        <createTable tableName="powerplay_testberichte">
+            <column name="id" type="INT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="gesamt" type="INT"/>
+            <column name="grafik" type="INT"/>
+            <column name="name" type="VARCHAR(255)"/>
+            <column name="sound" type="INT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="sebastian (generated)" id="1461945410351-6">
+        <createTable tableName="revinfo">
+            <column autoIncrement="true" name="rev" type="INT">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="revtstmp" type="BIGINT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="sebastian (generated)" id="1461945410351-7">
+        <createTable tableName="zeitschrift">
+            <column name="id" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="name" type="VARCHAR(255)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="sebastian (generated)" id="1461945410351-8">
+        <createTable tableName="zeitschrift_aud">
+            <column name="id" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="rev" type="INT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="revtype" type="TINYINT"/>
+            <column name="name" type="VARCHAR(255)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="sebastian (generated)" id="1461945410351-9">
+        <addPrimaryKey columnNames="id" constraintName="PRIMARY" tableName="ausgabe"/>
+    </changeSet>
+    <changeSet author="sebastian (generated)" id="1461945410351-10">
+        <addPrimaryKey columnNames="id, rev" constraintName="PRIMARY" tableName="ausgabe_aud"/>
+    </changeSet>
+    <changeSet author="sebastian (generated)" id="1461945410351-11">
+        <addPrimaryKey columnNames="id" constraintName="PRIMARY" tableName="interview"/>
+    </changeSet>
+    <changeSet author="sebastian (generated)" id="1461945410351-12">
+        <addPrimaryKey columnNames="id" constraintName="PRIMARY" tableName="interviewtext"/>
+    </changeSet>
+    <changeSet author="sebastian (generated)" id="1461945410351-13">
+        <addPrimaryKey columnNames="id" constraintName="PRIMARY" tableName="powerplay_testberichte"/>
+    </changeSet>
+    <changeSet author="sebastian (generated)" id="1461945410351-14">
+        <addPrimaryKey columnNames="id" constraintName="PRIMARY" tableName="zeitschrift"/>
+    </changeSet>
+    <changeSet author="sebastian (generated)" id="1461945410351-15">
+        <addPrimaryKey columnNames="id, rev" constraintName="PRIMARY" tableName="zeitschrift_aud"/>
+    </changeSet>
+    <changeSet author="sebastian (generated)" id="1461945410351-16">
+        <createIndex indexName="FK_4uemgnp3fpvvwpf1pk6lad8uc" tableName="ausgabe">
+            <column name="zeitschrift"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="sebastian (generated)" id="1461945410351-17">
+        <createIndex indexName="FK_87url1jbsus3759bkhok5fi2e" tableName="zeitschrift_aud">
+            <column name="rev"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="sebastian (generated)" id="1461945410351-18">
+        <createIndex indexName="FK_mnkahupyppe9kbyo7blwl2erb" tableName="interviewtext">
+            <column name="interview"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="sebastian (generated)" id="1461945410351-19">
+        <createIndex indexName="FK_tdx9m4mlm7mfefehynkfyjde7" tableName="ausgabe_aud">
+            <column name="rev"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="sebastian (generated)" id="1461945410351-20">
+        <addForeignKeyConstraint baseColumnNames="zeitschrift" baseTableName="ausgabe" constraintName="FK_4uemgnp3fpvvwpf1pk6lad8uc" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="zeitschrift"/>
+    </changeSet>
+    <changeSet author="sebastian (generated)" id="1461945410351-21">
+        <addForeignKeyConstraint baseColumnNames="rev" baseTableName="zeitschrift_aud" constraintName="FK_87url1jbsus3759bkhok5fi2e" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="rev" referencedTableName="revinfo"/>
+    </changeSet>
+    <changeSet author="sebastian (generated)" id="1461945410351-22">
+        <addForeignKeyConstraint baseColumnNames="interview" baseTableName="interviewtext" constraintName="FK_mnkahupyppe9kbyo7blwl2erb" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="interview"/>
+    </changeSet>
+    <changeSet author="sebastian (generated)" id="1461945410351-23">
+        <addForeignKeyConstraint baseColumnNames="rev" baseTableName="ausgabe_aud" constraintName="FK_tdx9m4mlm7mfefehynkfyjde7" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="rev" referencedTableName="revinfo"/>
+    </changeSet>
+</databaseChangeLog>

@@ -3,6 +3,7 @@ package org.kultpower.entities;
 import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
 import org.hibernate.annotations.GenericGenerator;
 import org.hibernate.annotations.Type;
+import org.hibernate.envers.Audited;
 import org.joda.time.LocalDate;
 
 import javax.persistence.*;
@@ -12,6 +13,7 @@ import javax.persistence.*;
  */
 @Entity
 @Table(name = "ausgabe")
+@Audited
 public class Ausgabe
 //		implements Comparable<Ausgabe>
 {
@@ -43,7 +45,6 @@ public class Ausgabe
 	private String coverfile;
 
 	@ManyToOne
-	@JoinColumn(name = "zeitschrift")
 	private Zeitschrift zeitschrift;
 
 	public Zeitschrift getZeitschrift() {

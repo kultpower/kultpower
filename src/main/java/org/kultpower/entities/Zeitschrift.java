@@ -2,6 +2,9 @@ package org.kultpower.entities;
 
 import org.apache.commons.lang3.builder.ToStringBuilder;
 import org.apache.commons.lang3.builder.ToStringStyle;
+import org.hibernate.envers.Audited;
+import org.joda.time.Chronology;
+import org.joda.time.LocalDate;
 
 import javax.persistence.*;
 import java.util.*;
@@ -10,6 +13,7 @@ import java.util.*;
  * Created by sebastian on 28.01.16.
  */
 @Entity
+@Audited
 @Table(name = "zeitschrift")
 @NamedEntityGraph(name = "Zeitschrift.ausgaben",
 		attributeNodes = @NamedAttributeNode("ausgaben"))
@@ -23,9 +27,11 @@ public class Zeitschrift {
 	private String name;
 
 
-	@OneToMany(mappedBy = "zeitschrift", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+	@OneToMany(
+			mappedBy = "zeitschrift",
+			cascade = CascadeType.ALL, fetch = FetchType.EAGER, orphanRemoval = true)
 	@OrderBy("shortname ASC")
-	private Set<Ausgabe> ausgaben = new TreeSet<>();
+	private Set<Ausgabe> ausgaben = new HashSet<>();
 
 	public Set<Ausgabe> getAusgaben() {
 		return ausgaben;
@@ -88,5 +94,16 @@ public class Zeitschrift {
 			map.get(jahrString).add(a);
 		}
 		return map;
+	}
+
+	public void addAusgabe(Integer jahr, String name, String shortname, Integer nummer, String coverfile, Integer eJahr, Integer eMonat, Integer eTag) {
+		Ausgabe a = new Ausgabe();
+		a.setJahr(jahr);
+		a.setName(name);
+		a.setShortname(shortname);
+		a.setNummer(nummer);
+		a.setCoverfile(coverfile);
+		a.setErscheinungsdatum(new LocalDate(eJahr,eMonat,eTag));
+		getAusgaben().add(a);
 	}
 }

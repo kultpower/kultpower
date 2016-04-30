@@ -44,8 +44,13 @@ public class StaticResourceConfiguration extends WebMvcConfigurerAdapter {
             }
             @Override
             public void postHandle(HttpServletRequest request, HttpServletResponse response, Object handler, ModelAndView modelAndView) throws Exception {
+                /*if (modelAndView==null) {
+                    return;
+                }*/
                 for (URLConfiguration.URLS url: urlConfiguration.getUrls()) {
-                    modelAndView.addObject("URL_" + url.name(), url.value);
+                    if (modelAndView!=null) {
+                        modelAndView.addObject("URL_" + url.name(), url.value);
+                    }
                 }
 
                 System.out.println("postHandle aufgerufen!");

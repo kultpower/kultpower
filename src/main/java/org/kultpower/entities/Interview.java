@@ -30,7 +30,7 @@ public class Interview {
 	@Type(type = "org.jadira.usertype.dateandtime.joda.PersistentLocalDate")
 	private LocalDate datum;
 
-	@OneToMany(mappedBy = "interview", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+	@OneToMany(mappedBy = "interview", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
 	@OrderBy("position ASC")
 	private Set<InterviewText> texte = new TreeSet<>();
 

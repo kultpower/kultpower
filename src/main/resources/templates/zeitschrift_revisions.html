@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+
+<head th:include="header :: header"
+      th:with="title='revisions'"
+></head>
+
+<body>
+<nav th:replace="navigation :: navigation(URL_ZEITSCHRIFTEN)"></nav>
+
+<div class="content">
+
+<div th:each="rev : ${revisionList}">
+    <a th:href="@{${#httpServletRequest.requestURI} + ${rev.revisionNumber}}">
+        <span th:text="'Revision ' + ${rev.revisionNumber}"></span>:
+    </a>
+
+    <span th:text="${rev.entity.name}"></span>
+    <span th:text="' (' + ${rev.entity.ausgaben.size()} + ' Ausgaben)'"></span>
+
+    <!--
+    <div th:each="ausgabe : ${rev.entity.ausgaben}">
+        <ul>
+            <li th:text="${ausgabe.shortname}"></li>
+        </ul>
+    </div>
+    -->
+</div>
+
+</div>
+
+<div th:replace="footer :: copy"></div>
+
+</body>
+</html>

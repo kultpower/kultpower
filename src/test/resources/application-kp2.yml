@@ -8,12 +8,12 @@ debug:  true
 # connection. In this example we have "netgloo_blog" as database name and
 # "root" as username and password.
 spring:
+  thymeleaf:
+    cache: false
   datasource:
     url:  jdbc:mysql://localhost:3306/kp2?useUnicode=true&amp;characterEncoding=UTF-8
     username: kp2
     password: kp2
-  thymeleaf:
-    cache: false
 
 # Keep the connection alive if idle for a long time (needed in production)
     testWhileIdle:  true
@@ -25,7 +25,7 @@ spring:
 
 # Hibernate ddl auto (create, create-drop, update)
     hibernate:
-      #ddl-auto: update
+      #ddl-auto: create
 
 # Naming strategy
       naming-strategy:  org.hibernate.cfg.ImprovedNamingStrategy
@@ -37,16 +37,4 @@ spring:
     properties:
       hibernate:
         dialect:  org.hibernate.dialect.MySQL5Dialect
-#      jadira:
-#        usertype:
-#          autoRegisterUserTypes: true
 
-
-logging:
-  level:
-    org.springframework.web:  DEBUG
-    org.springframework.transaction:  DEBUG
-    org.springframework.boot: OFF
-
-liquibase.:
-  changeLog: classpath:/db/changelog/db.changelog-master.xml
