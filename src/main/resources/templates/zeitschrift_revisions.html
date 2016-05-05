@@ -12,22 +12,26 @@
 
 <div class="content">
 
-<div th:each="rev : ${revisionList}">
-    <a th:href="@{${#httpServletRequest.requestURI} + ${rev.revisionNumber}}">
-        <span th:text="'Revision ' + ${rev.revisionNumber}"></span>:
-    </a>
+    <h1>
+        <a th:href="@{${URL_ZEITSCHRIFTEN}}"><i class="fa fa-chevron-circle-left color-primary-0"></i></a>
+        <span th:text="${revisionList.get(0).entity.name}">Zeitschrift-Name</span>
+    </h1>
 
-    <span th:text="${rev.entity.name}"></span>
-    <span th:text="' (' + ${rev.entity.ausgaben.size()} + ' Ausgaben)'"></span>
+    <div th:each="rev : ${revisionList}">
+        <a th:href="@{${URL_ZEITSCHRIFTEN} + '/' + ${rev.entity.id} + '/revisions/' + ${rev.revisionNumber}}">
+            <span th:text="'Revision ' + ${rev.revisionNumber}"></span></a>:
 
-    <!--
-    <div th:each="ausgabe : ${rev.entity.ausgaben}">
-        <ul>
-            <li th:text="${ausgabe.shortname}"></li>
-        </ul>
+        <span th:text="${rev.entity.name}"></span>
+        <span th:text="' (' + ${rev.entity.ausgaben.size()} + ' Ausgaben)'"></span>
+
+        <!--
+        <div th:each="ausgabe : ${rev.entity.ausgaben}">
+            <ul>
+                <li th:text="${ausgabe.shortname}"></li>
+            </ul>
+        </div>
+        -->
     </div>
-    -->
-</div>
 
 </div>
 
