@@ -1,0 +1,307 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+    <changeSet author="sebastian (generated)" id="1463171964997-4" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <insert tableName="zeitschrift">
+            <column name="id" value="64er"/>
+            <column name="name" value="64er"/>
+        </insert>
+        <insert tableName="zeitschrift">
+            <column name="id" value="amigagames"/>
+            <column name="name" value="Amiga Games"/>
+        </insert>
+        <insert tableName="zeitschrift">
+            <column name="id" value="amigajoker"/>
+            <column name="name" value="Amiga Joker"/>
+        </insert>
+        <insert tableName="zeitschrift">
+            <column name="id" value="amigamagazin"/>
+            <column name="name" value="Amiga Magazin"/>
+        </insert>
+        <insert tableName="zeitschrift">
+            <column name="id" value="amigo"/>
+            <column name="name" value="Amigo"/>
+        </insert>
+        <insert tableName="zeitschrift">
+            <column name="id" value="asm"/>
+            <column name="name" value="Aktueller Software Markt"/>
+        </insert>
+        <insert tableName="zeitschrift">
+            <column name="id" value="clubnintendo"/>
+            <column name="name" value="Club Nintendo"/>
+        </insert>
+        <insert tableName="zeitschrift">
+            <column name="id" value="dckult"/>
+            <column name="name" value="Dreamcast Kult"/>
+        </insert>
+        <insert tableName="zeitschrift">
+            <column name="id" value="dreamcastmagazin"/>
+            <column name="name" value="Dreamcast Magazin"/>
+        </insert>
+        <insert tableName="zeitschrift">
+            <column name="id" value="dreamcastmagic"/>
+            <column name="name" value="Dreamcast Magic"/>
+        </insert>
+        <insert tableName="zeitschrift">
+            <column name="id" value="fungeneration"/>
+            <column name="name" value="Fun Generation"/>
+        </insert>
+        <insert tableName="zeitschrift">
+            <column name="id" value="funvision"/>
+            <column name="name" value="Fun Vision"/>
+        </insert>
+        <insert tableName="zeitschrift">
+            <column name="id" value="gamepro"/>
+            <column name="name" value="Game Pro"/>
+        </insert>
+        <insert tableName="zeitschrift">
+            <column name="id" value="gamers"/>
+            <column name="name" value="Gamers"/>
+        </insert>
+        <insert tableName="zeitschrift">
+            <column name="id" value="joystick"/>
+            <column name="name" value="Joystick"/>
+        </insert>
+        <insert tableName="zeitschrift">
+            <column name="id" value="mausklick"/>
+            <column name="name" value="Mausklick"/>
+        </insert>
+        <insert tableName="zeitschrift">
+            <column name="id" value="megafun"/>
+            <column name="name" value="Mega Fun"/>
+        </insert>
+        <insert tableName="zeitschrift">
+            <column name="id" value="multimediajoker"/>
+            <column name="name" value="Multimedia Joker"/>
+        </insert>
+        <insert tableName="zeitschrift">
+            <column name="id" value="n"/>
+            <column name="name" value="N"/>
+        </insert>
+        <insert tableName="zeitschrift">
+            <column name="id" value="nextlevel"/>
+            <column name="name" value="Next Level"/>
+        </insert>
+        <insert tableName="zeitschrift">
+            <column name="id" value="pcjoker"/>
+            <column name="name" value="PC Joker"/>
+        </insert>
+        <insert tableName="zeitschrift">
+            <column name="id" value="pcplayer"/>
+            <column name="name" value="PC Player"/>
+        </insert>
+        <insert tableName="zeitschrift">
+            <column name="id" value="pcxtreme"/>
+            <column name="name" value="PcXtreme"/>
+        </insert>
+        <insert tableName="zeitschrift">
+            <column name="id" value="playtime"/>
+            <column name="name" value="Playtime"/>
+        </insert>
+        <insert tableName="zeitschrift">
+            <column name="id" value="powerplay"/>
+            <column name="name" value="Power Play"/>
+        </insert>
+        <insert tableName="zeitschrift">
+            <column name="id" value="segamagazin"/>
+            <column name="name" value="Sega Magazin"/>
+        </insert>
+        <insert tableName="zeitschrift">
+            <column name="id" value="teleaction"/>
+            <column name="name" value="Teleaction"/>
+        </insert>
+        <insert tableName="zeitschrift">
+            <column name="id" value="telematch"/>
+            <column name="name" value="Telematch"/>
+        </insert>
+        <insert tableName="zeitschrift">
+            <column name="id" value="total"/>
+            <column name="name" value="Total"/>
+        </insert>
+        <insert tableName="zeitschrift">
+            <column name="id" value="videogames"/>
+            <column name="name" value="Video Games"/>
+        </insert>
+    </changeSet>
+    <changeSet author="sebastian (generated)" id="1463171964997-5" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <insert tableName="zeitschrift_aud">
+            <column name="id" value="64er"/>
+            <column name="rev" valueNumeric="144"/>
+            <column name="revtype" valueNumeric="0"/>
+            <column name="name" value="64er"/>
+        </insert>
+        <insert tableName="zeitschrift_aud">
+            <column name="id" value="amigagames"/>
+            <column name="rev" valueNumeric="132"/>
+            <column name="revtype" valueNumeric="0"/>
+            <column name="name" value="Amiga Games"/>
+        </insert>
+        <insert tableName="zeitschrift_aud">
+            <column name="id" value="amigajoker"/>
+            <column name="rev" valueNumeric="148"/>
+            <column name="revtype" valueNumeric="0"/>
+            <column name="name" value="Amiga Joker"/>
+        </insert>
+        <insert tableName="zeitschrift_aud">
+            <column name="id" value="amigamagazin"/>
+            <column name="rev" valueNumeric="139"/>
+            <column name="revtype" valueNumeric="0"/>
+            <column name="name" value="Amiga Magazin"/>
+        </insert>
+        <insert tableName="zeitschrift_aud">
+            <column name="id" value="amigo"/>
+            <column name="rev" valueNumeric="143"/>
+            <column name="revtype" valueNumeric="0"/>
+            <column name="name" value="Amigo"/>
+        </insert>
+        <insert tableName="zeitschrift_aud">
+            <column name="id" value="asm"/>
+            <column name="rev" valueNumeric="149"/>
+            <column name="revtype" valueNumeric="0"/>
+            <column name="name" value="Aktueller Software Markt"/>
+        </insert>
+        <insert tableName="zeitschrift_aud">
+            <column name="id" value="clubnintendo"/>
+            <column name="rev" valueNumeric="123"/>
+            <column name="revtype" valueNumeric="0"/>
+            <column name="name" value="Club Nintendo"/>
+        </insert>
+        <insert tableName="zeitschrift_aud">
+            <column name="id" value="dckult"/>
+            <column name="rev" valueNumeric="150"/>
+            <column name="revtype" valueNumeric="0"/>
+            <column name="name" value="Dreamcast Kult"/>
+        </insert>
+        <insert tableName="zeitschrift_aud">
+            <column name="id" value="dreamcastmagazin"/>
+            <column name="rev" valueNumeric="124"/>
+            <column name="revtype" valueNumeric="0"/>
+            <column name="name" value="Dreamcast Magazin"/>
+        </insert>
+        <insert tableName="zeitschrift_aud">
+            <column name="id" value="dreamcastmagic"/>
+            <column name="rev" valueNumeric="152"/>
+            <column name="revtype" valueNumeric="0"/>
+            <column name="name" value="Dreamcast Magic"/>
+        </insert>
+        <insert tableName="zeitschrift_aud">
+            <column name="id" value="fungeneration"/>
+            <column name="rev" valueNumeric="147"/>
+            <column name="revtype" valueNumeric="0"/>
+            <column name="name" value="Fun Generation"/>
+        </insert>
+        <insert tableName="zeitschrift_aud">
+            <column name="id" value="funvision"/>
+            <column name="rev" valueNumeric="129"/>
+            <column name="revtype" valueNumeric="0"/>
+            <column name="name" value="Fun Vision"/>
+        </insert>
+        <insert tableName="zeitschrift_aud">
+            <column name="id" value="gamepro"/>
+            <column name="rev" valueNumeric="141"/>
+            <column name="revtype" valueNumeric="0"/>
+            <column name="name" value="Game Pro"/>
+        </insert>
+        <insert tableName="zeitschrift_aud">
+            <column name="id" value="gamers"/>
+            <column name="rev" valueNumeric="151"/>
+            <column name="revtype" valueNumeric="0"/>
+            <column name="name" value="Gamers"/>
+        </insert>
+        <insert tableName="zeitschrift_aud">
+            <column name="id" value="joystick"/>
+            <column name="rev" valueNumeric="138"/>
+            <column name="revtype" valueNumeric="0"/>
+            <column name="name" value="Joystick"/>
+        </insert>
+        <insert tableName="zeitschrift_aud">
+            <column name="id" value="mausklick"/>
+            <column name="rev" valueNumeric="134"/>
+            <column name="revtype" valueNumeric="0"/>
+            <column name="name" value="Mausklick"/>
+        </insert>
+        <insert tableName="zeitschrift_aud">
+            <column name="id" value="megafun"/>
+            <column name="rev" valueNumeric="146"/>
+            <column name="revtype" valueNumeric="0"/>
+            <column name="name" value="Mega Fun"/>
+        </insert>
+        <insert tableName="zeitschrift_aud">
+            <column name="id" value="multimediajoker"/>
+            <column name="rev" valueNumeric="135"/>
+            <column name="revtype" valueNumeric="0"/>
+            <column name="name" value="Multimedia Joker"/>
+        </insert>
+        <insert tableName="zeitschrift_aud">
+            <column name="id" value="n"/>
+            <column name="rev" valueNumeric="142"/>
+            <column name="revtype" valueNumeric="0"/>
+            <column name="name" value="N"/>
+        </insert>
+        <insert tableName="zeitschrift_aud">
+            <column name="id" value="nextlevel"/>
+            <column name="rev" valueNumeric="126"/>
+            <column name="revtype" valueNumeric="0"/>
+            <column name="name" value="Next Level"/>
+        </insert>
+        <insert tableName="zeitschrift_aud">
+            <column name="id" value="pcjoker"/>
+            <column name="rev" valueNumeric="130"/>
+            <column name="revtype" valueNumeric="0"/>
+            <column name="name" value="PC Joker"/>
+        </insert>
+        <insert tableName="zeitschrift_aud">
+            <column name="id" value="pcplayer"/>
+            <column name="rev" valueNumeric="136"/>
+            <column name="revtype" valueNumeric="0"/>
+            <column name="name" value="PC Player"/>
+        </insert>
+        <insert tableName="zeitschrift_aud">
+            <column name="id" value="pcxtreme"/>
+            <column name="rev" valueNumeric="127"/>
+            <column name="revtype" valueNumeric="0"/>
+            <column name="name" value="PcXtreme"/>
+        </insert>
+        <insert tableName="zeitschrift_aud">
+            <column name="id" value="playtime"/>
+            <column name="rev" valueNumeric="125"/>
+            <column name="revtype" valueNumeric="0"/>
+            <column name="name" value="Playtime"/>
+        </insert>
+        <insert tableName="zeitschrift_aud">
+            <column name="id" value="powerplay"/>
+            <column name="rev" valueNumeric="131"/>
+            <column name="revtype" valueNumeric="0"/>
+            <column name="name" value="Power Play"/>
+        </insert>
+        <insert tableName="zeitschrift_aud">
+            <column name="id" value="segamagazin"/>
+            <column name="rev" valueNumeric="145"/>
+            <column name="revtype" valueNumeric="0"/>
+            <column name="name" value="Sega Magazin"/>
+        </insert>
+        <insert tableName="zeitschrift_aud">
+            <column name="id" value="teleaction"/>
+            <column name="rev" valueNumeric="140"/>
+            <column name="revtype" valueNumeric="0"/>
+            <column name="name" value="Teleaction"/>
+        </insert>
+        <insert tableName="zeitschrift_aud">
+            <column name="id" value="telematch"/>
+            <column name="rev" valueNumeric="133"/>
+            <column name="revtype" valueNumeric="0"/>
+            <column name="name" value="Telematch"/>
+        </insert>
+        <insert tableName="zeitschrift_aud">
+            <column name="id" value="total"/>
+            <column name="rev" valueNumeric="128"/>
+            <column name="revtype" valueNumeric="0"/>
+            <column name="name" value="Total"/>
+        </insert>
+        <insert tableName="zeitschrift_aud">
+            <column name="id" value="videogames"/>
+            <column name="rev" valueNumeric="137"/>
+            <column name="revtype" valueNumeric="0"/>
+            <column name="name" value="Video Games"/>
+        </insert>
+    </changeSet>
+</databaseChangeLog>

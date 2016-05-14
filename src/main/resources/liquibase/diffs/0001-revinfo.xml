@@ -1,0 +1,125 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+    <changeSet author="sebastian (generated)" id="1463171964997-3" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <insert tableName="revinfo">
+            <column name="rev" valueNumeric="123"/>
+            <column name="revtstmp" valueNumeric="1462443061740"/>
+        </insert>
+        <insert tableName="revinfo">
+            <column name="rev" valueNumeric="124"/>
+            <column name="revtstmp" valueNumeric="1462443062106"/>
+        </insert>
+        <insert tableName="revinfo">
+            <column name="rev" valueNumeric="125"/>
+            <column name="revtstmp" valueNumeric="1462443062435"/>
+        </insert>
+        <insert tableName="revinfo">
+            <column name="rev" valueNumeric="126"/>
+            <column name="revtstmp" valueNumeric="1462443062845"/>
+        </insert>
+        <insert tableName="revinfo">
+            <column name="rev" valueNumeric="127"/>
+            <column name="revtstmp" valueNumeric="1462443062996"/>
+        </insert>
+        <insert tableName="revinfo">
+            <column name="rev" valueNumeric="128"/>
+            <column name="revtstmp" valueNumeric="1462443063677"/>
+        </insert>
+        <insert tableName="revinfo">
+            <column name="rev" valueNumeric="129"/>
+            <column name="revtstmp" valueNumeric="1462443064281"/>
+        </insert>
+        <insert tableName="revinfo">
+            <column name="rev" valueNumeric="130"/>
+            <column name="revtstmp" valueNumeric="1462443064794"/>
+        </insert>
+        <insert tableName="revinfo">
+            <column name="rev" valueNumeric="131"/>
+            <column name="revtstmp" valueNumeric="1462443066556"/>
+        </insert>
+        <insert tableName="revinfo">
+            <column name="rev" valueNumeric="132"/>
+            <column name="revtstmp" valueNumeric="1462443067409"/>
+        </insert>
+        <insert tableName="revinfo">
+            <column name="rev" valueNumeric="133"/>
+            <column name="revtstmp" valueNumeric="1462443067690"/>
+        </insert>
+        <insert tableName="revinfo">
+            <column name="rev" valueNumeric="134"/>
+            <column name="revtstmp" valueNumeric="1462443067775"/>
+        </insert>
+        <insert tableName="revinfo">
+            <column name="rev" valueNumeric="135"/>
+            <column name="revtstmp" valueNumeric="1462443067863"/>
+        </insert>
+        <insert tableName="revinfo">
+            <column name="rev" valueNumeric="136"/>
+            <column name="revtstmp" valueNumeric="1462443068000"/>
+        </insert>
+        <insert tableName="revinfo">
+            <column name="rev" valueNumeric="137"/>
+            <column name="revtstmp" valueNumeric="1462443068816"/>
+        </insert>
+        <insert tableName="revinfo">
+            <column name="rev" valueNumeric="138"/>
+            <column name="revtstmp" valueNumeric="1462443069365"/>
+        </insert>
+        <insert tableName="revinfo">
+            <column name="rev" valueNumeric="139"/>
+            <column name="revtstmp" valueNumeric="1462443070672"/>
+        </insert>
+        <insert tableName="revinfo">
+            <column name="rev" valueNumeric="140"/>
+            <column name="revtstmp" valueNumeric="1462443071130"/>
+        </insert>
+        <insert tableName="revinfo">
+            <column name="rev" valueNumeric="141"/>
+            <column name="revtstmp" valueNumeric="1462443071203"/>
+        </insert>
+        <insert tableName="revinfo">
+            <column name="rev" valueNumeric="142"/>
+            <column name="revtstmp" valueNumeric="1462443071254"/>
+        </insert>
+        <insert tableName="revinfo">
+            <column name="rev" valueNumeric="143"/>
+            <column name="revtstmp" valueNumeric="1462443071292"/>
+        </insert>
+        <insert tableName="revinfo">
+            <column name="rev" valueNumeric="144"/>
+            <column name="revtstmp" valueNumeric="1462443071562"/>
+        </insert>
+        <insert tableName="revinfo">
+            <column name="rev" valueNumeric="145"/>
+            <column name="revtstmp" valueNumeric="1462443071822"/>
+        </insert>
+        <insert tableName="revinfo">
+            <column name="rev" valueNumeric="146"/>
+            <column name="revtstmp" valueNumeric="1462443072290"/>
+        </insert>
+        <insert tableName="revinfo">
+            <column name="rev" valueNumeric="147"/>
+            <column name="revtstmp" valueNumeric="1462443072581"/>
+        </insert>
+        <insert tableName="revinfo">
+            <column name="rev" valueNumeric="148"/>
+            <column name="revtstmp" valueNumeric="1462443073016"/>
+        </insert>
+        <insert tableName="revinfo">
+            <column name="rev" valueNumeric="149"/>
+            <column name="revtstmp" valueNumeric="1462443074033"/>
+        </insert>
+        <insert tableName="revinfo">
+            <column name="rev" valueNumeric="150"/>
+            <column name="revtstmp" valueNumeric="1462443074846"/>
+        </insert>
+        <insert tableName="revinfo">
+            <column name="rev" valueNumeric="151"/>
+            <column name="revtstmp" valueNumeric="1462443075103"/>
+        </insert>
+        <insert tableName="revinfo">
+            <column name="rev" valueNumeric="152"/>
+            <column name="revtstmp" valueNumeric="1462443075245"/>
+        </insert>
+    </changeSet>
+</databaseChangeLog>

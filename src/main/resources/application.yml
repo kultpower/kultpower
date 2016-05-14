@@ -49,4 +49,5 @@ logging:
     org.springframework.boot: OFF
 
 liquibase.:
-  changeLog: classpath:/db/changelog/db.changelog-master.xml
+  #changeLog: classpath:/db/changelog/db.changelog-master.xml
+  changeLog: classpath:/liquibase/master.xml

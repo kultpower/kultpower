@@ -1,0 +1,1820 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+    <changeSet author="sebastian (generated)" id="1463233168805-3" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <insert tableName="interview">
+            <column name="id" value="harald_horchler_2006-05"/>
+            <column name="title" value="Interview mit Harald Horchler"/>
+            <column name="datum" valueDate="2006-05-01"/>
+        </insert>
+        <insert tableName="interview">
+            <column name="id" value="michael_hengst_2001-03"/>
+            <column name="title" value="Interview mit Michael Hengst"/>
+            <column name="datum" valueDate="2001-03-27"/>
+        </insert>
+        <insert tableName="interview">
+            <column name="id" value="rolf_boyke_2006-05"/>
+            <column name="title" value="Interview mit Rolf Boyke"/>
+            <column name="datum" valueDate="2006-05-09"/>
+        </insert>
+        <insert tableName="interview">
+            <column name="id" value="winnie_forster_2003-01"/>
+            <column name="title" value="Interview mit Winnie Forster"/>
+            <column name="datum" valueDate="2003-01-06"/>
+        </insert>
+        <insert tableName="interview">
+            <column name="id" value="winnie_forster_2005-06"/>
+            <column name="title" value="Interview mit Winnie Forster"/>
+            <column name="datum" valueDate="2005-06-25"/>
+        </insert>
+        <insert tableName="interview">
+            <column name="id" value="winnie_forster_2008-12"/>
+            <column name="title" value="Interview mit Winnie Forster"/>
+            <column name="datum" valueDate="2008-12-01"/>
+        </insert>
+        <insert tableName="interview">
+            <column name="id" value="winnie_forster_2011-03"/>
+            <column name="title" value="Interview mit Winnie Forster"/>
+            <column name="datum" valueDate="2011-03-01"/>
+        </insert>
+    </changeSet>
+    <changeSet author="sebastian (generated)" id="1463233168805-4" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <insert tableName="interviewtext">
+            <column name="id" value="00c6921a-7426-4065-9f16-68738182bfd3"/>
+            <column name="interview" value="winnie_forster_2003-01"/>
+            <column name="position" valueNumeric="4"/>
+            <column name="prefix" value="Winnie"/>
+            <column name="text" value="Kurz: Nach viel Hin und Her, Gesprächen mit Chefredaktion und Verlagsleitung wurde ich Mitte 1990 bei Powerplay als fester Redakteur angestellt. Im Gegensatz zu den Lesern waren Heini, Anatol &amp; Co. für mich damals Unbekannte -- es stellte sich jedoch schnell heraus, dass ich in einem außergewöhnlichem Team gelandet bin, dem ich eine Menge verdanke."/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="02102476-e56d-444b-aabe-07cf6ba7ad53"/>
+            <column name="interview" value="winnie_forster_2008-12"/>
+            <column name="position" valueNumeric="24"/>
+            <column name="prefix" value="Winnie"/>
+            <column name="text" value="Die üblichen Verdächtigen, Journalisten, Techniker und Spielprofis. Der langjährige Screenfun-Redakteur Michael Stapf half bei Analyse der zeitgenössischen Industrie, ebenso der Schweizer Journalist Marco Rohner. Der deutsche Retro-Fachmann Thomas Grauel wühlte mit uns in Infos und Pixel des vorangegangenen Jahrhunderts. In der Endphase und den letzten Korrekturzyklen sprang Ex-Man!ac und Print-Routinier Stephan Freundorfer Gameplan bei. Ein starker Partner ist auch der Cybermedia Verlag (M!, Audiovision, Mobile Gamer)."/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="027cf68a-762d-4043-9b4c-ca0930324017"/>
+            <column name="interview" value="winnie_forster_2003-01"/>
+            <column name="position" valueNumeric="30"/>
+            <column name="prefix" value=""/>
+            <column name="text" value="Wer schon seit Jahren spielt, muss die 'Gameplan-Bibel' haben"/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="03753f47-4e29-41f4-9ce7-cbcd9c78a315"/>
+            <column name="interview" value="michael_hengst_2001-03"/>
+            <column name="position" valueNumeric="37"/>
+            <column name="prefix" value="Kultpower"/>
+            <column name="text" value="Was machst Du heute beruflich, und was sind Deine Ziele für die nächsten Jahre?"/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="04326b55-00f4-4dd3-9825-27adea49936f"/>
+            <column name="interview" value="winnie_forster_2003-01"/>
+            <column name="position" valueNumeric="23"/>
+            <column name="prefix" value="Kultpower"/>
+            <column name="text" value="Hättest du jemals gedacht, das Powerplay und Videogames bis heute einen gewissen Kultstatus erreichen könnten?"/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="067ddde5-964d-46c1-9968-1d10af0679de"/>
+            <column name="interview" value="winnie_forster_2011-03"/>
+            <column name="position" valueNumeric="30"/>
+            <column name="prefix" value="Winnie"/>
+            <column name="text" value="Alle, an denen ich beteiligt war. Was danach kam, sammelte ich nicht."/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="08d95d1f-c9a5-42b9-853e-2aeea8fee2d2"/>
+            <column name="interview" value="michael_hengst_2001-03"/>
+            <column name="position" valueNumeric="18"/>
+            <column name="prefix" value="Michael"/>
+            <column name="text" value="Keine Frage: &quot;Elite 2&quot;. Knut (Gollert) war extra drüben in England und hat sich das Spiel ausgiebig vor Ort angeschaut. Er war hellauf begeistert und voll des Lobes. Gegen meinen Widerstand - ja ja, die Basisdemokratie - gab´s eine 90er Wertung. Dafür haben wir nicht nur von Lesern jede Menge Schelte eingesteckt."/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="0aa6c441-bafe-4da0-a232-11e80961326b"/>
+            <column name="interview" value="winnie_forster_2008-12"/>
+            <column name="position" valueNumeric="5"/>
+            <column name="prefix" value="Kultpower"/>
+            <column name="text" value="Welchen Zeitraum behandelt das Lexikon?"/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="0abe9770-92de-4bcc-b597-41d8349d2e13"/>
+            <column name="interview" value="winnie_forster_2011-03"/>
+            <column name="position" valueNumeric="26"/>
+            <column name="prefix" value="Winnie"/>
+            <column name="text" value="Während des Sonderheft-Jahres 1991, in dem vier Ausgaben erschienen und wir VGler gleichzeitig noch voll für die PowerPlay schrieben, und über das ganze erste reguläre VG-Jahr 1992. Das letzte Heft an dem ich beteiligt war, müsste die 1/1993 gewesen sein, wenn ich mich recht erinnere. Nachdem wir gekündigt hatten, saßen Ex-Chef-Redakteur Martin Gaksch, unser Redakteur Andreas Knauf und ich noch ein paar Wochen neben gekappten Telefonleitungen im Markt-&amp;-Technik-Kerker, bevor wir nahe Augsburg eine neue Redaktion eröffneten und die Cybermedia GmbH gründeten. Die mächtige M&amp;T AG gibt's längst nicht mehr, Cybermedia dagegen floriert bis heute und gibt monatlich Hefte wie M! und Audio Vision, manchmal auch eine Mobile Gamer, heraus."/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="0d9eb2f6-ffeb-4ea9-8141-425e13317ed7"/>
+            <column name="interview" value="harald_horchler_2006-05"/>
+            <column name="position" valueNumeric="21"/>
+            <column name="prefix" value="Kultpower"/>
+            <column name="text" value="Gerade ist bekannt geworden, dass demnächst absolut neue Starkiller-Comics vom Original-Starkiller-Team veröffentlicht werden sollen. Meinst du, dass deine Starkiller-Veröffentlichungen etwas zur &quot;Wiederbelebung&quot; von Starkiller &amp; Co. beigetragen haben?"/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="0e02f2ab-26de-478a-8a4d-91e4fb5ea9bc"/>
+            <column name="interview" value="winnie_forster_2011-03"/>
+            <column name="position" valueNumeric="3"/>
+            <column name="prefix" value="Kultpower"/>
+            <column name="text" value="Kannst du bitte kurz erklären, wie dein Kontakt zu Boris Kretzinger entstanden ist und was er sonst so macht, wenn er nicht gerade ein Buch über Commodore schreibt?"/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="0e6331da-82b0-4a8f-883a-ae0517b4216b"/>
+            <column name="interview" value="winnie_forster_2003-01"/>
+            <column name="position" valueNumeric="45"/>
+            <column name="prefix" value="Winnie"/>
+            <column name="text" value="5000 Bücher kamen Mitte Dezember 2002 aus dem Druck. Der Verkauf läuft gut, drei Wochen nach VÖ bin ich mir aber noch nicht sicher ob's ein Flopp oder ein Erfolg wird -- frag mich in Februar oder März nochmal ;-)&#10;Sollte die &quot;Gameplan-Bibel&quot; die erhoffte Zielgruppe finden, mache ich weitere Bücher -- vergleicht man Computer- &amp; Videospiele mit anderen Medien besteht noch ein gehöriger Nachholbedarf was vernünftige Sekundärliteratur angeht."/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="0fb41c34-c96b-48f6-9e35-4922c1db37c5"/>
+            <column name="interview" value="michael_hengst_2001-03"/>
+            <column name="position" valueNumeric="14"/>
+            <column name="prefix" value="Michael"/>
+            <column name="text" value="Hmm... schwierige Frage. Es gibt ein paar Spiele, die mich wirklich nachhaltig beeindruckt haben. Aber wenn ich nur eines aussuchen kann, würde ich sagen &quot;Dungeon Master&quot; für den Atari ST. Ich habe bei ausgeschaltetem Licht vor dem Monitor gesessen und bin jedes Mal zusammengezuckt, wenn plötzlich eine Mumie seufzte. Aber wie gesagt: Das ist nur ein Spiel von einer ganzen Reihe, die ich extrem gut fand!"/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="107aa525-b8ce-4845-9417-862eadd31d69"/>
+            <column name="interview" value="harald_horchler_2006-05"/>
+            <column name="position" valueNumeric="11"/>
+            <column name="prefix" value="Kultpower"/>
+            <column name="text" value="Wie ist das Feedback der Starkiller-Leser? Bekommst du viel &quot;Fan-Post&quot;?"/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="10a68949-2bc5-4415-b681-f13a7b816ada"/>
+            <column name="interview" value="michael_hengst_2001-03"/>
+            <column name="position" valueNumeric="4"/>
+            <column name="prefix" value="Michael"/>
+            <column name="text" value="Vorneweg: Nein, die Gründung der Power Play war nicht meine Idee - diese Ehre gebührt Heinrich Lenhardt und Boris Schneider. Die haben 1988 die Sonderheftreihe ins Leben gerufen, aus der dann die PowerPlay entstand. An den Job bei der PowerPlay bin ich mehr durch Zufall gekommen - lange Geschichte &lt;G&gt;. 1987 habe ich mit einem Kumpel zusammen das Infocom-Adventure &quot;Starcross&quot; gespielt, bis wir an eine Stelle gelangten, an der wir partout nicht weiterkamen. Naiv wie ich war, habe ich damals bei der Happy Computer angerufen und wollte einen Spieletip - versuch das mal heute bei einer Redaktion. Statt mich abzuwimmeln, beantwortete Anatol Locker meine Frage geduldig. Am nächsten Tag habe ich noch mal angerufen und mich für den Tip bedankt - Anatol war baff, daß sich ein Leser bedankt, und so blieben wir telefonisch in Kontakt. Dann habe ich die Komplettlösung für &quot;Dungeon Master&quot; an die Redaktion geschickt, und die haben die gleich abgedruckt - wenn ich die heute lese, wird mir ganz anders &lt;G&gt; - stilistisch war die Lösung eher tragisch, aber ich hatte in der Schule eh nie die tollsten Deutschnoten ;-) Na ja, Ende 1988 rief mich Anatol (trotzdem) an und fragte, ob ich nicht Lust hätte, Redakteur zu werden - ich wurde von Anatol und dem damaligen Redaktionsdirektor zum Interview geladen und machte mich auf nach München. Also so richtig mit Bewerbungsgespräch... Der Rest ging dann ganz schnell, und sechs Wochen später zog ich mit Sack und Pack nach München - am Silvesterabend!"/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="116d1f58-1147-40b3-89e6-85b12f9c0e7e"/>
+            <column name="interview" value="winnie_forster_2008-12"/>
+            <column name="position" valueNumeric="23"/>
+            <column name="prefix" value="Kultpower"/>
+            <column name="text" value="Wer hat dich bei deinen Arbeiten unterstützt?"/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="137d8803-ca2d-495a-a11b-6c3b9f3b2ce0"/>
+            <column name="interview" value="winnie_forster_2008-12"/>
+            <column name="position" valueNumeric="11"/>
+            <column name="prefix" value="Kultpower"/>
+            <column name="text" value="Wie verliefen deine Recherchen? Hast du viele der Personen selbst kennengelernt?"/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="1552033c-ad2f-46ae-862b-5e642927e592"/>
+            <column name="interview" value="winnie_forster_2008-12"/>
+            <column name="position" valueNumeric="31"/>
+            <column name="prefix" value="Kultpower"/>
+            <column name="text" value="Was macht dir beim Schreiben der GAMEplan-Bücher am meisten Spaß? Das Recherchieren? Das Feedback der Leser?"/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="16b36582-606f-4c99-8fee-f3f4f786fdbb"/>
+            <column name="interview" value="winnie_forster_2011-03"/>
+            <column name="position" valueNumeric="10"/>
+            <column name="prefix" value="Winnie"/>
+            <column name="text" value="Über die &quot;erneuerte Fassung&quot; sprach ich mit Brian, entschied jedoch, dass das nicht der Weg ist, den wir mit dem deutschen Buch gehen wollten. &quot;Commodore: A Company on the Edge&quot; behandelt den &quot;Pre-Amiga-Teil&quot; nicht nur ausführlicher, wie Du erwähnst, sondern lässt die gesamte Amiga-Geschichte einfach weg. Die &quot;erneuerte&quot; Fassung behandelt also nur die 8-Bit-Jahre der Firma, was mir für ein deutsches Buch zu wenig und unbefriedigend erschien, zudem Gameplan-Bücher möglichst übergreifend, nicht hyper-spezialisiert sein sollten. Letztendlich übernahmen wir ein paar der Updates (und natürlich alle echten Verbesserungen), die Brian für seinen zweiten Anlauf anfertigte und mir Mitte 2010 zur Verfügung stellte, entschlossen uns jedoch dafür, in Deutschland kein zwei-geteiltes Commodore-Buch zu bringen, wie es Brian in Nordamerika anging, sondern eine komplette, abgeschlossene Geschichte von den späten 1970er- bis in die 90er-Jahre."/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="1782439a-91f6-4e4f-b122-febc2c161625"/>
+            <column name="interview" value="winnie_forster_2008-12"/>
+            <column name="position" valueNumeric="41"/>
+            <column name="prefix" value="Kultpower"/>
+            <column name="text" value="Wie oft - außerhalb deines beruflichen Lebens - hast du mit Dingen aus dem Bereich Computer- und Videospiel zu tun?"/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="17daf86b-3369-4eda-951b-dadfdb4a8ee2"/>
+            <column name="interview" value="harald_horchler_2006-05"/>
+            <column name="position" valueNumeric="29"/>
+            <column name="prefix" value="Kultpower"/>
+            <column name="text" value="Harald, herzlichen Dank für dieses Interview und deine Unterstützung von Kultpower.de! Hoffentlich bis bald "/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="18ae590a-f715-4b9e-afd1-cb28540bb236"/>
+            <column name="interview" value="winnie_forster_2011-03"/>
+            <column name="position" valueNumeric="16"/>
+            <column name="prefix" value="Winnie"/>
+            <column name="text" value="Viele Geräte hat Gameplan natürlich im Archiv: neben 8-Bit-PETs und -Heimcomputern die ganze Amiga-Familie vom A1000 über die Desktop-Workstations und das CDTV bis hin zu späten Modellen wie den kleine A600. Die ganz seltenen und exotischen Teile, die ich oben erwähne, stellten jedoch Sammler und darin lag für mich auch der Hauptreiz der Foto-Produktion: Es macht sicherlich Spaß, Altbekanntes noch einmal Revue passieren zu lassen oder ans Stromnetz zu hängen, doch noch spannender ist es, völlig unbekannte Geräte in die Finger zu bekommen und kennen zu lernen. Die Entwicklung eines Gameplan-Buchs ist für mich immer auch ein Lernprozess. Den legendären Proto-Heimcomputer KIM-1 z.B. habe ich in früheren Gameplan-Bücher bereits erwähnt, jedoch nie in der Hand gehalten. &quot;Volkscomputer&quot; war die Gelegenheit das zu ändern und eigene &quot;hands on&quot;-Erfahrungen zu machen."/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="1a2a7378-56f8-4789-965d-ead3f761b888"/>
+            <column name="interview" value="rolf_boyke_2006-05"/>
+            <column name="position" valueNumeric="5"/>
+            <column name="prefix" value="Kultpower"/>
+            <column name="text" value="Was machst du heutzutage beruflich?"/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="1c035bdd-01c8-41ac-b4f4-1d3794889b6d"/>
+            <column name="interview" value="winnie_forster_2011-03"/>
+            <column name="position" valueNumeric="1"/>
+            <column name="prefix" value="Kultpower"/>
+            <column name="text" value="Dein neues Buch &quot;Volkscomputer&quot; ist - anders als deine bisher erschienenen Werke - eine Übersetzung eines englischsprachigen Buches, hier von &quot;On the Edge - The Spectacular Rise and Fall of Commodore&quot;. Wie ist die Entstehungsgeschichte zu dieser Übersetzung, warum bist du hier anders vorgegangen als bisher?"/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="1c8a2c58-2d2e-41e7-adca-9a115f253dd3"/>
+            <column name="interview" value="harald_horchler_2006-05"/>
+            <column name="position" valueNumeric="8"/>
+            <column name="prefix" value="Harald"/>
+            <column name="text" value="Starkiller ist eigentlich ein liebenswerter Kerl wie du und ich. Er möchte von seiner Umwelt ernst genommen werden (Zitat: &quot;Das Universum wird vor mir im Staub kriechen!&quot;). Leider misslingen ihm so ziemlich alle seine Unternehmungen, was ihn noch sympathischer macht. Doc Bobo, der etwas weltfremde, aber geniale Wissenschaftler, ist ganz klar meine zweite Lieblingsfigur. Ein weiterer Grund, warum ich immer wieder gern in dem Comic schmökere, sind die witzigen und liebevollen Zeichnungen von Rolf Boyke. Vergleicht man die einzelnen Episoden, erkennt man sehr gut, wie sich Rolfs zeichenstil weiter entwickelt. Sehr schön finde ich die vielen Anspielungen auf die Computerspiele- und Computerindustrie, obwohl ich mir auf Grund der vielen Insiderwitze nicht sicher bin, ob ich auch nur die Hälfte davon mitbekomme. Aber diese Parallelen und das darum herum gebaute Universum geben dem Comic die Substanz."/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="1cc2b24d-350b-46a9-8f8a-37b3d7f24dbd"/>
+            <column name="interview" value="winnie_forster_2008-12"/>
+            <column name="position" valueNumeric="9"/>
+            <column name="prefix" value="Kultpower"/>
+            <column name="text" value="Wann ist jemand überhaupt ein &quot;Spielemacher&quot; für dich?"/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="1d7adf26-87a3-4168-b86b-7c6861476705"/>
+            <column name="interview" value="winnie_forster_2008-12"/>
+            <column name="position" valueNumeric="43"/>
+            <column name="prefix" value="Kultpower"/>
+            <column name="text" value="Winnie, herzlichen Dank für dieses Interview. Bis zum nächsten Buch! "/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="1e2938aa-996a-4d72-81c2-4032696799e2"/>
+            <column name="interview" value="winnie_forster_2008-12"/>
+            <column name="position" valueNumeric="3"/>
+            <column name="prefix" value="Kultpower"/>
+            <column name="text" value="Worum geht's in deinem neuen Buch &quot;Computer- und Video-Spielmacher&quot;? Wie ist GPX aufgebaut?"/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="21651a7e-7a03-43d1-87eb-d3192cb2cbc0"/>
+            <column name="interview" value="winnie_forster_2003-01"/>
+            <column name="position" valueNumeric="44"/>
+            <column name="prefix" value="Kultpower"/>
+            <column name="text" value="Wie viele Exemplare wurden gedruckt, wie läuft der Verkauf bisher? Was hast du für den Fall, dass alle Exemplare verkauft werden, geplant?"/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="21cef094-7874-4f3d-8502-ea6bdf179334"/>
+            <column name="interview" value="winnie_forster_2003-01"/>
+            <column name="position" valueNumeric="15"/>
+            <column name="prefix" value="Winnie"/>
+            <column name="text" value="Mein damaliger Chefred. Martin Gaksch und ich waren der Meinung das man viele Sachen besser &amp; effektiver machen konnte, als es damals bei Markt &amp; Technik geschah. Deshalb haben wir zusammen mit unseren Redakteuren Andreas Knauf und Ingo Zaborowski gekündigt &amp; einen eigenen Verlag gegründet. Nach harten Anfangsjahren haben wir dann hintereinander Fun Generation, Mega Fun und schließlich auch den damaligen Marktführer Video Games abgehängt -- ein stetiger Aufstieg :-)"/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="23f1199c-c88a-4667-b351-a84312ba3427"/>
+            <column name="interview" value="winnie_forster_2003-01"/>
+            <column name="position" valueNumeric="17"/>
+            <column name="prefix" value="Winnie"/>
+            <column name="text" value="Zu fast allen: Martin Gaksch und Andreas Knauf sind ebenso wie ich Gesellschafter der Cybermedia GmbH, für Anatol Locker schreibe ich seit der Erstausgabe der Bravo Screenfun -- umgekehrt hat er auch Cybermedia ein paar Artikel beigesteuert. Die Genannten habe ich kurz vor Weihnachten 2002 zum letzten Mal getroffen. Heini und Fac5-Chef Julian Eggebrecht treffe ich seltener, meist in Kalifornien oder Tokio -- das liegt den beiden Auswanderern näher als München, Köln oder HH."/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="2433d400-f75b-4a87-bd35-18f1f7b3a7ba"/>
+            <column name="interview" value="winnie_forster_2008-12"/>
+            <column name="position" valueNumeric="4"/>
+            <column name="prefix" value="Winnie"/>
+            <column name="text" value="GPX beschreibt und zeigt die Menschen sowie die Teams und die Firmen hinter vier Computerspiel-Jahrzehnten. In den anderen Büchern fielen zugunsten von Technik und Hardware die Macher und Kreativen ziemlich unter den Tisch. Auch legendäre Software-Firmen wie Infocom und Microprose in den USA, NCS oder Toaplan in Japan, Alligata oder Hewson in England spielten in GP1 und GP2 nur eine Nebenrolle. GPX soll frühere Gameplan-Bücher nicht wiederholen, sondern ergänzen. Neben dem inhaltlichen Schwerpunkt ist der Aufbau ganz anders: Keine Chronologie von 1972 bis heute, sondern ein sachliches Lexikon (daher das X im Kürzel) - Menschen und Firmen alphabetisch, mit Querverweisen, Bildern und ein paar Tabellen. Ziel war eine möglichst hohe Infodichte. Ein halbes Jahr verbrachten wir allein damit, jedes überflüssige Wort zu streichen, Formulierungen zu straffen und zu kürzen, Redundanzen auszumerzen. In dieser Beziehung ist GPX den anderen Büchern ähnlich, aber halt viel text-lastiger. Im Optimalfall findet der Leser in GPX Alles was er über die Macher, Werdegang, Erfolge und Scheitern, sprich: die Geschichte und Gegenwart des Mediums, wissen möchte. In grafischer Hinsicht waren Lesbarkeit und &quot;Bedienungsfreundlichkeit&quot; das oberstes Ziel. GPX soll Infos möglichst schnell und übersichtlich an den Leser weitergeben."/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="266f6432-6d80-4bc9-befb-4e29008d2392"/>
+            <column name="interview" value="winnie_forster_2011-03"/>
+            <column name="position" valueNumeric="34"/>
+            <column name="prefix" value="Winnie"/>
+            <column name="text" value="2012 :-)"/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="27204a39-f38d-418e-a0d3-963933e8f56e"/>
+            <column name="interview" value="winnie_forster_2011-03"/>
+            <column name="position" valueNumeric="11"/>
+            <column name="prefix" value="Kultpower"/>
+            <column name="text" value="Was fasziniert dich besonders an der Commodore-Story?"/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="27d8666a-8eed-4efe-915f-3470189a98fb"/>
+            <column name="interview" value="winnie_forster_2003-01"/>
+            <column name="position" valueNumeric="19"/>
+            <column name="prefix" value=""/>
+            <column name="text" value="Dem Powerplay-Team fühle ich mich bis heute zu Dank verpflichtet."/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="285afa3a-9ad6-4fd5-89ec-28e76c62035f"/>
+            <column name="interview" value="winnie_forster_2008-12"/>
+            <column name="position" valueNumeric="29"/>
+            <column name="prefix" value="Kultpower"/>
+            <column name="text" value="Wann wird &quot;Spielemacher&quot; erscheinen und was wird es kosten?"/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="2973abb6-abc9-4c7c-aa45-f55702a94909"/>
+            <column name="interview" value="rolf_boyke_2006-05"/>
+            <column name="position" valueNumeric="30"/>
+            <column name="prefix" value="Rolf"/>
+            <column name="text" value="Für Anatol Locker mach ich den Turbo-Cartoon im Bravo Screenfun. Von den anderen hör ich ab und zu. (Grüße, Jungs)"/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="29b2bcc0-96b0-4e64-be9f-3a4369d62b7c"/>
+            <column name="interview" value="michael_hengst_2001-03"/>
+            <column name="position" valueNumeric="22"/>
+            <column name="prefix" value="Michael"/>
+            <column name="text" value="Generell würde ich sagen, daß die technische Qualität natürlich deutlich gestiegen ist. Wenn ich mir heute allein die Grafik anschaue, wird mir schwindelig - das ist wirklich phänomenal. Inhaltlich vermisse ich hingegen die wirklich innovativen Konzepte - aber mal ehrlich, ist das wirklich so schlimm? Entscheidend ist doch immer noch, ob das Spiel Spaß macht oder nicht. Da interessiert es mich heute eigentlich kaum, ob´s das Spielprinzip schon vor zehn Jahren gab oder nicht. Fesselt mich das Spiel, ist es toll gemacht, habe ich eine gute Zeit? Das ist wichtig!"/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="2b089147-f37a-4e64-ae3d-efb40dda43b4"/>
+            <column name="interview" value="harald_horchler_2006-05"/>
+            <column name="position" valueNumeric="22"/>
+            <column name="prefix" value="Harald"/>
+            <column name="text" value="Na klar! Wer kann schon behaupten, alle Starkiller-Folgen aus den Zeitschriften zu Hause zu haben? Sicher kennen die meisten Starkiller und wissen mit dem Begriff etwas anzufangen, aber die ganze Geschichte kannten die wenigsten. Durch die Neuveröffentlichung können sich die &quot;alten&quot; Fans wieder einlesen und die Comics dann an Freunde verleihen, die Starkiller bis dahin noch gar nicht kannten. Und als ganz alter Starkiller-Fan freut es mich natürlich, wenn aus der Ankündigung was wird "/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="2b29d520-41d7-4f01-9337-9ecb76a7d2d0"/>
+            <column name="interview" value="winnie_forster_2008-12"/>
+            <column name="position" valueNumeric="33"/>
+            <column name="prefix" value="Kultpower"/>
+            <column name="text" value="In unserem letzten Interview sagtest du, dass &quot;GP3: Software&quot; schon in Arbeit sei. Wie ist der aktuelle Stand?"/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="2b995dd5-3183-4199-97bd-f4550e833495"/>
+            <column name="interview" value="rolf_boyke_2006-05"/>
+            <column name="position" valueNumeric="24"/>
+            <column name="prefix" value="Rolf"/>
+            <column name="text" value="Ich will www.boyke-comix.de als Online-Comix-Heft nutzen. Es gibt den aktuellen Turbo aus der Bravo Screenfun, merkwürdiges aus meinem Skizzenbuch, seltsame Comix-Experimente und natürlich Starkiller. (Versprochen)"/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="2c2e3afb-8345-4ce6-bb9c-3297c537cf34"/>
+            <column name="interview" value="michael_hengst_2001-03"/>
+            <column name="position" valueNumeric="6"/>
+            <column name="prefix" value="Michael"/>
+            <column name="text" value="Oha! Die Motivation? Hmmm... wie wäre es damit: Den ganzen Tag spielen, immer die neuste Software auf den Tisch bekommen und auch noch Geld dafür kriegen? Und was heißt, Computerspiele waren nicht weit verbreitet? Nach heutigen Maßstäben sicher nicht, aber für die damaligen Verhältnisse war das schon ein ordentlicher Markt- sonst hätte es ja das Heft nicht gegeben! Aber stimmt schon - der Markt war kleiner, überschaubarer und vor allem familiärer. Damals konnten zwei, drei Hanseln in der Garage in sechs Monaten einen Superhit programmieren, heute brauchst Du 50 Leute, vier Jahre und 20 Millionen Dollar..."/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="2dfd9c6a-d9e9-4254-8a07-4ea4a48c1120"/>
+            <column name="interview" value="harald_horchler_2006-05"/>
+            <column name="position" valueNumeric="20"/>
+            <column name="prefix" value="Harald"/>
+            <column name="text" value="Wenn mir Arbeit und Familie dazu Zeit lassen, ist das sogar meine Lieblingsbeschäftigung. Da ich damals eine C64 und einen Amiga hatte, spiele ich meistens Spiele dieser Maschinen per Emulator auf dem PC. Favoriten sind Bubble Bobble, Dino Eggs, Archon, Jumpman und Great Giana Sisters (C 64). Für den Amiga sind es vor allem Pirates! (obwohl ich die C64-Version fast noch besser finde) und diverse Rollenspiele. Aber ich probiere immer mal wieder &quot;neue&quot; Spiele aus."/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="2e7fb8dd-a732-41c3-981c-d8a483aa41d2"/>
+            <column name="interview" value="winnie_forster_2008-12"/>
+            <column name="position" valueNumeric="6"/>
+            <column name="prefix" value="Winnie"/>
+            <column name="text" value="Den gesamten Computer- und Videospiel-Zeitraum, vom Anfang der 70er-Jahre bis heute. Bei einigen Firmenporträts und Biografien geht GPX über &quot;Pong&quot; hinaus, zurück in die 30er-, 40er- und 50-Jahre. Das sind jedoch Ausnahmen; die letzten vier Jahrzehnte bilden den GPX-Schwerpunkt. GPX soll historisch tief, aber gleichzeitig up-to-date sein. Das letzte inhaltliche Update machten wir - Gameplan-Tradition - am Tag des Druckbeginns."/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="2ee2146b-f139-4fef-825a-35d14497e53d"/>
+            <column name="interview" value="harald_horchler_2006-05"/>
+            <column name="position" valueNumeric="10"/>
+            <column name="prefix" value="Harald"/>
+            <column name="text" value="Jawohl, die Cover wurden von Rolf Boyke extra für Band 2 und den Sammelband entworfen und gezeichnet (an dieser Stelle noch mal vielen Dank, Rolf!)."/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="30c9e5bb-f9ec-47f0-842c-976b68afc40b"/>
+            <column name="interview" value="winnie_forster_2008-12"/>
+            <column name="position" valueNumeric="21"/>
+            <column name="prefix" value="Kultpower"/>
+            <column name="text" value="Ich kann mir vorstellen, dass du nicht selber die ganze Welt bereist hast, um mit den Spielemachern zu reden..."/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="30f05e4a-f0d9-4210-a9fe-d0ace9015b45"/>
+            <column name="interview" value="michael_hengst_2001-03"/>
+            <column name="position" valueNumeric="31"/>
+            <column name="prefix" value="Kultpower"/>
+            <column name="text" value="War Dir (bevor Du Kultpower.de kanntest) bewußt, daß es auch heute noch wahre Powerplay-Fans gibt?"/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="32f54d3f-6686-4db7-b297-14bf293bad3b"/>
+            <column name="interview" value="rolf_boyke_2006-05"/>
+            <column name="position" valueNumeric="20"/>
+            <column name="prefix" value="Rolf"/>
+            <column name="text" value="Eine tolle Sache. Die Bände sind super geworden, genauso quietschbunt wie ich es immer wollte. Auch die früher oft verdruckten Farb-Seiten wie grüne Gesichter durch vertauschte Druck-Filme, oder alles unscharf durch verrutschte Passermarken, all dies ist jetzt korrigiert. Ausserdem wurde seinerzeit auch zensiert: &quot;Ogottogott zuviel rotes Blut, zu frauenfeindlich&quot;. Heutzutage ist das eher zum Schmunzeln, jede Simpson-Folge ist krasser. Zum Glück habe ich noch alle Ur-Seiten und davon wurden dann die Scans gemacht. Sozusagen der Directors-Cut. (Hmm)&#10;Wir sind alle sehr stolz auf die Neuauflage nach fast 20 Jahren und daß die Fans so begeistert auf die ersten Seiten bei Kultpower reagiert haben, war eine mächtig große Hilfe. (Applaus)"/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="32f60c6e-5a70-4a97-9356-2f7652b6b36a"/>
+            <column name="interview" value="winnie_forster_2003-01"/>
+            <column name="position" valueNumeric="6"/>
+            <column name="prefix" value="Winnie"/>
+            <column name="text" value="Wie die meisten Spieler meiner Generation waren Pong und Space Invaders die ersten elektronischen Spiele die ich als kleiner Sch...er kennen lernte. Ich kam kaum bis zum Joystick dieser Automaten rauf, war aber sofort süchtig. Eine Konsole konnte ich mir damals nicht leisten, habe die ersten Heimgeräte Interton und Atari VCS also nur bei Freunden gespielt. Meine Eltern hielten einen Heim-Computer für vernünftiger. Ich hatte Erfahrung mit dem ZX 81 und dem VC 20, gab dann aber 500 Mark für einen Sinclair Spectrum aus. Obwohl alle meine Kumpels schnell zu C64-Freaks mutierten, habe ich die exotische Kaufentscheidung nie bereut -- bis Mitte der 80er-Jahre war die Spectrum-Software brillant. Zugegeben: Für Archon, Elite, Ultima und Wasteland mussten mir Kumpels ihre Commodore-Rechner leihen. Zum Glück wuchs ich in einem äußerst verspielten Umfeld auf u.a. ging der spätere Rainbow-Arts-Produzent Teut Weidemann ins gleiche Gymnasium. Der war ein paar Jahre älter und finanzkräftiger und hat mir z.B. seinen 64 SX ins Zimmer gestellt. Später stieß ich zu einer Rollenspieltruppe der z.B. Andreas von Lepel (2001/2002 Chefredakteur der Bravo Screenfun) angehörten. Dieser Kreis von Jugendlichen war schon Mitte der 80er-Jahre auf den Sprung in die Computer-Professionalität. Komischer Zufall, dass ich unabhängig von dieser Clique Jahre später in der selben Ecke gelandet bin..."/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="350407e6-a85f-44b9-ba72-5e5dc500cc65"/>
+            <column name="interview" value="rolf_boyke_2006-05"/>
+            <column name="position" valueNumeric="13"/>
+            <column name="prefix" value="Kultpower"/>
+            <column name="text" value="Wie findest du die Konkurrenz Space-Rat-Comics von Mathias Neumann? :-)"/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="360a6ca2-89fa-4fd0-8957-db4df5684ca9"/>
+            <column name="interview" value="winnie_forster_2003-01"/>
+            <column name="position" valueNumeric="39"/>
+            <column name="prefix" value=""/>
+            <column name="text" value="Ich stand zwischen ein paar hundert Apple-2-, Atari-800-&#10;und Commodore-Pet-Computern!"/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="36273f2e-bb98-436c-b348-63894d284d3d"/>
+            <column name="interview" value="harald_horchler_2006-05"/>
+            <column name="position" valueNumeric="26"/>
+            <column name="prefix" value="Harald"/>
+            <column name="text" value="Im Mai kommt Band 2 von &quot;Schöpfer neuer Welten&quot; heraus. Der Band wird denselben Umfang wie Band 1 haben, allerdings sind die meisten Abbildungen diesmal farbig. Im Herbst wird es ein Buch zum Thema &quot;Emulatoren&quot; von Hansjürg Wüthrich geben, ich hoffe, noch im September. Dieses Buch befindet sich aber noch im Frühstadium."/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="37732932-2df4-4f34-b96d-1e1b9916f4ac"/>
+            <column name="interview" value="harald_horchler_2006-05"/>
+            <column name="position" valueNumeric="18"/>
+            <column name="prefix" value="Harald"/>
+            <column name="text" value="Die &quot;Happy Computer&quot; habe ich regelrecht verschlungen. Besonders wichtig war mir immer der Spiele-Teil &quot;Hallo Freaks&quot;. Später habe ich immer die &quot;Power Play&quot;-Beilage zuerst gelesen. Die 64'er habe ich manchmal gelesen, aber sie war mir damals immer zu technisch. Heute bereue ich das ..."/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="3806a406-7251-406e-be16-c6bc8e9d9ea5"/>
+            <column name="interview" value="winnie_forster_2008-12"/>
+            <column name="position" valueNumeric="27"/>
+            <column name="prefix" value="Kultpower"/>
+            <column name="text" value="Wird es vielleicht sogar eine englischsprachige Ausgabe von &quot;Spielemacher&quot; geben?"/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="3a4e6c00-3cce-4497-ad2d-8cafcefb068c"/>
+            <column name="interview" value="winnie_forster_2003-01"/>
+            <column name="position" valueNumeric="46"/>
+            <column name="prefix" value="Kultpower"/>
+            <column name="text" value="Winnie, vielen Dank für dieses Interview und danke für dein Buch! :-) Ich wünsche dir weiterhin viel Erfolg!"/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="3af1ef9d-e67c-447c-83d7-4c75e2a6380a"/>
+            <column name="interview" value="rolf_boyke_2006-05"/>
+            <column name="position" valueNumeric="28"/>
+            <column name="prefix" value="Rolf"/>
+            <column name="text" value="Der Zeichenstil vom frühen Lucky Luke gefällt mir sehr gut, sehr locker, sehr lässig, und der Erzählstil von Carl Barks, der hat einfach die besten Donald Duck Storys gemacht. (Schmacht)"/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="3cbfb68d-8844-48ad-9801-f5126e7f14f6"/>
+            <column name="interview" value="winnie_forster_2008-12"/>
+            <column name="position" valueNumeric="17"/>
+            <column name="prefix" value="Kultpower"/>
+            <column name="text" value="Gab es vor &quot;Spielmacher&quot; vergleichbaren Bücher auf dem (internationalen) Markt?"/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="3d136b6e-5817-4274-8f14-566c5d069d45"/>
+            <column name="interview" value="rolf_boyke_2006-05"/>
+            <column name="position" valueNumeric="26"/>
+            <column name="prefix" value="Rolf"/>
+            <column name="text" value="Immer wenn mich ein Spiel fasziniert hat, hab ich mir den Rechner dazu gekauft. Für Uridium, Alternate Reality (The Dungeon) und Boulder Dash hab ich mir den C-64 geholt. Den Atari ST für Dungeon Master, den Amiga wegen Driver und den Jaguar und Nintendo wegen Doom und Duke Nukem. Heute spiele ich mit großer Begeisterung Half Life 2 auf der 360er X-Box. (Schwitz)"/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="3e9ff40c-a3a9-4ca5-a741-e9b1caa643a5"/>
+            <column name="interview" value="harald_horchler_2006-05"/>
+            <column name="position" valueNumeric="7"/>
+            <column name="prefix" value="Kultpower"/>
+            <column name="text" value="Was gefällt dir generell an Starkiller und seinen Weggefährten?"/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="3ebc9d44-ff63-4478-8f39-7ad80aca7b4d"/>
+            <column name="interview" value="winnie_forster_2005-06"/>
+            <column name="position" valueNumeric="5"/>
+            <column name="prefix" value="Kultpower"/>
+            <column name="text" value="Wie war generell das Feedback zu der ersten Auflage?"/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="3f94fd93-f217-4fbb-96e8-122204aa0a3a"/>
+            <column name="interview" value="winnie_forster_2005-06"/>
+            <column name="position" valueNumeric="19"/>
+            <column name="prefix" value="Kultpower"/>
+            <column name="text" value="Welche weiteren Autoren werden an deinem nächsten Werk beteiligt sein?"/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="40d688e7-b070-4e28-a873-3832f642189c"/>
+            <column name="interview" value="winnie_forster_2005-06"/>
+            <column name="position" valueNumeric="6"/>
+            <column name="prefix" value="Winnie"/>
+            <column name="text" value="Wie skizziert. Ohne das &quot;etwas stärker als erwartet&quot;-Feedback gäbe es GP1.5 nicht. Auch die Presse fand das Buch gut."/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="438a5ae2-7c11-49aa-8a2e-66c8f1a8889c"/>
+            <column name="interview" value="rolf_boyke_2006-05"/>
+            <column name="position" valueNumeric="22"/>
+            <column name="prefix" value="Rolf"/>
+            <column name="text" value="Heinrich hatte mich ja seit Jahren immer wieder gelöchert: &quot;Man könnte doch, wäre es nicht super&quot;, jetzt seh ichs endlich auch ein...&#10;Erstmal machen wir einige kurze Strips zum Aufwärmen, dann gehts nahtlos weiter mit Starkiller in einem Aushilfsjob als Endbosstester in einem Online-Rollenspiel. (Yeah-Yeah-Yeah)"/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="43b4ee45-5647-4002-bd80-0798b538a269"/>
+            <column name="interview" value="rolf_boyke_2006-05"/>
+            <column name="position" valueNumeric="27"/>
+            <column name="prefix" value="Kultpower"/>
+            <column name="text" value="Welche Comics anderer Zeichner gefallen dir?"/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="4491701c-ab29-47c0-bc9d-884c27753780"/>
+            <column name="interview" value="winnie_forster_2008-12"/>
+            <column name="position" valueNumeric="39"/>
+            <column name="prefix" value="Kultpower"/>
+            <column name="text" value="Wie viele Powerplay- und Videogames-Ausgaben besitzt du? "/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="4520a0a9-9a88-47d6-aa70-04967b31559c"/>
+            <column name="interview" value="michael_hengst_2001-03"/>
+            <column name="position" valueNumeric="19"/>
+            <column name="prefix" value="Kultpower"/>
+            <column name="text" value="Hast Du das Ende der PowerPlay als Zeitschrift mitverfolgt? Aus welchen Gründen konnte sich die PowerPlay aus Deiner Sicht letztendlich nicht am Markt halten?"/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="4537d77c-5fb9-409e-8ca1-e28ebdecd39e"/>
+            <column name="interview" value="winnie_forster_2008-12"/>
+            <column name="position" valueNumeric="25"/>
+            <column name="prefix" value="Kultpower"/>
+            <column name="text" value="Das erste GAMEplan-Buch ist auch in englischer Sprache erschienen. Hat sich diese Entscheidung aus heutiger Sicht gelohnt?"/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="461e7626-a475-4874-bd39-d237f82c45bd"/>
+            <column name="interview" value="michael_hengst_2001-03"/>
+            <column name="position" valueNumeric="3"/>
+            <column name="prefix" value="Kultpower"/>
+            <column name="text" value="Wann und wie wurdest Du Redakteur bei der PowerPlay? Musstest Du an einem richtigen Vorstellungsgespräch teilnehmen? Oder war die Gründung der PowerPlay Deine Idee?"/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="466295be-ebc5-46c7-a9df-1ac853afcf9c"/>
+            <column name="interview" value="michael_hengst_2001-03"/>
+            <column name="position" valueNumeric="32"/>
+            <column name="prefix" value="Michael"/>
+            <column name="text" value="Ehrlich gesagt: Nein! Ich hatte keine Ahnung, daß es noch so viele echte Fans gibt. Ich finde eure Seite echt klasse und bin begeistert, daß die &quot;guten alten Zeiten&quot; nicht so einfach vergessen sind."/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="478b733f-ca1e-45a1-9f3f-a1587f3e9eca"/>
+            <column name="interview" value="winnie_forster_2008-12"/>
+            <column name="position" valueNumeric="2"/>
+            <column name="prefix" value="Winnie"/>
+            <column name="text" value="Seit 2005 kümmerte ich mich um die Vermarktung der erschienenen Gameplan-Bücher sowie um die Entwicklung des Lexikons der &quot;Spielmacher&quot; (GPX) und des 2009er-Updates von &quot;Spielkonsolen ...&quot;. Andere Tätigkeiten - hier und da mal einen Fachartikel oder Vortrag, ab und an Hilfe für andere Firma oder akademische Arbeit - fallen dagegen zeitlich kaum ins Gewicht."/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="48299fa9-3063-42fb-a9e7-153e8cb8b715"/>
+            <column name="interview" value="winnie_forster_2008-12"/>
+            <column name="position" valueNumeric="28"/>
+            <column name="prefix" value="Winnie"/>
+            <column name="text" value="Ja. Aber das dauert noch, denn zuerst kommt in englischer Sprache ein Update von &quot;Game.Machines&quot;."/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="488910b8-f128-4b1c-aa68-a96d098017c1"/>
+            <column name="interview" value="winnie_forster_2011-03"/>
+            <column name="position" valueNumeric="27"/>
+            <column name="prefix" value="Kultpower"/>
+            <column name="text" value="Mit welchen der anderen Video Games-Redakteure - auch von denen, die nach deiner Zeit dort waren - stehst du heute noch in Kontakt?"/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="48920314-525b-4b6f-b8ff-0d067912de82"/>
+            <column name="interview" value="winnie_forster_2005-06"/>
+            <column name="position" valueNumeric="15"/>
+            <column name="prefix" value="Kultpower"/>
+            <column name="text" value="Um das englische &quot;Game Machines&quot; zu vermarkten hat Gameplan Büros in London und Vancouver eröffnet. Welche Rolle spielt Heinrich Lenhardt beim Vertrieb in den USA und in Kanada?"/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="48a3de2b-041f-4008-9a7f-58d399349d66"/>
+            <column name="interview" value="rolf_boyke_2006-05"/>
+            <column name="position" valueNumeric="23"/>
+            <column name="prefix" value="Kultpower"/>
+            <column name="text" value="Was können wir von deiner neuen Webseite www.boyke-comix.de alles erwarten?"/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="49317dda-2e96-4572-b27f-d3962b916337"/>
+            <column name="interview" value="michael_hengst_2001-03"/>
+            <column name="position" valueNumeric="25"/>
+            <column name="prefix" value="Kultpower"/>
+            <column name="text" value="Viele sehen in der PowerPlay das kompetenteste Spielemagazin, das es je gegeben hat. Wie beurteilst Du die Qualität aktueller Spielemagazine?"/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="4958f17f-b7f5-4bc9-8414-5beeb10b4c47"/>
+            <column name="interview" value="michael_hengst_2001-03"/>
+            <column name="position" valueNumeric="39"/>
+            <column name="prefix" value="Kultpower"/>
+            <column name="text" value="Michael, nochmal vieeeelen Dank für Deine interessanten Antworten! Ich freue mich echt riesig, daß Du dieses Interview mitgemacht hast!"/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="4b6dfe02-c51b-4350-8581-45e107949310"/>
+            <column name="interview" value="harald_horchler_2006-05"/>
+            <column name="position" valueNumeric="14"/>
+            <column name="prefix" value="Harald"/>
+            <column name="text" value="Ursprünglich dachte ich, die Urheberrechte würden bei der Verlagsgruppe liegen, die bis vor kurzem die Rechte an Power Play und PC Player hatte. Aber so einfach war es nicht: Die Rechte an Starkiller liegen nach wie vor komplett bei Heinrich Lenhardt, Boris Schneider und Rolf Boyke. Mit den dreien und zusätzlich noch mit Anatol Locker und Martin Gaksch gab es daher einen ausgiebigen E-Mail-Austausch, und zum Schluss hat es ja dann auch geklappt (danke, Leute!)"/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="4ba047ae-458c-4bcc-81c8-47fee3139485"/>
+            <column name="interview" value="winnie_forster_2003-01"/>
+            <column name="position" valueNumeric="24"/>
+            <column name="prefix" value="Winnie"/>
+            <column name="text" value="Das war uns klar -- deshalb haben wir Powerplay und Video Games ja gemacht ;-)&#10;Persönlich finde ich, dass Powerplay das bessere Heft war und nütze diese Zeitschrift immer noch als Quellmaterial. Alte Video Games rühre ich heute jedoch kaum noch an. Unterm Strich muss ich zugeben, dass ich Powerplay vor meiner Anstellung unterschätzt und erst während meiner Tätigkeit kapiert habe wie gut die Arbeit von Boris, Anatol, Heini und Maga war -- Hut ab z.B. vor Boris' Serie über Atari, die bereits Ende der 80er-Jahre in Happy Computer bzw. Powerplay erschien -- damit war er anderen Euro-Journalisten um Jahre voraus."/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="4c6f1c12-bdbb-43b0-a3aa-75e1f31a8229"/>
+            <column name="interview" value="winnie_forster_2011-03"/>
+            <column name="position" valueNumeric="14"/>
+            <column name="prefix" value="Winnie"/>
+            <column name="text" value="Die Tatsache, dass ich Atari-, Nintendo- und Sega-Leute persönlich kenne, jedoch nie Bezug zu einer der Commodore-Größen hatte, war meine Motivation für &quot;Volkscomputer&quot;: Als User war mir Commodore vertraut, beruflich blieb diese Firma für mich jedoch Terra Incognita - im Gegensatz zu englischen und japanischen Firmengeschichten, gab's hier für mich viel zu entdecken. Brian Bagnalls Treffen und Gespräche mit Commodore-Ingenieuren und -Managern füllten somit eine Lücke. Während er (und auch Boris Kretzinger) direkten Kontakt zu Commodore-Veteranen pflegen, beschränkte ich mich darauf, das Material zu ordnen und in Gameplan-Context zu setzen."/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="4dce4062-f30d-498a-9f2d-b0f7d5dce160"/>
+            <column name="interview" value="rolf_boyke_2006-05"/>
+            <column name="position" valueNumeric="11"/>
+            <column name="prefix" value="Kultpower"/>
+            <column name="text" value="War es schwierig für euch, einen Comic-Strip in der Powerplay gegenüber euren &quot;Chefs&quot; durchzusetzen?"/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="4e5d1eee-2dda-4981-bddb-b3129e47de39"/>
+            <column name="interview" value="winnie_forster_2011-03"/>
+            <column name="position" valueNumeric="22"/>
+            <column name="prefix" value="Winnie"/>
+            <column name="text" value="Nein. &quot;Video Games&quot; war ein lustige Zeit, und es war wohl wichtig und richtig, dass wir dieses Heft Anfang der 90er-Jahre machten. Aber hättest Du mich nicht daran erinnert, wäre ich wohl kaum darauf gekommen, dass sich die VG-Gründung im März 2011 zum 20. Mal jährt. Ich denke, für Martin Gaksch und mich, war VG eher Warm-Up und Vorübung, für das was wir dann in den folgenden Jahren machten - das Multi-Format-Heft &quot;Man!ac&quot;, das heute noch als &quot;M! Games&quot; existiert und VG somit um ein Vielfaches überlebte."/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="4e622856-d5e3-4825-90af-be0bd7aa27a6"/>
+            <column name="interview" value="winnie_forster_2003-01"/>
+            <column name="position" valueNumeric="3"/>
+            <column name="prefix" value=""/>
+            <column name="text" value="Heini, Anatol &amp; Co waren für mich damals Unbekannte"/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="4ef33609-3584-440d-ae26-cee1b6e1c1ae"/>
+            <column name="interview" value="winnie_forster_2008-12"/>
+            <column name="position" valueNumeric="38"/>
+            <column name="prefix" value="Winnie"/>
+            <column name="text" value="Das hängt vom Wetter ab  Im Sommer 08 bretterte ich meist mit dem Fahrrad durch Gelände oder stand auf irgendeinem bayrischen Hof hinter einer Tischtennisplatte. Von Freunden und Familie abgesehen, verbringe ich natürlich viel Zeit mit Medien, Videospiel, Büchern, Vinyl. Für Film bleibt wenig Zeit. TV habe ich gar nicht."/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="4f3bcece-d25b-4d0f-914a-6629501b7f10"/>
+            <column name="interview" value="winnie_forster_2008-12"/>
+            <column name="position" valueNumeric="7"/>
+            <column name="prefix" value="Kultpower"/>
+            <column name="text" value="Wie kamst du auf die Idee, ein Buch über &quot;Spielemacher&quot; zu schreiben?"/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="51311b0d-625c-49cd-b3c4-a51eaaca9438"/>
+            <column name="interview" value="michael_hengst_2001-03"/>
+            <column name="position" valueNumeric="30"/>
+            <column name="prefix" value="Michael"/>
+            <column name="text" value="Wenig. Die meisten sind eh in alle Winde verstreut und machen ihr eigenes Ding. Mit Martin Gaksch (ehemaliger Chefred. - heute Maniac!) habe ich erst kürzlich telefoniert."/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="51eca2dd-cf90-4141-9aea-8ad8cd595c20"/>
+            <column name="interview" value="michael_hengst_2001-03"/>
+            <column name="position" valueNumeric="36"/>
+            <column name="prefix" value="Michael"/>
+            <column name="text" value="Das sind leider nicht mehr so viele: C64, Atari ST (512er), Atari Mega ST, Master System, NES, PC-Engine, Turbo-Duo, Mega Drive, Mega CD, Saturn, SNES, GameBoy... aber die sind eigentlich alle eingemottet und liegen auf dem Dachboden oder bei mir in der Firma (neben den ganzen alten Spielen&lt;G&gt;.)"/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="529bc263-65a9-4e72-b8a0-326f0c727156"/>
+            <column name="interview" value="harald_horchler_2006-05"/>
+            <column name="position" valueNumeric="1"/>
+            <column name="prefix" value="Kultpower"/>
+            <column name="text" value="Hallo Harald. Vielen Dank, dass du für Kultpower.de dieses Interview mitmachst!&#10;Dein Name ist Retro-Fans durch deine bisher veröffentlichten Bücher seit einigen Jahren ein Begriff. Wie kamst du auf die Idee, Bücher zu diesem Themenbereich zu veröffentlichen?"/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="54200520-bdbe-43bf-9624-0a954dc8acc7"/>
+            <column name="interview" value="winnie_forster_2008-12"/>
+            <column name="position" valueNumeric="30"/>
+            <column name="prefix" value="Winnie"/>
+            <column name="text" value="Laut Druckerei wird in der dritten Dezemberwoche ausgeliefert, so dass alle die nun auf gameplan.de, maniac.de oder bei einem anderen Gameplan-Partner bestellen, Weihnachten ihr Buch haben ... müssten."/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="557751dd-c143-49f6-99d6-44b905415aca"/>
+            <column name="interview" value="michael_hengst_2001-03"/>
+            <column name="position" valueNumeric="17"/>
+            <column name="prefix" value="Kultpower"/>
+            <column name="text" value="Von welchem Spiel warst Du am schwersten enttäuscht?"/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="56ba5775-61ec-4ae1-8823-80e09dca5ba6"/>
+            <column name="interview" value="rolf_boyke_2006-05"/>
+            <column name="position" valueNumeric="29"/>
+            <column name="prefix" value="Kultpower"/>
+            <column name="text" value="Zu wem (außer Boris und Heinrich) aus der damaligen Truppe hast du heute noch Kontakt?"/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="575b11af-b013-498d-9532-c6b569a0df71"/>
+            <column name="interview" value="winnie_forster_2011-03"/>
+            <column name="position" valueNumeric="9"/>
+            <column name="prefix" value="Kultpower"/>
+            <column name="text" value="Das Buch &quot;On the Edge - The Spectacular Rise and Fall of Commodore&quot; erschien 2005. Mittlerweile gibt es eine erneuerte Fassung mit dem Titel &quot;Commodore: A Company on the Edge&quot;, die den &quot;Pre-Amiga-Teil&quot; ausführlicher behandelt. Wie ist euer Bezug dazu?"/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="58dcddf0-e005-40eb-8e26-8e3b61998142"/>
+            <column name="interview" value="michael_hengst_2001-03"/>
+            <column name="position" valueNumeric="35"/>
+            <column name="prefix" value="Kultpower"/>
+            <column name="text" value="Was für Rechner (insbesondere von früher) besitzt Du heute noch?"/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="58f2231c-30d3-4dfd-a04f-2c357cb78051"/>
+            <column name="interview" value="winnie_forster_2005-06"/>
+            <column name="position" valueNumeric="10"/>
+            <column name="prefix" value="Winnie"/>
+            <column name="text" value="Moment mal, langsam - die erweiterte Auflage ist gerade erst erschienen und druckfrisch. Bis auf aktuelle PSP- und DS-Verkaufszahlen gäbe es zu GP1.5 nicht viel nachzutragen. Was willst Du mit &quot;weiteren&quot; Auflagen? ;-)&#10;Spaß beiseite: Wie beim ersten Buch kommt die nächste Auflage dann, wenn die vorhergehende weg ist (&amp; keine Reste mehr im Handel liegen) und genügend Material neues Material recherchiert ist. Bevor das nächste Update erscheint, gibt es mindestens noch zwei andere Gameplan-Bücher, nämlich &quot;GP3: Software&quot; sowie ein Buch das ebenso weit fortgeschritten, aber noch nicht angekündigt ist, nennen wir es mal GPX. Vor 2008 ist mit keinem GP1.5-Update zu rechnen."/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="593ca4dc-c085-4218-b8e9-09efdbdbdb09"/>
+            <column name="interview" value="winnie_forster_2011-03"/>
+            <column name="position" valueNumeric="25"/>
+            <column name="prefix" value="Kultpower"/>
+            <column name="text" value="Wie lange hast du bei der Video Games gearbeitet?"/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="5a2ec7a0-0b31-4fec-9255-f45e1d595339"/>
+            <column name="interview" value="winnie_forster_2003-01"/>
+            <column name="position" valueNumeric="28"/>
+            <column name="prefix" value="Winnie"/>
+            <column name="text" value="Der Entschluss der beruflichen Neuorientierung fiel Ende 2001, die Konzeption des Buchs begann im Frühjahr 2002. Ab Sommer letzten Jahres habe ich dann fast Full-Time an der &quot;Gameplan-Bibel&quot; gearbeitet, wobei mich in den letzten Wochen Stephan Freundorfer, Andreas von Lepel, Oliver Ehrle und andere Redaktionsprofis unterstützten."/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="5ac11bd8-8b53-45ca-a170-fd499ea44af0"/>
+            <column name="interview" value="winnie_forster_2003-01"/>
+            <column name="position" valueNumeric="40"/>
+            <column name="prefix" value="Winnie"/>
+            <column name="text" value="Witzig auch als Teut, Andreas von Lepel und ich einen angeblichen Retro-Shop irgendwo in einem obskuren US-Nest besuchen wollten. Wir hatten nur eine alte Adresse und waren uns alles andere als sicher, den uns unbekannten Laden zu finden, als wir auf gut Glück in unseren Mietwagen stiegen. Ohne Hektik sind wir zwei Stunden durch Kalifornien gefahren, auf 200 km nur dreimal abgebogen und landeten -- voila -- direkt vor dem halbverfallenen Geschäft -- ohne uns auch nur einen einzigen Meter zu verfahren! Der dicke ca. 50jährige Redneck-Besitzer hat mich dann im Jeep in sein Lager mitgenommen -- dort stand ich zwischen ein paar hundert Apple-2-, Atari-800- und Commodore-Pet-Computern!&#10;Unterm Strich erwies sich die Hardware-Suche als tolle Parabel auf das ganze Leben: Zum einen brauchst Du kühle Planung, Kalkulation und Know-How, zum anderen solltest Du regelmäßig Deine ausgetretenen Pfade verlassen, um weiterzukommen. Sowohl im Leben, als auch bei der einjährigen Arbeit an meinem Buch hatte ich die erfreulichsten Erlebnisse völlig unverhofft -- z.B. nachdem etwas nicht geklappt hat, ich ins Blaue marschierte oder ein Zufall mich beim Händchen nahm..schon komisch, irgendwie. Nur den Glauben an den Erfolg sollte man nie verlieren.&#10;Genug der Lebensphilosophie, zurück zu Deiner Frage: Bis auf Creativision, Atari 5200 und FM Towns Mary habe ich jetzt fast jedes Spielgerät der letzten 25 Jahre -- im Endeffekt zu viel um es in die Kapitel des Buchs zu pressen. Deshalb wurde z.B. die Famicom/Diskstation-Kombi noch ins Inhaltsverzeichnis geflickt. Andere Sachen mussten ganz draußen bleiben, denn nach der vierten Fotosession mussten wir zu einem Abschluss kommen."/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="5b372de5-bc2c-4b41-8d37-b50e72b72fbb"/>
+            <column name="interview" value="winnie_forster_2003-01"/>
+            <column name="position" valueNumeric="14"/>
+            <column name="prefix" value="Kultpower"/>
+            <column name="text" value="Aus welchen Gründen hast du deine Arbeit bei Powerplay und Videogames schon recht bald wieder beendet?"/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="5b552a20-5c21-405c-9b07-4b247b8305bd"/>
+            <column name="interview" value="winnie_forster_2003-01"/>
+            <column name="position" valueNumeric="43"/>
+            <column name="prefix" value="Winnie"/>
+            <column name="text" value="Das hat konzeptionelle Gründe -- um ein &quot;Werk&quot; zu realisieren braucht man einen festen Rahmen. Ursprünglich wollte ich sogar ein Buch NUR über Hardware machen und auf die dazugehörigen Spiele ganz verzichten. Da ich's aber ähnlich sehe wie Du (ohne Spiele hat die Hardware eigentlich keinen Wert &amp; nur wenig Faszination), beschloss ich, zumindest die wichtigsten Spiele abzubilden und zu empfehlen. Leider brachte das bei der Realisation eine Menge Zusatzaufwand: Neben der authentischen Hardware musste ich plötzlich auch historische Software akquirieren -- ächz. Insgesamt finde ich, dass nun fast schon etwas zuviel im Buch drinsteht, bin mit dem Ergebnis aber dennoch sehr zufrieden.&#10;Ein Buch über die &quot;beliebtesten Spiele&quot;? Das ist ein ganz anderes Konzept, ebenso sinnvoll wie der Gedanke einer Hardware-Bibel, aber anderen Rahmenbedingungen unterworfen."/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="5b8cdbe9-92b7-42b9-aa1e-fdf52b4c0c11"/>
+            <column name="interview" value="michael_hengst_2001-03"/>
+            <column name="position" valueNumeric="7"/>
+            <column name="prefix" value="Kultpower"/>
+            <column name="text" value="Bis wann hast Du für die Powerplay gearbeitet, und wie kam es zum Ende Deiner Powerplay-Karriere?"/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="5c6a0646-05de-4056-8d10-00424f226421"/>
+            <column name="interview" value="winnie_forster_2003-01"/>
+            <column name="position" valueNumeric="13"/>
+            <column name="prefix" value="Winnie"/>
+            <column name="text" value="Gut kam ich damit zurecht -- auch wenn viele Powerplay-Leser wahrscheinlich schockiert wären, wüssten sie was wirklich hinter den Kulissen abging ;-)"/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="5fe0f315-5c91-4929-a868-fb3e637878b3"/>
+            <column name="interview" value="harald_horchler_2006-05"/>
+            <column name="position" valueNumeric="5"/>
+            <column name="prefix" value="Kultpower"/>
+            <column name="text" value="Welche Pointe aus allen Starkiller-Folgen gefällt dir am besten?"/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="6058150a-4f4c-49de-9887-7f605aa2537b"/>
+            <column name="interview" value="rolf_boyke_2006-05"/>
+            <column name="position" valueNumeric="10"/>
+            <column name="prefix" value="Rolf"/>
+            <column name="text" value="Einige Bücher für kleinere Verlage, leider war kein Bestseller dabei. (Schnüff)"/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="628b32e9-93e7-4a95-be7b-84ae9ad1eaba"/>
+            <column name="interview" value="winnie_forster_2003-01"/>
+            <column name="position" valueNumeric="12"/>
+            <column name="prefix" value="Kultpower"/>
+            <column name="text" value="Für viele Leser der Powerplay war es früher ein Traum, Redakteur zu werden und mit dem Spielen sozusagen &quot;nebenbei&quot; Geld zu verdienen. War das bei dir ähnlich und wie kamst du in den ersten Monaten mit deiner neuen Tätigkeit als Redakteur einer Zeitschrift für Computerspiele zurecht?"/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="6321ce69-e950-4a7f-be49-b1943343445d"/>
+            <column name="interview" value="winnie_forster_2011-03"/>
+            <column name="position" valueNumeric="21"/>
+            <column name="prefix" value="Kultpower"/>
+            <column name="text" value="Kommen wir zu einem anderen Thema: Am 27. März diesen Jahres ist es genau 20 Jahre her, dass die erste Ausgabe der Zeitschrift &quot;Video Games&quot; erschienen ist. Zündest du eine Kerze (oder sogar 20 Kerzen) an?"/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="63360c20-e70a-47a2-bc21-682bda2b8986"/>
+            <column name="interview" value="winnie_forster_2008-12"/>
+            <column name="position" valueNumeric="8"/>
+            <column name="prefix" value="Winnie"/>
+            <column name="text" value="Wie bei GP1 sehe ich hinter GPX weniger eine Idee, als eine Notwendigkeit. Das Buch hat mir für meine Arbeit und für mein Videospiel-Hobby gefehlt. Ich wollte mir neben einem Katalog der Hardware auch endlich ein Lexikon der Computer- und Videospiel-Menschen ins Regal stellen. Und es anderen, die sich für Medium und Branche interessieren, zugänglich machen."/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="6caf8a7c-e292-4744-8e44-7a254a95d313"/>
+            <column name="interview" value="winnie_forster_2008-12"/>
+            <column name="position" valueNumeric="40"/>
+            <column name="prefix" value="Winnie"/>
+            <column name="text" value="äh... Genau weiss ich das nicht, und möchte jetzt auch keine versiegelten Kartons aufbrechen, um zu zählen. So viele Hefte wie Du, Gene, dürfte Gameplan nicht besitzen. Ich versuche exakt einen Satz aller Powerplay-Ausgaben und einen Satz aller Videogames (bis zum Abgang von Martin Gaksch &amp; Co.) zu halten."/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="6e699189-efbb-4c40-b52d-0924168038d3"/>
+            <column name="interview" value="winnie_forster_2003-01"/>
+            <column name="position" valueNumeric="31"/>
+            <column name="prefix" value="Winnie"/>
+            <column name="text" value="Alle, deren Interesse an Computer- &amp; Videospielen über die saisonale Beschäftigung hinausgeht. Wer ab und an mal ein Playstation-Spiel kauft (oder kopiert), wird mit dem Buch nichts anfangen können; wer schon seit Jahren (oder auf mehreren Geräten gleichzeitig) spielt, muss die &quot;Bibel&quot; haben ;-)"/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="6e95e4ca-7d80-428a-95d9-59af95930484"/>
+            <column name="interview" value="michael_hengst_2001-03"/>
+            <column name="position" valueNumeric="20"/>
+            <column name="prefix" value="Michael"/>
+            <column name="text" value="Klar habe ich das Dahinsiechen der PP mitverfolgt. Aber meiner Meinung nach war das Ende nicht abzuwenden. Die eigentliche Ursache liegt viel weiter zurück: Im Grunde starb die Power Play schon 1994/1995. Da sich die damalige Verlagsleitung außerstande sah, Verbesserungsvorschläge und Erweiterungen für die PP zuzulassen, wurde - meiner Meinung nach - schon damals das Grab geschaufelt. Das war auch einer der Gründe, warum ich mich dann entschlossen habe, zu gehen."/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="7135fe28-3dcc-4e36-924f-6fd7962c31a5"/>
+            <column name="interview" value="michael_hengst_2001-03"/>
+            <column name="position" valueNumeric="10"/>
+            <column name="prefix" value="Michael"/>
+            <column name="text" value="Einer meiner ersten Tests für die PowerPlay war &quot;Dragon´s Lair&quot; für den Amiga - schlappe 40 Punkte und ein &quot;4er&quot;-Gesicht (&quot;Na ja&quot;)... Dafür durfte ich zum Ausgleich in der gleichen Ausgabe (3/89) das Rollenspiel &quot;Legend of Blacksilver&quot; testen - 80 Punkte und ein &quot;Gut&quot;! Ich weiß noch, daß ich am Anfang beim Testen immer ein schlechtes Gewissen hatte - ich dachte, daß jeden Moment irgendeiner kommt und mich anbrummelt, weil ich da saß und spielte ;-)"/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="7249c6da-501a-4d26-908a-b1384f45d7e3"/>
+            <column name="interview" value="winnie_forster_2011-03"/>
+            <column name="position" valueNumeric="6"/>
+            <column name="prefix" value="Winnie"/>
+            <column name="text" value="Boris fertigte die erste Übersetzung von OtE an, korrigierte dabei ein paar Fehler, ergänzte und klärte diverse Ungenauigkeiten. Danach redigierte ich den deutschen Text und ging dabei ähnlich vor wie Boris: Unklarheiten wurden beseitigt, Details verbessert, ein paar Bezüge bezüglich des Spielemarkts ergänzt. Während dieser Zeit (2009 - 2010) entstanden auch die oben erwähnten Fotos: Die Hardware stellten bekannte Commodore-Sammler wie z.B. der Go64- und Retro-Magazin-Herausgeber Enno Coners, die Fotos selbst schoss wieder Christian Boehm, den ich lustigerweise als Playboy-Fotografen kennenlernte und der seit 2004 für alle Gameplan-Fotos verantwortlich zeichnet. &#10;Essentiell war der letzte Redaktions-Schritt, für den Gamepan weitere Profis ins Boot holte: Während ich technische Tabellen und Indices (die dem englischen Original ebenfalls fehlten) anfertigte, ging Ex-Powerplay- und -Man!ac-Mann Stephan Freundorfer, privat ein Sammler mit dem Spezialgebiet &quot;8-Bit&quot;, über den gesamten Text. Er fand eine dreistellige Zahl von Details, die der IT-ler Mustafa K. Isik und ich in mehreren Marathon-Sessions diskutierten und umsetzten. Mustafa und der Gameplan-Informatiker Silvestre Zabala prüften und präzisierten auch die zahlreichen technischen Erläuterungen in &quot;Volkscomputer&quot;. Unterm Strich ist somit auch &quot;Volkscomputer&quot; nicht das Werk eines Einzelnen, sondern die Kooperation vieler Hard- und Software-Spezialisten."/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="72de901e-5687-4194-9114-34bb8b3a95f0"/>
+            <column name="interview" value="winnie_forster_2003-01"/>
+            <column name="position" valueNumeric="41"/>
+            <column name="prefix" value="Kultpower"/>
+            <column name="text" value="Warum behandelst du in dem Buch hauptsächlich die Geräte? Stellen nicht viel mehr die beliebtesten Spiele die Geschichte der Computerspiele dar?"/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="7463b51a-0a86-4aca-88d0-d236eb17f3d9"/>
+            <column name="interview" value="rolf_boyke_2006-05"/>
+            <column name="position" valueNumeric="16"/>
+            <column name="prefix" value="Rolf"/>
+            <column name="text" value="Von mir gabs jede Menge Fotos in den verschiedenen Verlags-Heften: Immer, wenn der Photograph für einen Aufmacher einen Computer-Professor oder einen Computer-Knalldeppen brauchte, beides liegt ja sehr nah beieinander, durfte ich in die Kamera grinsen. Für bezahlte Modelle gabs kein Budget und mir hats riesig Spaß gemacht. Erkannt hat mich aber nie einer. (Grins)&#10;Allerdings gab es einmal so eine Geschichte auf der Buchmesse in Frankfurt. Es war so fünf Jahre nach Starkiller, da hatte ich zwei dicke Kinderbücher zum Thema Computer illustriert. Auf der Messe hat der Verlag die Bücher präsentiert und ich gab den Autogramm-August. Es kamen auch viele begeisterte Jugendliche und holten sich mein Autogramm. Aber sehr zur Verblüffung und zum Leidwesen meines Verlegers hat sich für die Kinderbücher keine alte Sau interessiert, alle wollten nur Starkiller und Trantor-Zeichnungen! (Hi-hi)"/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="75d03330-5304-48af-9adc-ad13a54bcac3"/>
+            <column name="interview" value="harald_horchler_2006-05"/>
+            <column name="position" valueNumeric="4"/>
+            <column name="prefix" value="Harald"/>
+            <column name="text" value="Bei der Suche nach &quot;neuem&quot; Stoff zur Veröffentlichung sind mir als altem Starkiller-Fan natürlich die Comics eingefallen. Allerdings hatte ich genau dafür keine Veröffentlichungsrechte, da diese damals bei Autoren und Zeichner geblieben sind. Also habe ich mit allen Beteiligten Kontakt aufgenommen und um Erlaubnis gebeten. Das hat mehrere Wochen gedauert, da ich sicherheitshalber noch bei Martin Gaksch und Anatol Locker nachgefragt habe. Die beiden sind zwar offiziell keine Autoren, haben aber einige Ideen zur Story beigesteuert. Heinrich hatte zunächst Bedenken wegen einer Neuveröffentlichung, hat sich dann aber von Rolf breitschlagen lassen, nachdem wir uns auf eine limitierte Auflage geeinigt haben."/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="79de5ea1-acbe-407a-933c-2de881089de3"/>
+            <column name="interview" value="winnie_forster_2005-06"/>
+            <column name="position" valueNumeric="16"/>
+            <column name="prefix" value="Winnie"/>
+            <column name="text" value="Mit dem Vertrieb von Büchern hat Heini nichts zu tun, sondern ist Autor für GP3. Seine Partnerin, die Publizistin Karen Ötzel, schmeißt die kaufmännische Seite von Gameplan Vancouver und ist für Logistik, Sales &amp; Marketing verantwortlich."/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="7c64ef22-b4a5-4fee-a02a-873a8978136f"/>
+            <column name="interview" value="michael_hengst_2001-03"/>
+            <column name="position" valueNumeric="8"/>
+            <column name="prefix" value="Michael"/>
+            <column name="text" value="Ich habe von 1989 bis Anfang 1995 bei der PP und der VideoGames gearbeitet. Aufgehört habe ich aus Frust über die Verlagsleitung. Monatelang hat die Redaktion Änderungswünsche und Verbesserungen am Heft geplant und immer wieder präsentiert. Dummerweise wurden alle Vorschläge abgeblockt - oft mit recht fadenscheinigen Begründungen. Da habe ich dann - ziemlich genervt - das Handtuch geworfen. Außerdem wollte ich einfach mal die andere Seite sehen. Nach einer kleinen Pause von knapp zwei Jahren in der Softwareindustrie habe ich dann im November ´96 wieder angefangen - in der naiven Hoffnung, doch noch was ändern zu können, aber da war es eh schon zu spät für die Rettung der PP. Dann wurde der Verlag gekauft, und die neue Ausrichtung gefiel mir überhaupt nicht."/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="7d5b73a9-a360-4adf-a1f1-4bd5947994e8"/>
+            <column name="interview" value="winnie_forster_2008-12"/>
+            <column name="position" valueNumeric="18"/>
+            <column name="prefix" value="Winnie"/>
+            <column name="text" value="Im Westen gibt es nach meinem Wissen noch kein Buch oder Nachschlagewerk zu Machern und Firmen. Einige der bekannten US-Video-Game-Bücher sind wesentlich &quot;Menschen-lastiger&quot; als GP1 oder GP2, aber auch Kent, Sheff, Kohler &amp; Co. beschäftigen sich mit den Machern nicht in geordneter Form, sondern in zusammengewürfelten Anekdoten. Online-Datenbänke wiederum sind ganz gut, wenn es um Infos zu amerikanischen Machern geht, aber schwach wenn man sich für eine japanische Firma oder gar für einen (historischen oder aktuellen) Entwickler aus einem &quot;Schwellenland&quot; interessiert. Auch bringt die freie Editierbarkeit von Online-Enzyklopädien inhaltliche Probleme, die Bücher oder andere Werke, für die ein Chefredakteur verantwortlich zeichnet, nicht haben. Während GPX im Westen wohl das erste Buch seiner Art ist, erscheinen in Japan regelmäßig Bücher und Mooks die sich mit dem Firmen und Personen der Branche befassen; entweder akkurate Übersichten über aktuell aktive Firmen oder aber Auswahlen mit Biografien &quot;historischer&quot; Spielmacher und Interviews; beides zusammen oder ein übergreifendes Lexikon, das Geschichte und Gegenwart verbindet, gibt’s afaik auch in Japan nicht. Ebenso wichtig wie die zeitliche Dimension ist Gameplan die räumliche Breite. Koreanische Software-Verbände berichten z.B. über regionale Macher, kümmern sich in ihren aufwendig gemachten &quot;Directorys&quot; aber natürlich nicht um andere Länder. Gameplan-Bücher versuchen unterschiedliche Zeiten und Regionen zusammenzufassen."/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="7d8ded82-0f31-451c-8aa3-8c260b2216ef"/>
+            <column name="interview" value="michael_hengst_2001-03"/>
+            <column name="position" valueNumeric="26"/>
+            <column name="prefix" value="Michael"/>
+            <column name="text" value="Ich glaube, daß ein Magazin immer nur so kompetent ist wie seine Redakteure. Und natürlich haben wir auch einige dicke Patzer auf dem Kompetenzkerbholz, wie beispielsweise &quot;Elite 2&quot; - ob wir also das &quot;kompetenteste&quot; Magazin waren, das es je gab? Ganz ehrlich: Ich weiß es nicht. Ich glaube, daß dies ein &quot;Gefühl&quot; ist, das auch deutlich mit der damaligen Zeit zusammenhing. Der Markt war kleiner, der Konkurrenzkampf nicht so stark wie heute."/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="7e16a67f-bbc9-4603-9e4c-f3ae3ed2d2f6"/>
+            <column name="interview" value="winnie_forster_2011-03"/>
+            <column name="position" valueNumeric="33"/>
+            <column name="prefix" value="Kultpower"/>
+            <column name="text" value="Und jetzt doch nochmal zurück zum Buch-Markt: Wann kommt endlich das ultimative Gameplan-Spiele-Werk? Ich warte seit Jahren darauf!"/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="826d2fb0-aa1f-4c21-88e7-3366361ae391"/>
+            <column name="interview" value="winnie_forster_2011-03"/>
+            <column name="position" valueNumeric="24"/>
+            <column name="prefix" value="Winnie"/>
+            <column name="text" value="Die Idee kam von Heinrich Lenhardt, der damals nicht mehr Powerplay-Chef war, sondern freier Mitarbeiter, und der sich mit VG wieder ein Standbein bei Markt &amp; Technik aufbauen wollte, nachdem er den Journalismus kurzzeitig Richtung Industrie (Sega) verlassen hatte. Heini sah den Sega- und Nintendo-Durchmarsch klar voraus und wollte für die Konsolen-Zukunft ein Medium schaffen. Stärkster Fürsprecher war sicherlich Martin Gaksch, damals der stellvertretende Chefredakteur der Power Play und Haupt der Konsolen-Fraktion innerhalb der Redaktion.&#10;Ich selbst war damals erst ein paar Monate bei Markt &amp; Technik, eigentlich ein Computer- nicht Joypad-User und eher zufällig im Konsolen-Lager gelandet; letzteres war unterbesetzt, so dass man mich noch in der Probezeit auf Sega und Nintendo ansetzte. Da es mir dort gut gefiel - Mega-Drive- und PC-Engine-Spiele waren viel stärker als die Software für den sterbenden Amiga - wollte ich natürlich bei Video Games dabei sein und wurde schließlich - als VG vom Sonder- zum regelmäßigen Heft befördert wurde - leitender Redakteur des Magazins."/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="82d3cbf2-6c54-4757-99ed-188c2baf5e46"/>
+            <column name="interview" value="winnie_forster_2008-12"/>
+            <column name="position" valueNumeric="19"/>
+            <column name="prefix" value="Kultpower"/>
+            <column name="text" value="Was für ein Gefühl ist es nun, das Buch fertiggestellt zu haben?"/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="83668046-9db5-4c6f-abad-f7c1c0a61548"/>
+            <column name="interview" value="winnie_forster_2003-01"/>
+            <column name="position" valueNumeric="5"/>
+            <column name="prefix" value="Kultpower"/>
+            <column name="text" value="Was für Computer- oder Videospiele waren deine Favoriten, bevor du Powerplay-Redakteur wurdest?"/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="83bc5b49-993b-4c56-a764-0cbee32f6908"/>
+            <column name="interview" value="winnie_forster_2005-06"/>
+            <column name="position" valueNumeric="28"/>
+            <column name="prefix" value="Winnie"/>
+            <column name="text" value="Wenn nur eins, dann lieber keins.&#10;Wenn ich das Glück hätte mit Begleitung auf der Insel zu sitzen &amp; diese Begleitung vielleicht weiblich wäre, wohl zwei Game Boys, Grundaustattung, Tetris und Link-Kabel. Kritisch wird's dann wenn nach 12 Stunden die Batterien ausgehen."/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="83d6b36f-3241-4801-bc3e-6d09f715193e"/>
+            <column name="interview" value="winnie_forster_2005-06"/>
+            <column name="position" valueNumeric="29"/>
+            <column name="prefix" value="Kultpower"/>
+            <column name="text" value="Diese Frage habe ich doch glatt beim letzten Interview vor 2 1/2 Jahren vergessen: Wirst du in der Öffentlichkeit als ehemaliger, beliebter Powerplay- bzw. Videogames-Redakteur wiedererkannt und angesprochen?"/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="844b7275-7c2e-4df8-a338-a5cdffda826f"/>
+            <column name="interview" value="michael_hengst_2001-03"/>
+            <column name="position" valueNumeric="15"/>
+            <column name="prefix" value="Kultpower"/>
+            <column name="text" value="Auf welches angekündigte Spiel mußtet Ihr in der Redaktion der PowerPlay am längsten warten?"/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="8505d4cd-9af5-4652-abab-5f61a708cd28"/>
+            <column name="interview" value="michael_hengst_2001-03"/>
+            <column name="position" valueNumeric="9"/>
+            <column name="prefix" value="Kultpower"/>
+            <column name="text" value="Erinnerst Du Dich noch an deinen ersten Testbericht für die PowerPlay?"/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="853a95e9-bb9f-45f8-879a-11d6ac4990a6"/>
+            <column name="interview" value="rolf_boyke_2006-05"/>
+            <column name="position" valueNumeric="25"/>
+            <column name="prefix" value="Kultpower"/>
+            <column name="text" value="Auf Kultpower.de dreht sich ja alles um alte Computer- und Videospiele. Hast du früher selber gerne am Computer oder an der Konsole gespielt? Wie sieht dein Interesse in diesem Bereich heutzutage aus?"/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="8575dee4-adae-4a60-a816-c2538aa3af53"/>
+            <column name="interview" value="winnie_forster_2003-01"/>
+            <column name="position" valueNumeric="37"/>
+            <column name="prefix" value=""/>
+            <column name="text" value="Über meine Shopping-Abenteuer könnte ich ein eigenes Buch schreiben"/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="86086bfd-4fba-482b-a5f1-5d700c1aa833"/>
+            <column name="interview" value="winnie_forster_2011-03"/>
+            <column name="position" valueNumeric="31"/>
+            <column name="prefix" value="Kultpower"/>
+            <column name="text" value="Was waren aus heutiger Sicht die Stärken und Innovationen der ersten Video Games-Ausgaben, was war eher verbesserungswürdig?"/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="8657307d-a50a-465f-83fe-d25df2cd94a5"/>
+            <column name="interview" value="michael_hengst_2001-03"/>
+            <column name="position" valueNumeric="13"/>
+            <column name="prefix" value="Kultpower"/>
+            <column name="text" value="Welches Computerspiel hat Dich rückblickend am meisten fasziniert?"/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="8660e2ea-04d6-4ac6-adb4-591d9b316615"/>
+            <column name="interview" value="rolf_boyke_2006-05"/>
+            <column name="position" valueNumeric="9"/>
+            <column name="prefix" value="Kultpower"/>
+            <column name="text" value="Welche Comics hat du vor der Entstehung von Starkiller gezeichnet?"/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="877b8175-0db0-4c95-bb99-9d1a724607e8"/>
+            <column name="interview" value="winnie_forster_2003-01"/>
+            <column name="position" valueNumeric="35"/>
+            <column name="prefix" value="Winnie"/>
+            <column name="text" value="Gute Frage, da muss ich kurz überlegen. Generell war kein System besonders knifflig, da ich mich seit Interton und VCS mit der Hardware beschäftigte und das Glück hatte, mit guten Leuten zusammenzuarbeiten und direkte Kontakte zu allen wichtigen Firmen nützen konnte. Reizvoll war die Recherche zum Hanimex/Arcadia, da die Erkenntnisse europäischer, amerikanischer und japanischer Sammler noch nicht zusammengeführt sind; eventuell ist das entsprechende Kapitel in meinem Buch die kompakteste und korrekteste Beschreibung dieses 80er-Jahre-Systems. Der Apple Mac war knifflig, da die &quot;Urzeit&quot; dieses Systems (1985 bis 1988) von den nachfolgenden Jahren, Hardware- und Software-Generationen völlig zugeschüttet ist. Es existieren unzählige Mac-Quellen, aber kaum eine die sich mit den monochromen Anfängen dieses Computers beschäftigt. Dagegen sind Atari-, Commodore-, Sega- und Nintendo-Geräte gut dokumentiert; zu all diesen System gibt's auch in Europa (zum Großteil sogar in meinem unmittelbaren Bekanntenkreis) Entwickler und Kaufleute, die mit diesen Geräten zu tun hatten."/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="884e5b62-85dc-48a0-8892-b9638659d5e6"/>
+            <column name="interview" value="winnie_forster_2005-06"/>
+            <column name="position" valueNumeric="17"/>
+            <column name="prefix" value="Kultpower"/>
+            <column name="text" value="War die Zusammenarbeit Heinis oder Deine Idee?"/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="8aac56da-d42e-4712-affd-fce3cacd7105"/>
+            <column name="interview" value="harald_horchler_2006-05"/>
+            <column name="position" valueNumeric="15"/>
+            <column name="prefix" value="Kultpower"/>
+            <column name="text" value="Du bist nicht selber als Autor tätig, sondern immer als Herausgeber. Wie gehst du generell vor, wenn du dir überlegst, was du als nächstes veröffentlichen könntest?"/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="8b77becc-70ac-47e8-a811-ce7b2ccd795a"/>
+            <column name="interview" value="winnie_forster_2005-06"/>
+            <column name="position" valueNumeric="27"/>
+            <column name="prefix" value="Kultpower"/>
+            <column name="text" value="Welche Spielekonsole (nur eine!) oder welchen Heimcomputer würdest du mit welchem Spiel (nur eins!) auf eine einsame Insel mitnehmen?"/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="8e36b485-67f5-45d7-af15-bd0917a1a416"/>
+            <column name="interview" value="winnie_forster_2005-06"/>
+            <column name="position" valueNumeric="24"/>
+            <column name="prefix" value="Winnie"/>
+            <column name="text" value="...ich halte seit fast 25 Jahren nichts anderes in den Händen...zumindest fast nichts anderes...als &quot;alte Spiele&quot; :-)&#10;Aber klar: Für GP3: Software arbeiten wir mit den &quot;Erstauflagen&quot; der Originalspiele, die auf Original-Hardware laufen. U.a. weil wir auch Verpackung, Cover-Art, Anleitung und Packungsinhalt betrachten, wenn wir ein Spiel fürs Buch unter die Lupe nehmen.&#10;Die GP3-Titel werden seit den 90er-Jahren gesammelt &amp; liegen komplett vor: Frühe Ultima-Rollenspiele mit Stoffkarten und fett ausgestattete Infocom-Originale, seltene Sega-Saturn-Sonderauflagen, C-64-Klassiker und japanische Famicom-Module in putzigen Miniverpackungen...ein Teil davon ist bereits in GP1.5 zu sehen, das neben neuen Hardware-Fotos auch mehr Bilder von Zubehör und OVP-Software enthält. Hier haben wir quasi für GP3 geübt."/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="8e42a888-ba79-4775-9592-e3d09731089b"/>
+            <column name="interview" value="winnie_forster_2005-06"/>
+            <column name="position" valueNumeric="4"/>
+            <column name="prefix" value="Winnie"/>
+            <column name="text" value="Viele, was eine Triebfeder hinter dem neuen Buch war. Nach Veröffentlichung des ersten Buchs erreichten mich mehrere konstruktive Mails pro Tag, so dass Leute wie die auf Seite 5 genannten (mir größtenteils persönlich gar nicht bekannten) Kritiker und Helfer, nicht nur daran schuld sind, dass GP1.5 gut wurde, sondern auch daran, dass es so lange dauerte.&#10;Nach zwei Jahren der fröhlichen Kommunikation mit Sammlern, Software-Gourmets und Hardware-Historikern schätze ich, dass 5 bis 10% meiner Leser Spiele-mäßig noch härter drauf sind als ich. Als Errata zu &quot;Spielkonsolen &amp; Heimcomputer&quot; erhielt ganze Diplom-- und Magisterarbeiten ... &#10;Den Input nachzurecherchieren und in Detailverbesserungen umzusetzen braucht Zeit. Hat Spaß gemacht, ich habe viel gelernt und viele schlaue Leute getroffen. Mit meinem Leserstamm bin ich zufrieden :-)"/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="8f142ac5-b540-435e-91bc-449f017c7467"/>
+            <column name="interview" value="michael_hengst_2001-03"/>
+            <column name="position" valueNumeric="12"/>
+            <column name="prefix" value="Michael"/>
+            <column name="text" value="Klar haben wir damals auch die ASM gelesen - wie die Kollegen auch die PowerPlay. Außerdem glaube ich, daß wir uns mit gesundem Respekt begegnet sind - auch wenn wir, wie heute die Magazine auch, nicht unbedingt immer einer Meinung waren und einige Sachen bei den Kollegen zum Schreien fanden."/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="8f4295dc-f16d-47f1-9a86-fd5f19679f01"/>
+            <column name="interview" value="winnie_forster_2008-12"/>
+            <column name="position" valueNumeric="22"/>
+            <column name="prefix" value="Winnie"/>
+            <column name="text" value="Die ganze Welt nicht, ab jene Regionen in denen 90% aller Spielmacher siedeln (USA und UK, Zentral-EU und Japan) besuchte ich, durchleuchtete Firmen und sprach mit Entscheidungsträgern und Kreativen. Manchmal nahm ich auch an internen Beratungen und Entwicker-Meetings teil, aber das geschah nicht explizit fürs Lexikon, sondern für andere Tätigkeiten in der Spielindustrie."/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="9022f892-d92a-4569-88f6-d927c89746b9"/>
+            <column name="interview" value="harald_horchler_2006-05"/>
+            <column name="position" valueNumeric="12"/>
+            <column name="prefix" value="Harald"/>
+            <column name="text" value="Ich denke, die Fanpost geht vor allem an Boris, Heinrich und Rolf. Allerdings habe ich nach der Ankündigung von Band 2 schon Nachfragen bekommen, wann der Band endlich erscheint und ob man ihn vorbestellen könne. Das motiviert natürlich zum Weiterarbeiten und hat sicher dazu beigetragen, dass die Bände schon erhältlich sind."/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="9085109d-9ad9-44cd-bab3-c49f73adcd6e"/>
+            <column name="interview" value="winnie_forster_2011-03"/>
+            <column name="position" valueNumeric="2"/>
+            <column name="prefix" value="Winnie"/>
+            <column name="text" value="Ich lernte das kanadische Buch noch während dessen Entstehung kennen - half Autor Brian Bagnall bei der finalen Redaktion - und fand die Masse an O-Ton-Aussagen, die Brian zusammentrug, faszinierend. Er sprach für sein Buch mit fast allen Chip- und System-Entwicklern von Commodore, sowohl mit der Ur-Generation um Chuck Peddle und dessen MOS-Technology-Kollegen, als auch mit den späten Ingenieuren, z.B. dem Amiga-Team um Jay Miner und R.J. Mical. &#10;Obwohl ich mich mit Commodore gut auskannte, erfuhr ich durch &quot;On the Edge&quot; eine Menge Neues über die frühen Jahre der PC- und Heimcomputer-Industrie und erhielt Antworten auf Fragen, die C64- und Amiga-User seit den 80er-Jahren beschäftigten. &#10;Kurz: Mir erschien Brians Buch als das bislang beste Werk zur PC-Frühgeschichte und zu Aufstieg und Fall der Firma Commodore. &#10;Gameplan erwarb die Rechte für eine deutsche Ausgabe aber nicht nur weil Brians Vorlage so gut war, sondern weil mir ad hoc auch Möglichkeiten einfielen, wie man es verbessern könnte. Unter anderem fehlten dem Originalbuch Fotos der Commodore-Geräte, so dass ich die Gelegenheit ergriff nicht nur das Gameplan-Archiv nach klassischer Hardware zu durchforsten, sondern im Zusammenspiel mit europäischen Sammlern auch nach seltenen Geräten zu graben, und nach Commodore-Hardware der Vor-Computer-Ära. Wir stöberten mechanische Schreibmaschinen mit Commodore-Logo auf, Kilo-schwere analoge Tischrechner, Exemplare der seltenen CBM-LED-Armbanduhren, den MOS-6502-bestückten Schach-Computer Chessmate, die Pong-Clones, die Commodore fertigte, einen C65-Prototypen. Kurz: Gameplan wollte das bereits sehr gute Brian Buch nicht einfach übersetzen, sondern auf der OtE-Grundlage ein neues Werk schaffen. Brians gründliche Recherche und Insider-Gespräche mit typischen Gameplan-Stärken zu verbinden - das hat mich gereizt."/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="916a7f8c-2c30-4cd6-a5c8-5070fec42bc6"/>
+            <column name="interview" value="rolf_boyke_2006-05"/>
+            <column name="position" valueNumeric="7"/>
+            <column name="prefix" value="Kultpower"/>
+            <column name="text" value="Die Comic-Strips basieren ja auf Texten von Heinrich Lenhardt und Boris Schneider. Wer ist denn eigentlich der ursprüngliche Erfinder der Starkiller-Figur?"/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="91dc7a5d-7f29-41b2-b9d3-6d799e54c09d"/>
+            <column name="interview" value="harald_horchler_2006-05"/>
+            <column name="position" valueNumeric="24"/>
+            <column name="prefix" value="Harald"/>
+            <column name="text" value="&quot;Schöpfer neuer Welten&quot;, dicht gefolgt von Boris Kretzingers &quot;Commodore Ð Aufstieg und Fall eines Computerriesen&quot;"/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="92b34520-e014-4cf1-b440-a2498163fe41"/>
+            <column name="interview" value="winnie_forster_2003-01"/>
+            <column name="position" valueNumeric="16"/>
+            <column name="prefix" value="Kultpower"/>
+            <column name="text" value="Zu welchen deiner früheren Kollegen hast du heute noch Kontakt?"/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="932fcbe0-3191-4e8a-a400-d4aa86cd471c"/>
+            <column name="interview" value="harald_horchler_2006-05"/>
+            <column name="position" valueNumeric="25"/>
+            <column name="prefix" value="Kultpower"/>
+            <column name="text" value="Seit dem neuesten Starkiller-Werk hast du die &quot;Edition Retrobooks&quot; (www.retrobooks.de) geschaffen. Was dürfen wir bei diesem wohlklingenden Namen als nächstes von dir erwarten?"/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="941e1bf6-de5c-4060-8b2e-47409262842a"/>
+            <column name="interview" value="winnie_forster_2008-12"/>
+            <column name="position" valueNumeric="13"/>
+            <column name="prefix" value="Kultpower"/>
+            <column name="text" value="Welche Begegnung ist dir besonders in Erinnerung geblieben?"/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="944bd5af-431e-422d-9080-c2e9ceb88fdf"/>
+            <column name="interview" value="harald_horchler_2006-05"/>
+            <column name="position" valueNumeric="3"/>
+            <column name="prefix" value="Kultpower"/>
+            <column name="text" value="Wie kamst du auf die Idee, die Starkiller-Comics auf Print-Medien zu veröffentlichen? Wie war der Kontakt zu Rolf, Heinrich und Boris?"/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="9521b8de-6748-4dbd-bf3e-5d596ac2c98b"/>
+            <column name="interview" value="michael_hengst_2001-03"/>
+            <column name="position" valueNumeric="27"/>
+            <column name="prefix" value="Kultpower"/>
+            <column name="text" value="Erkennen Dich die Leute auf der Straße wieder? :-)"/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="952a8344-be7a-4ab9-97a4-e37d90a30fad"/>
+            <column name="interview" value="rolf_boyke_2006-05"/>
+            <column name="position" valueNumeric="32"/>
+            <column name="prefix" value="Rolf"/>
+            <column name="text" value="Gerne."/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="956b3468-0cbc-4021-b029-483cdb1acd57"/>
+            <column name="interview" value="winnie_forster_2005-06"/>
+            <column name="position" valueNumeric="8"/>
+            <column name="prefix" value="Winnie"/>
+            <column name="text" value="Das ist je nach System verschieden. Für Geräte die nicht ordentlich oder stabil emuliert sind, sowie für alle DVD-Konsolen verwenden wir einen PC-basierten RGB-Grabber, deshalb sehen die Bilder besser aus als in den meisten Fachzeitschriften. Andere Fotos entstanden mit einer Spiegelreflexkamera direkt auf den Bildschirm. Bei einigen Systemen haben wir auch das Video-RAM ausgelesen, siehe z.B. die PSOne-Bilder auf der Doppelseite 158/159.&#10;Alle Bilder...ächz...wurden exklusiv für das Buch angefertigt; oder zumindest fast (siehe &quot;weitere Bilder&quot;-Nachweis auf S. 224)."/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="96691d8f-d8ab-4d84-a840-b3971ad39864"/>
+            <column name="interview" value="winnie_forster_2011-03"/>
+            <column name="position" valueNumeric="17"/>
+            <column name="prefix" value="Kultpower"/>
+            <column name="text" value="Hast du alle Geräte auftreiben können oder fehlt etwas ganz Seltenes?"/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="98391af7-8d8f-420b-8b80-079b6c9705e5"/>
+            <column name="interview" value="winnie_forster_2008-12"/>
+            <column name="position" valueNumeric="35"/>
+            <column name="prefix" value="Kultpower"/>
+            <column name="text" value="Gibt es neben dem Software-Buch noch weitere Projekte bzw. Bücher, an denen du arbeitest? Hast du schon wieder neue Ideen?"/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="993e4420-6bb7-4e97-b1da-f4ec057dc8e4"/>
+            <column name="interview" value="winnie_forster_2003-01"/>
+            <column name="position" valueNumeric="18"/>
+            <column name="prefix" value="Kultpower"/>
+            <column name="text" value="Inwieweit hat die Zeit bei Powerplay und Videogames deine weitere berufliche Laufbahn beeinflusst? Kannst du heute noch von deinen damaligen Erfahrungen profitieren?"/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="9a288b68-5a84-480c-a77b-eb54b625ed20"/>
+            <column name="interview" value="rolf_boyke_2006-05"/>
+            <column name="position" valueNumeric="2"/>
+            <column name="prefix" value="Rolf"/>
+            <column name="text" value="Ich jobbte seinerzeit in einem Schwabinger Buchladen: Es gab Comix, SF-Taschenbücher und Second-Hand-LPs, kurz: ein geniales Trivia-Paradies. Anatol Locker kam regelmäßig vorbei und holte sich die neuesten Franquin-Comix. Ich pinselte da schon neben meinem Verkäufer-Job Illustrationen für das C64-Magazin und die Happy und wechselte dann komplett über als der Verlag einen Layouter suchte. Dort gab es eine ganz besondere Stimmung: Alles war im Aufbruch, alle waren Technik-verliebt und alle verband die Begeisterung für Computer. Es gab viele Berufs-Quereinsteiger, vom Ballet-Tänzer, Pfarrer und Volontär bis zum tatsächlich gelernten Journalisten. So mancher begann als Praktikant, schrieb einen Artikel und war zwei Wochen später Redakteur für ein neu gegründetes Heft. (Kein Witz) &quot;."/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="9a79e7a5-c88e-4651-a95e-9ff6f46039a9"/>
+            <column name="interview" value="winnie_forster_2011-03"/>
+            <column name="position" valueNumeric="18"/>
+            <column name="prefix" value="Winnie"/>
+            <column name="text" value="Um &quot;alle Geräte&quot; ging es Gameplan nicht. Für unsere Foto-Strecke steckten wir uns zwei Ziele: Zum einen wollten wir natürlich die Klassiker und Bestseller von Commodore zeigen - das war easy. Zum anderen die vergessene CBM-Frühzeit - analoge Schreib- und Rechengeräte - ans Licht holen und gleichzeitig jene Geräte in die Hände bekommen und zeigen, die selbst für IT- und Game-Insider neu sind: Cool fand ich die LED-Uhren, die CBM in den späten 70er-Jahren vermarktete, froh bin ich auch, dass wir einen C65 - den sagenumwobenen C64-Nachfolger, der nie in Serie ging - für unser Buch akquirieren und fotografieren konnten. Unser &quot;Hardware-Museum&quot; soll eine repräsentative Auswahl aus 25 Commodore-Jahre zeigen - ich denke, das ist gelungen."/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="9bd9d49f-9a53-4d89-aefd-b73e019d85a9"/>
+            <column name="interview" value="winnie_forster_2008-12"/>
+            <column name="position" valueNumeric="42"/>
+            <column name="prefix" value="Winnie"/>
+            <column name="text" value="Ist das eine verschlüsselte Formulierung der &quot;Wie viel spielst Du privat?&quot;-Frage? Falls ja lautet die Antwort: Das wechselt mit Jahreszeit und - siehe oben - Wetter. Mehr als mit der PS3 beschäftigte ich mich 2009 mit Nintendo DS, auch um mit meiner Tochter zu spielen, die bei den harten &quot;Professor Layton&quot;-Rätsel nach Hilfe ruft. Stationär wechsel ich zwischen modern und alt; zuletzt liefen Mega Drive und Wii. &quot;Call of Duty 4&quot; habe ich natürlich gespielt, das zweite &quot;LocoRoco&quot; oder &quot;Patapon&quot; leider noch immer nicht "/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="9ca94c31-2bb1-4f64-9c2c-9e009a417eaa"/>
+            <column name="interview" value="winnie_forster_2005-06"/>
+            <column name="position" valueNumeric="25"/>
+            <column name="prefix" value="Kultpower"/>
+            <column name="text" value="Wirst du jedes Spiel &quot;durchspielen&quot;, bevor du darüber schreibst?"/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="9ec65a95-522f-49ad-a87c-e51db428dc7b"/>
+            <column name="interview" value="winnie_forster_2008-12"/>
+            <column name="position" valueNumeric="36"/>
+            <column name="prefix" value="Winnie"/>
+            <column name="text" value="Der Fahrplan für 2009 ist ziemlich klar: Nach GPX erscheint im Frühjahr die erweiterte 2009er-Ausgabe von &quot;Spielkonsolen&quot; (GP1). Im Frühsommer folgt die deutsche Fassung eines US-Buchs, das wir lokalisierten und durch Farbfotografie erweiterten (GPVC). Sowohl GP1 und GPVC sind seit 2007 in Arbeit und werden nun hintereinander fertig gestellt. Erst danach stehen GP3 und englische übersetzungen auf der Agenda. Auch hält Gameplan Ausschau nach guten englischsprachigen Büchern, die wir nach Deutschland bringen könnten, und nach guten Texten und Mansuskripten deutscher Autoren. Im Vergleich zu Japan sieht's im Westen immer noch ziemlich mau aus, was Videospiel-Fachliteratur und -Autoren angeht."/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="9f3e20bb-0d68-4c6f-925d-3827a69c8733"/>
+            <column name="interview" value="winnie_forster_2003-01"/>
+            <column name="position" valueNumeric="38"/>
+            <column name="prefix" value="Winnie"/>
+            <column name="text" value="Eigentlich bin ich kein Hardcore-Sammler, aber durch die Arbeit am Buch dann wohl doch zu einem geworden ;-)&#10;Wichtig war es mir, nicht verbastelte Hardware oder belanglose Neuauflagen sondern die authentische Ur-Hardware abzubilden -- die Suche nach korrekten Geräten wuchs im Verlauf meiner Arbeit zur Manie und führte mich rund um den Globus. Stellenweise habe ich's sicherlich übertrieben, z.B. schien mir das deutsche Super NES hässlich, obwohl es sich nur marginal vom japanischen Super Famicom unterscheidet -- also musste ich im Oktober noch mal nach Tokio um mir ein OVP-SFamicom zu holen, ebenso wie den ersten Saturn (silbern, nicht PAL-Schwarz), eine NEC FX etc. Über meine Shopping-Abenteuer könnte ich ein eigenes Buch schreiben, es gab eine Menge logistischer und technischer Probleme, aber auch viele Glücksmomente, z.B. als ich in Japan wegen eines defekten Fahrstuhl überraschend einen Laden entdeckte, in dem es die ersten Sega-Geräte in Originalverpackung gab, oder als ich bei einem ziellosen Tokio-Spaziergang kurz vor dem Rückflug plötzlich in einen Riesenflohmarkt stolperte. Dort wühlte ich in Sachen die ich bisher nur vom Hörensagen kannte und fand z.B. den raren Netzwerk-Adapter für das alte Famicom."/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="9fae0c40-c9a2-4390-b155-1e17b7cfdf0c"/>
+            <column name="interview" value="winnie_forster_2011-03"/>
+            <column name="position" valueNumeric="12"/>
+            <column name="prefix" value="Winnie"/>
+            <column name="text" value="Obwohl Commodore den PC-Markt aufbaute und in den 80er-Jahren mit VC 20, C64 und Amiga beherrschte, ist die Leistung dieser Firma heute in der breiten Öffentlichkeit nahezu vergessen. Das liegt daran, dass Commodore im Gegensatz zu z.B. Apple und Microsoft Mitte der 90er-Jahre recht unrühmlich verschwand und sich die Chronisten nach dem spontanen Exitus an Gates, Jobs und Co. - die überlebenden der &quot;Heim-Computer-Kriege&quot; - hielten. Besonders für deutsche User ist das befremdlich - hier waren &quot;Heimcomputer&quot; und &quot;Commodore&quot; in den entscheidenden Jahren 1982 - 1992 nahezu deckungsgleiche Begriffe, hiesige IT-Entscheidungsträger wuchsen nicht mit Apple 2 oder Sinclair Spectrum, sondern mit Brotkästen und Amiga auf. Auch ich erinnere mich, dass, als ich 1980 von der Grundschule ans Gymnasium kam, dort massive CBM-PET-Kisten standen; in der Mittelstufe saßen wir dann alle an C64- und C128-Rechnern. Commodore ist, gleichwohl eine amerikanische Firma, nicht zuletzt eine deutsche Erfolgsgeschichte. &#10;Sekundär rechtfertigte natürlich auch der internationale Commodore-Erfolg die Retrospektive: Z.B. wurde der erste Markt-beherrschende Internet-Provider AOL ursprünglich als C64-Netzwerk gegründet, der Linux-Erfinder Linus Torwalds lernte auf einem VC-20 das Programmieren, der heutige Nintendo-Präsident Satoru Iwata begann Anfang der 80er-Jahre als VC-20-Spieldesigner. Zu meiner Überraschung outeten sich mir gegenüber selbst japanische Playstation-Produzenten später als Amiga-User, z.B. wie &quot;Gran Turismo&quot;-Macher Kazunori Yamauchi oder Fumito Ueda, der mit Amiga 1200 und A4000 arbeitete, bevor er für Sony &quot;Ico&quot; und &quot;Shadow of the Collossus&quot;-schuf."/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="a2c1555c-c871-4d0f-8ace-e5b359286394"/>
+            <column name="interview" value="winnie_forster_2008-12"/>
+            <column name="position" valueNumeric="34"/>
+            <column name="prefix" value="Winnie"/>
+            <column name="text" value="GP3 ist unverändert in Arbeit. Das Buch wurde von GPX überholt und auch die GP1-Neuauflage sowie eine übersetzung aus dem englischen werden noch vor &quot;Software&quot; erscheinen. Ab Frühjahr 2009 wendet sich Gameplan diesem Buch wieder zu."/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="a442fd27-f48e-4aa5-8337-645e90af9383"/>
+            <column name="interview" value="harald_horchler_2006-05"/>
+            <column name="position" valueNumeric="17"/>
+            <column name="prefix" value="Kultpower"/>
+            <column name="text" value="Powerplay, ASM, Amiga Joker, Videogames... Das sind die &quot;magischen Worte&quot; für alle Kultpower-Leser. Welche Zeitschriften hat du früher gelesen?"/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="a444a5b2-c483-4d30-9324-d7d0a9026e1d"/>
+            <column name="interview" value="winnie_forster_2005-06"/>
+            <column name="position" valueNumeric="14"/>
+            <column name="prefix" value="Winnie"/>
+            <column name="text" value="Die US-Konkurrenz, von der Du sprichst, ist für mich auch in Deutschland vorhanden -- ich denke fast die Hälfte meiner Leser hat auch eines oder mehrere der namhaften US- oder UK-Bücher im Schrank (und GP1 damit vor oder nach dem Kauf verglichen).&#10;GP1 und GP1.5 hatte ich von Anfang an im Vergleich zu englischsprachigen Büchern konzeptioniert und geschrieben. Das ist z.B. der Grund, wieso als erstes Gameplan-Buch nicht eine konventionelle Historie erschien, wie z.B. S. Kent oder L. Herman in den USA, sondern so ein komischer Schinken über Hardware. Ich will Bücher, die sich kaum mit bereits erschienenen überschneiden.&#10;Einige der US- und UK-Bücher sind sehr gut (siehe GP1.5-Quellenverzeichnis), aber zwei Sachen waren mir wichtig, die in englischen Publikationen fehlen:&#10;Die Kombination aus hartem Text und vielen, exklusiven Bildern: Ähnlich wie oben für Deutschland skizziert ist ein Buch entweder grafisch schön, aber quasi Text-los, also ein reines Anschaubuch (z.B. Liz Fabers re:play[Amazon-Link]) oder der Text ist gut &amp; stark, dafür bekommt der Leser keines der beschriebenen Spiele zu sehen (z.B. S. Poole's Trigger Happy [Amazon-Link]). &#10;Kents Ultimate History [Amazon-Link] ist - gleichwohl die gegenwärtig stärkste Game-Historie im US-Buchhandel - ein Beispiel für beide Negativpunkte: Das Buch bespricht ein visuelles Medium auf 600 großzügig layouteten Seiten ohne ein einziges Farbfoto, ohne screenshots und ohne auch nur mal einen Joystick zu zeigen. Zweitens ist Kents Standpunkt US-zentrisch: Die starke UK-Industrie 1980 bis 1995 wird völlig übergangen, die Videospielgroßmacht Japan nur oberflächlich angerissen. Von Spielindustrie und -entwicklung in Frankreich oder Deutschland, Spanien oder Korea ist bei Kent nichts zu lesen. Kein &quot;Alone in the Dark&quot;, kein Blue Byte und kein .&quot;Micro Machines&quot;. Selbst Rare wird quasi als US-Firma beschrieben."/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="a48ac498-b3b5-4d68-ad74-0a93cd6e9e65"/>
+            <column name="interview" value="rolf_boyke_2006-05"/>
+            <column name="position" valueNumeric="18"/>
+            <column name="prefix" value="Rolf"/>
+            <column name="text" value="Die meisten Originale hab ich immer noch, bis auf einige wenige, die im dunklen Schlund der Repro-Hölle verschwunden sind. &#10;Die Zeichnungen hab ich ganz klassisch mit Filzer und Papier gemacht. Später hab ich am Macintosh coloriert."/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="a4c08f22-4cd5-4611-8717-9cb9700553f7"/>
+            <column name="interview" value="winnie_forster_2003-01"/>
+            <column name="position" valueNumeric="20"/>
+            <column name="prefix" value="Winnie"/>
+            <column name="text" value="Das Fundament für meine berufliche Laufbahn habe ich durch meine Non-Stop-Beschäftigung mit Medien während meiner Schulzeit selbst gelegt. Von Anatol, Heini &amp; Co. habe ich viel übers Schreiben und viel über den Umgang mit launischen Spiele-Geschäftsführern und Pressesprechern gelernt. Wie oben angedeutet: Dem Powerplay-Team fühle ich mich bis heute zu Dank verpflichtet."/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="a6745165-a4f7-46be-9ef1-cf193d03be45"/>
+            <column name="interview" value="winnie_forster_2005-06"/>
+            <column name="position" valueNumeric="20"/>
+            <column name="prefix" value="Winnie"/>
+            <column name="text" value="So wie es gegenwärtig aussieht, wird Heini nicht der einzige &quot;Promi&quot; im GP3-Autoren-Team. Von denen wenigen Profis, die imo in Deutschland in Frage kommen bzw. für so etwas Spezielles wie &quot;GP3: Software&quot; fundierte Texte liefern können und wollen, haben sich die meisten mittlerweile angemeldet.&#10;Noch sind das ungelegte Eier: Vorerst &amp; offiziell arbeiten nur Heini und ich am Software-Buch."/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="a8509895-2c1e-49d0-871e-a43084b97ca3"/>
+            <column name="interview" value="winnie_forster_2003-01"/>
+            <column name="position" valueNumeric="42"/>
+            <column name="prefix" value=""/>
+            <column name="text" value="Ein Buch über die 'beliebtesten Spiele' ist ebenso sinnvoll"/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="a860fda4-2a84-40b4-82b5-fc2bdfac898b"/>
+            <column name="interview" value="winnie_forster_2003-01"/>
+            <column name="position" valueNumeric="25"/>
+            <column name="prefix" value="Kultpower"/>
+            <column name="text" value="Was hat dich dazu veranlasst, ein Buch über die Geschichte von Spielekonsolen und Heim-Computern zu schreiben?"/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="a8eb2bbe-df97-4f16-8cab-5adaff92b19e"/>
+            <column name="interview" value="winnie_forster_2005-06"/>
+            <column name="position" valueNumeric="23"/>
+            <column name="prefix" value="Kultpower"/>
+            <column name="text" value="Wie sehen die Recherchen für das nächste Buch aus? Ich könnte mir vorstellen, dass du zum einen relativ viele alte Spiele erstmal in den Händen halten musst..."/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="a95a07f4-6aab-44da-b5c1-a3bb5a4c18b7"/>
+            <column name="interview" value="harald_horchler_2006-05"/>
+            <column name="position" valueNumeric="28"/>
+            <column name="prefix" value="Harald"/>
+            <column name="text" value="Beim direkten Vergleich fällt auf, dass gute Computerspiele nicht nur von Grafik und Musik leben, sondern vor allem durch gute Ideen und Konzepte. Meistens machen mir die Spiele von C64 und Amiga mehr Spaß als aktuelle PC-Spiele (bei Spielkonsolen kann ich allerdings nicht mitreden)."/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="a9ef8032-f856-446d-a399-95872a946b2d"/>
+            <column name="interview" value="rolf_boyke_2006-05"/>
+            <column name="position" valueNumeric="6"/>
+            <column name="prefix" value="Rolf"/>
+            <column name="text" value="Ich layoute Computerhefte: &quot;Notebook Organizer &amp; Handy&quot; und das &quot;Pocket-PC-Magazin&quot;. (Sehr technisch, sehr interessant)"/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="adadd3c2-fbb7-41f5-9636-6a588e5b3fce"/>
+            <column name="interview" value="winnie_forster_2008-12"/>
+            <column name="position" valueNumeric="16"/>
+            <column name="prefix" value="Winnie"/>
+            <column name="text" value="Ironischerweise sind Inhalte, die im Internet reichlich behandelt werden, journalistisch schwieriger als Nicht-Mainstream-Infos: Je mehr zu einem Menschen, Spiel oder einer Firma publiziert ist, desto kniffliger ist die Aufgabe, das Relevante und das Korrekte zu filtern, Fehler zu erkennen und überflüssiges Blabla oder gar Propaganda zu verwerfen. Eine Information, die Gameplan aus ersten Hand erhält, konnte ich in Biografien übernehmen. In dem Moment aber, in dem Fachpresse, Wikis, Spieledatenbänke und offizielle Pressemitteilungen durcheinanderquasseln und sich widersprechen, werden alle zusammen nutzlos. Neben den genannten Medien und persönlichen Kontakten nutze ich für GPX alte englische, amerikanische und japanische Fachzeitschriften, vergilbtes Papier mit Texten von Garriott, Bunten, Crawford &amp; Co. Manch Anno-1983-Electronic Games, CGW oder C&amp;VG löste sich unter meinen Händen auf, als ich das alte Papier vom Archiv ans Licht des Arbeitsplatz holte "/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="ae089a01-6780-415c-8bf5-a128b06179e4"/>
+            <column name="interview" value="winnie_forster_2008-12"/>
+            <column name="position" valueNumeric="15"/>
+            <column name="prefix" value="Kultpower"/>
+            <column name="text" value="Bei welchen Inhalten deines Buches waren die Recherchen am schwierigsten?"/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="afd8f6b8-e78b-4aef-8a31-226157897289"/>
+            <column name="interview" value="winnie_forster_2003-01"/>
+            <column name="position" valueNumeric="10"/>
+            <column name="prefix" value=""/>
+            <column name="text" value="Ultima III macht immer noch höllisch süchtig"/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="afdeb19e-f9f8-4616-a1e2-52d8b034c07f"/>
+            <column name="interview" value="harald_horchler_2006-05"/>
+            <column name="position" valueNumeric="27"/>
+            <column name="prefix" value="Kultpower"/>
+            <column name="text" value="Als Fachmann für &quot;Retro-Spiele&quot;: Wie würdest du aktuelle Computerspiele mit denen von &quot;früher&quot; vergleichen?"/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="b04384c3-425a-42bf-a47d-0c39bc96606d"/>
+            <column name="interview" value="rolf_boyke_2006-05"/>
+            <column name="position" valueNumeric="17"/>
+            <column name="prefix" value="Kultpower"/>
+            <column name="text" value="Bitte beschreibe uns, wie die Starkiller-Comics in der Powerplay und später im PC Player technisch entstanden sind. Existieren heute vielleicht noch &quot;Originale&quot; von damals?"/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="b17a5191-46f1-492e-8c12-a197eb275b39"/>
+            <column name="interview" value="winnie_forster_2011-03"/>
+            <column name="position" valueNumeric="32"/>
+            <column name="prefix" value="Winnie"/>
+            <column name="text" value="Eine Stärke der Ur-VG waren sicherlich die M&amp;T-typische Mischung aus Sachlichkeit und visionärem Weitblick. Für die frühe VG arbeiteten die in meinen Augen besten Leute: Heini, Martin, aber auch Freie wie der Factor-5-Gründer Julian. Das Team legte extrem strenge Maßstäbe z.B. bei der Bewertung von Spielen an, war international gut vernetzt und - etwas das in späteren Jahren bei vielen IT-Zeitschriften verloren ging - völlig unabhängig vom Anzeigengeschäft. Nach den Sonderausgaben kamen auch progressive Themen ins Heft: Ich schätze, dass wir z.B. die erste Redaktion waren, die über Anime-Filme berichtete. Für die Zukunft installierten wir im hinteren Heftteil eine neue Rubrik, die sich mit Echtzeit-3D &amp; VR, neue Speichermedien &amp; Multimedia beschäftigte. Wir waren auch das erste Heft das statt traditionellen Artworks Pixel aufs Cover brachte. Die Ausgabe 7/1992 nahm um Jahre vorweg, was heute alle Computer- und Videspiel-Hefte machen."/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="b1f37161-484d-4b90-bfef-27f43093e60c"/>
+            <column name="interview" value="winnie_forster_2003-01"/>
+            <column name="position" valueNumeric="11"/>
+            <column name="prefix" value="Winnie"/>
+            <column name="text" value="Auf dem PC spiele ich fast nur &quot;Counterstrike&quot;, auf den Konsolen querbeet: Cool sind &quot;Jet Set Radio&quot;, die &quot;Gran Turismo&quot;-Spiele, Konamis &quot;Dracula X&quot; auf PC-Engine und Playstation, das SNES-&quot;Starfox&quot; (für das die englischen 3D-Veteranen Argonaut die Technik lieferten), Nintendos &quot;Fire Emblem&quot;, auf der Xbox z.B. &quot;Halo&quot;...zu viel um alles hier aufzuzählen.&#10;Als Mehrspieler-Titel halte ich das erste &quot;Bomberman&quot; sowie z.B. &quot;Virtua Tennis&quot; auf dem Dreamcast für ungeschlagen. Durch die Arbeit an meinem Buch habe ich auch ein paar alte Sachen wieder rausgekramt: &quot;Ultima III&quot; macht immer noch höllisch süchtig, ebenso die Jump´n-Run-Oldies &quot;Manic Miner&quot; und &quot;Miner 49er&quot;."/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="b1f8db0d-fa3b-40c7-991a-7c668c54c1eb"/>
+            <column name="interview" value="rolf_boyke_2006-05"/>
+            <column name="position" valueNumeric="31"/>
+            <column name="prefix" value="Kultpower"/>
+            <column name="text" value="Rolf, vielen Dank für dieses Interview, danke für Starkiller und alles Gute! Vielleicht sehen wir dich ja hier auf Kultpower.de in Zukunft bei Diskussionen mit Starkiller-Fans wieder :-)"/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="b2182f53-a16e-49d4-a87a-94f86c480c84"/>
+            <column name="interview" value="winnie_forster_2005-06"/>
+            <column name="position" valueNumeric="12"/>
+            <column name="prefix" value="Winnie"/>
+            <column name="text" value="Diese Leser sollten's nicht kaufen imo, wenn sie das Gefühl haben, zu wenig Mehrwert zu erhalten.&#10;Auf der einen Seite ist der Preis der beliebteste Diskussionspunkt (zumindest jener die das Buch noch nicht besitzen), auf der anderen Seite glaube ich nicht, dass er eine Rolle spielt: Ich habe das Gefühl, dass die meisten Spieler merken und wissen, dass in jedes Gameplan-Buch maximaler Aufwand gesteckt wird, und zwar in jedem Bereich - Text, Bilder, Layout, Druck - und das honorieren (zumindest nachdem sie das Buch geblättert haben ;-) &#10;Unbescheiden ausgedrückt: Ich kenne kein fundiertes Fachbuch dass für 24.80 eine ähnliche Ausstattung besitzt. Paradoxerweise läuft das meist so: Je größer ein Verlag, desto billiger, trashiger und oberflächlicher sind seine Sachbücher. Die teuren &amp; riskanten Sachen machen dann meistens die &quot;Kleinen&quot;. Sieh Dir die Ausstattung der dt. C.- &amp; V.-Spielbücher mal an, Heise, Eichborn, Schwarzkopf &amp; Schwarzkopf sind alles recht dicke Verlage, ihre Werke sind aber kaum besser ausgestattet als eine Schülerzeitung. Data Becker und Taschen tragen wiederum allerhand Bildmaterial zusammen, aber ohne davon ein Bild selbst zu knippsen oder eine eigene Grafik anzufertigen. Ich habe nicht das Gefühl, dass für diese Bücher ein alter Computer gewuchtet, geöffnet oder gar angeschaltet worden ist. &#10;Beide Modelle - viel Text, aber keine harten Facts, Fotos, Icons, Grafiken oder Tabellen, oder aber dicke Bilderbücher ohne Lesewert - habe ich mir genau angesehen; für Gameplan kommt keines von beiden in Frage. Meine Kosten und der Preis für den Leser sind zwei wichtige Faktoren, aber eben nicht ganz so wichtig wie Inhalt und Qualität.&#10;Gameplan-Bücher so preisgünstig für den Leser wie möglich, aber die Qualität möchte ich nicht herunterfahren, nur um einen Geiz-ist-geil-Preis draufzudrucken (und zu hoffen dass genügend Leute auf einen 13,80-Schnellschuss reinfallen)."/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="b33ced66-666f-49f0-93ed-0335ff8effc9"/>
+            <column name="interview" value="michael_hengst_2001-03"/>
+            <column name="position" valueNumeric="34"/>
+            <column name="prefix" value="Michael"/>
+            <column name="text" value="Nein, glaube ich nicht. Die Übermacht von PC- und Konsolensystemen wie PSX2, X-Box usw. ist einfach zu groß. Die Zeiten von Amiga und auch anderen Systemen ist definitiv vorbei - selbst wenn es &quot;nur&quot; um das Betriebssystem geht."/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="b34da0cb-5999-4878-b629-7de58bd43d8d"/>
+            <column name="interview" value="rolf_boyke_2006-05"/>
+            <column name="position" valueNumeric="4"/>
+            <column name="prefix" value="Rolf"/>
+            <column name="text" value="Ich war ja schon viele Jahre dabei und es war einfach mal Zeit für eine Veränderung. Ich bin zum ICP-Verlag und hab dort das erste PC-Player-Heft für Heinrich Lenhard layoutet. Da gings dann auch lustig weiter mit Starkiller, diesmal komplett in Farbe. (Hurra)"/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="b3a3fceb-69d6-4373-88b6-c7cd13366ab6"/>
+            <column name="interview" value="winnie_forster_2003-01"/>
+            <column name="position" valueNumeric="9"/>
+            <column name="prefix" value="Kultpower"/>
+            <column name="text" value="Was für Spiele begeistern dich heute?"/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="b4a67d63-a29a-454c-9ef6-f7ddb7b8c644"/>
+            <column name="interview" value="winnie_forster_2003-01"/>
+            <column name="position" valueNumeric="34"/>
+            <column name="prefix" value="Kultpower"/>
+            <column name="text" value="Zu welchem Gerät, das im Buch beschrieben wird, waren die Recherchen am schwierigsten?"/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="b6d00ed9-d62e-47cb-8f76-ac72d4e70c55"/>
+            <column name="interview" value="harald_horchler_2006-05"/>
+            <column name="position" valueNumeric="6"/>
+            <column name="prefix" value="Harald"/>
+            <column name="text" value="Eine Lieblingspointe habe ich eigentlich nicht. Allerdings gefallen mir vor allem die frühen Folgen - beispielsweise Doc Bobo bei den versklavten Programmierern, die gezwungen werden, langweilige und unlösbare Billigspiele zu schreiben... Aber auch die Farbepisode mit Bill Bates, der schließlich durch einen umprogrammierten Terminator ersetzt wird, finde ich sehr gut."/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="b76721c1-46ff-44e6-9d0a-cb422471d8d8"/>
+            <column name="interview" value="winnie_forster_2005-06"/>
+            <column name="position" valueNumeric="2"/>
+            <column name="prefix" value="Winnie"/>
+            <column name="text" value="Für neue Kapitel und die Erweiterung fast aller bisherigen Kapitel waren sechs Vollzeit-Monate Redaktion und eine dreimonatige Layout-Phase geplant. Nicht zuletzt wegen der Übersetzung ins Englische &amp; Co. wurden es acht Monate - bis ca. Februar 2005. &#10;Vor der redaktionellen Phase verbrachte ich sechs Wochen mit der Akquisition der noch fehlenden Hardware (fand in Tokio z.B. noch ein SG-1000 und ein Epoch Cassettevision) sowie mehreren Foto-Shootings mit Christian Boehm, dessen Studio über Wochen wie ein Computer- und Spiele-Museum aussah. Bei zwei der Shooting war oldbits's Frank Salomon dabei, um seine exotischsten Stücke selbst ins Studio zu schleppen und &quot;anzurichten&quot;."/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="b84fb3e2-6865-4db3-b011-e5f7a894872b"/>
+            <column name="interview" value="winnie_forster_2011-03"/>
+            <column name="position" valueNumeric="5"/>
+            <column name="prefix" value="Kultpower"/>
+            <column name="text" value="Boris wird als Übersetzer angegeben, du als Herausgeber. Wie war genau eure Arbeitsteilung und wer hat sonst noch mitgewirkt?"/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="b94d16ec-9fef-4630-a95c-a3693ea27dae"/>
+            <column name="interview" value="winnie_forster_2008-12"/>
+            <column name="position" valueNumeric="37"/>
+            <column name="prefix" value="Kultpower"/>
+            <column name="text" value="Was machst du momentan so, wenn du nicht gerade an einem Buch arbeitest?"/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="b9a21117-aef0-46e8-af10-84914aa0e1cb"/>
+            <column name="interview" value="winnie_forster_2008-12"/>
+            <column name="position" valueNumeric="12"/>
+            <column name="prefix" value="Winnie"/>
+            <column name="text" value="Knapp die Hälfte der Porträtierten traf ich persönlich, mit einem Drittel tauschte ich Mails. Ein paar der Macher wie z.B. den 1997 verunglückten Game-Boy-Erfinder Gunpey Yokoi hatte ich leider nie persönlich getroffen oder gesprochen."/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="b9fe98f2-0c82-4cfd-965c-63b2cd413261"/>
+            <column name="interview" value="rolf_boyke_2006-05"/>
+            <column name="position" valueNumeric="1"/>
+            <column name="prefix" value="Kultpower"/>
+            <column name="text" value="Hallo Rolf. Super, dass du für Kultpower.de dieses Interview durchführst!&#10;Powerplay-Fans der ersten Stunde kennen dich als Zeichner der Starkiller-Comics. Könntest du wohl kurz erklären, wie du damals zur Happy Computer bzw. Powerplay gekommen bist und was deine Aufgaben dort waren?"/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="ba710d6e-ce0e-4abd-82bb-496dbba99a98"/>
+            <column name="interview" value="winnie_forster_2003-01"/>
+            <column name="position" valueNumeric="22"/>
+            <column name="prefix" value="Winnie"/>
+            <column name="text" value="Quatsch, die Spiele waren früher nicht besser oder innovativer als heute. Schon damals kamen auf 50 Clones, Sequels und Rip-Offs vielleicht 5 gute sowie ein herausragendes Spiel. Klar hat man im Zeitalter von 3D-Beschleunigern &amp; DVD den Eindruck, dass audiovisueller Aufwand Spielidee &amp; -mechanik erschlägt. Aber machen wir uns nichts vor: Auch 1980, 1985 oder 1990 waren alle nur hinter &quot;noch besserer&quot; Optik &amp; Technik her -- daran hat sich nichts geändert.&#10;Aber auch umgekehrte Aussagen (&quot;Die Spiele wurden immer besser, alte Software ist rückständig&quot;) ist IMO falsch: &quot;Defender&quot;, &quot;Bomb Jack&quot;, &quot;Tetris&quot;, &quot;Lemmings&quot;, &quot;Civilization&quot; machen genauso viel Spaß wie ein modernes &quot;Halo&quot; oder &quot;Vice City&quot;. Warum sollten Spiele auch generell besser oder schlechter werden? Ein Fritz-Lang-Film ist heute noch meisterhaft -- ganz ohne Stimmen, ein Orson-Welles-Streifen trotz Schwarz-Weiß-Optik, der erste &quot;Star Wars&quot; auch ohne Computer-Effekte."/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="bad941b9-8b10-4267-9041-38a244319903"/>
+            <column name="interview" value="winnie_forster_2005-06"/>
+            <column name="position" valueNumeric="18"/>
+            <column name="prefix" value="Winnie"/>
+            <column name="text" value="Ich schrieb Heini vor Jahren mal an und skizzierte ihm die geplanten Bücher. Er hatte damals Interesse, kam aber erst Anfang 2005 mit einem &quot;Los geht's!&quot; auf mich zu. Das hat zeitlich gut gepasst."/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="bb4b2fe8-2d3d-4ac3-976b-cdeb2e797dc4"/>
+            <column name="interview" value="winnie_forster_2005-06"/>
+            <column name="position" valueNumeric="22"/>
+            <column name="prefix" value="Winnie"/>
+            <column name="text" value="Die Arbeit an GP3 begann bereits vor dem Hardware-Buch und wurde dann für GP1, GP2 und GP1.5 zurückgestellt. Das Konzept steht, 20 Kapitel sind bereits getextet, bebildert und layoutet, die dienen quasi als Blaupausen für das Groß der Kapitel, das wir im Spätsommer ins Layout verschieben. &#10;GP3 und GPX werden redaktionell also parallel zur US- und UK-Vermarktung von GP1.5, angeschoben. Bei GP3 sehe ich mich ganz unerwartet der Herausforderung gegenüber, ein größeres und rundum den Globus verteiltes Redaktions-Team zu koordinieren...ächz. Gegenwärtig arbeiten vier Autoren an GP3."/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="bda25af9-3e6b-4411-8792-5bfbc516331d"/>
+            <column name="interview" value="harald_horchler_2006-05"/>
+            <column name="position" valueNumeric="16"/>
+            <column name="prefix" value="Harald"/>
+            <column name="text" value="Auf dem Webshop des Verlags gibt es eine Umfrage, welche Themen die Leute am meisten interessieren. Außerdem hatte ich auch schon mal eine Umfrage zur Themenwahl mit einem Gewinnspiel in der GO64! Danach richte ich mich. Außerdem suche ich immer nach Autoren, die zu Themen aus dem Retrocomputing-Bereich schreiben wollen oder schon geschrieben haben. Deshalb an dieser Stelle ein Aufruf: Wer an der Thematik &quot;Retrocomputing&quot; Interesse hat und dazu etwas schreiben möchte oder bereits geschrieben hat, kann sich gern bei mir melden! Wenn ein Buch daraus wird, bekommt ihr ein branchenübliches Honorar pro verkauftem Buch (Unkosten entstehen euch sowieso keine)."/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="bfe67cc2-e076-43c2-a095-9d994cb8c243"/>
+            <column name="interview" value="michael_hengst_2001-03"/>
+            <column name="position" valueNumeric="11"/>
+            <column name="prefix" value="Kultpower"/>
+            <column name="text" value="Habt Ihr in der Redaktion der Powerplay das &quot;Konkurrenzblatt&quot; ASM gelesen und dessen Entwicklung beobachtet? Wie fandet Ihr die ASM?"/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="c08ed2f9-7480-4780-a3d8-af415a6dda45"/>
+            <column name="interview" value="michael_hengst_2001-03"/>
+            <column name="position" valueNumeric="33"/>
+            <column name="prefix" value="Kultpower"/>
+            <column name="text" value="Als Amiga-Freak würde mich interessieren, was Du von der Entwicklung bei Amiga hältst. Meinst Du, das plattformübergreifende neue AmigaOS wird sich auch nur ein wenig auf dem Markt behaupten können?"/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="c0bf5655-2b12-465f-a14f-0e6796d50bab"/>
+            <column name="interview" value="winnie_forster_2005-06"/>
+            <column name="position" valueNumeric="30"/>
+            <column name="prefix" value="Winnie"/>
+            <column name="text" value="Ab und zu von einem Sebastian. Sonst eher nicht."/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="c1181985-dc1c-46c0-a8d2-cf493ea32d46"/>
+            <column name="interview" value="winnie_forster_2011-03"/>
+            <column name="position" valueNumeric="8"/>
+            <column name="prefix" value="Winnie"/>
+            <column name="text" value="Neu sind die oben angeführten Elemente: Farbfotos, technische Tabellen zu Commodores 8- und 16-Bit-Geräten, ausführliche Indices für Personen, Firme und Spiele. Verbessert wurde der gesamte Text, wobei wir 2010 auch noch die Korrekturen einarbeiteten, die Brian selbst für seine zweite kanadische Auflage recherchierte und sammelte."/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="c1d61125-efca-4711-8b1a-0d23b67cdbae"/>
+            <column name="interview" value="michael_hengst_2001-03"/>
+            <column name="position" valueNumeric="38"/>
+            <column name="prefix" value="Michael"/>
+            <column name="text" value="Ich habe seit über drei Jahren meine eigene Firma (mit drei anderen zusammen). Die Firma nennt sich &quot;Das Trickwerk&quot;, und wir machen z.B. Lösungsbücher für Eidos oder Nintendo. Außerdem machen wir sehr viele &quot;Pressehefte&quot; - also Erstellung und Gestaltung von Pressematerial für Spiele - z.B. für Vivendi Universal (ehemalig Havas). Außerdem haben wir ein eigenes Test-Magazin für DVDs (so ganz ohne Verlagstätigkeit geht's halt nicht), und zwar die &quot;DVD-Home&quot;. Wie in guten alten Zeiten testen wir hier Software - zwar keine Spiele, aber Filme, die auf DVD erscheinen. Das Heft (so viel Eigenwerbung muß sein) gibt's an ausgewählten Kiosken oder direkt beim Trickwerk. Ansonsten haben wir letztes Jahr versucht, ein Spiele-Entwickler-Heft zu machen - für zwei Ausgaben machten wir die deutsche Lizenzausgabe des &quot;Game Developer&quot;. Das Echo war super, nur war die Industrie noch nicht bereit, das Heft finanziell mit Anzeigen zu stützen. Also mußten wir es wieder einstampfen. Schade, schade."/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="c3150b71-8cc6-4fb4-9b31-99f9ee5e8dec"/>
+            <column name="interview" value="michael_hengst_2001-03"/>
+            <column name="position" valueNumeric="29"/>
+            <column name="prefix" value="Kultpower"/>
+            <column name="text" value="Hast Du noch Kontakt zur &quot;alten PowerPlay-Familie&quot; (Boris Schneider, Heinrich Lenhardt,...) ?"/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="c41e52ff-4db6-4f88-a946-b914f5ade634"/>
+            <column name="interview" value="rolf_boyke_2006-05"/>
+            <column name="position" valueNumeric="12"/>
+            <column name="prefix" value="Rolf"/>
+            <column name="text" value="Normalerweise interessiert es die Geschäftsleitung nicht, ob ein Comix im Heft ist. Ausschlaggebend ist, daß der Chefredakteur das will. übrigens, der bärtige Typ, der von Trantor regelmäßig abgefackelt wurde, stand für den damaligen Geschäftsführer Michael Scharfenberger. Der hat uns mit viel Humor ertragen. (Eine Menge Leute aus dem Verlag hatten Gastauftritte, grins)"/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="c5be80fd-d6b8-4217-a5a2-daa633983844"/>
+            <column name="interview" value="rolf_boyke_2006-05"/>
+            <column name="position" valueNumeric="3"/>
+            <column name="prefix" value="Kultpower"/>
+            <column name="text" value="Wann hast du das Powerplay-Team verlassen und was war der Anlass dazu?"/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="c610eb56-a390-4d7d-99e5-93a768ad6caa"/>
+            <column name="interview" value="winnie_forster_2008-12"/>
+            <column name="position" valueNumeric="26"/>
+            <column name="prefix" value="Winnie"/>
+            <column name="text" value="Die Bücher ließen sich leicht verkaufen und fanden international wie in Deutschland eine gute Aufnahme. Trotzdem war &quot;Encyclopedia of Game.Machines&quot; eher ein Erfahrungs- als Geldgewinn. Mit Versand und Verschiffung, Steuer, Zoll und internationalem Geldverkehr beschäftigte ich mich für Game.Machines erstmals global, ächz. Die meisten der 5000 englischen Bücher landeten in den USA: Der Dollar stand im VK-Zeitraum historisch tief (und stieg erst wieder, als dort das letzte Buch verkauft war , gleichzeitig war die US-Verschiffung maximal teuer und wg. paranoider US-Einfuhrbestimmungen (bis hin zum Material der Paletten) umständlich; pro Buch blieb nicht viel Gewinn hängen, wenn man Aufwand und Nebenkosten abzieht. Unbezahlbar sind natürlich die neue Erfahrung, international zu vermarkten, sowie die netten Menschen und starken Kontakte, die Gameplans erste übersetzung rund um den Globus aktivierte."/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="c64ded36-3345-4850-bf8e-c49f10849e9e"/>
+            <column name="interview" value="winnie_forster_2003-01"/>
+            <column name="position" valueNumeric="21"/>
+            <column name="prefix" value="Kultpower"/>
+            <column name="text" value="Viele sind der Meinung, dass Computer- und Videospiele früher innovativer waren und die Spieler wesentlich länger motivieren konnten. Wie siehst du die Entwicklung von Spielen und deren Qualität?"/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="c7231a14-f50b-48fa-84a1-916c52ed2f8b"/>
+            <column name="interview" value="harald_horchler_2006-05"/>
+            <column name="position" valueNumeric="23"/>
+            <column name="prefix" value="Kultpower"/>
+            <column name="text" value="Welches deiner Bücher wurde bislang am besten verkauft?"/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="c7e79836-a231-430f-8b9b-a0f8983a467e"/>
+            <column name="interview" value="harald_horchler_2006-05"/>
+            <column name="position" valueNumeric="9"/>
+            <column name="prefix" value="Kultpower"/>
+            <column name="text" value="Woher stammen eigentlich die Cover der beiden neu erschienenen Strkiller-Bände? Hat da der &quot;Meister&quot; Rolf Boyke für dich den &quot;Pinsel&quot; wieder in die Hand genommen?"/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="cbb66b7d-eef9-4438-9ffe-3949cac8e79f"/>
+            <column name="interview" value="winnie_forster_2008-12"/>
+            <column name="position" valueNumeric="20"/>
+            <column name="prefix" value="Winnie"/>
+            <column name="text" value="Nachdem Gameplan bislang nur alle paar Jahre ein Buch veröffentlichte, ist jede Fertigstellung etwas ganz Besonderes  So richtig gut fühle ich mich jetzt, wo die Daten im Druck sind, noch nicht. Erst wenn die fertigen Bücher ausgeliefert wurden, vor mir liegen und OK sind, wird sich meine &quot;Hoffentlich geht nix mehr schief!&quot;-Paranoia in zufriedene Gelassenheit verwandeln."/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="cbc147a4-9ad5-43a9-964f-bf339b748ef1"/>
+            <column name="interview" value="winnie_forster_2005-06"/>
+            <column name="position" valueNumeric="21"/>
+            <column name="prefix" value="Kultpower"/>
+            <column name="text" value="Wir Computer-Spieler von &quot;damals&quot; warten schon ungeduldig: Wie weit bist du mit der Arbeit an GP3: Software?"/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="cd5fd5fd-90e2-46a8-af21-cc12d274def4"/>
+            <column name="interview" value="winnie_forster_2008-12"/>
+            <column name="position" valueNumeric="14"/>
+            <column name="prefix" value="Winnie"/>
+            <column name="text" value="Eigentlich wollte ich ich diese Frage mit einem &quot;Jede Begegnungen blieb in Erinnerungen!&quot; abtun, aber ein GPX-Ereignis gab's doch, das mich besonders berührte: Ein englischer Programmierer, der mir für das Lexikon biografische Daten und Infos zu seinen Firmen lieferte, trat ein Jahr nach unserer Kommunikation per eMail auf mich zu: Ob GPX nun gedruckt, seine Biografie erschienen sei? Ich war überrascht, da sich internationale Kontakte, selbst wenn sie bei Gameplan-Inhalten helfen, gewöhnlich nicht für die deutschen Bücher interessieren, Gameplan zwar unterstützen, bislang aber nie nach einem dt. Belegexemplar fragten. Den Engländer vertröstete ich auf Ende 2008, wofür er sich bedankte. Zwei Monate später erfuhr ich von seinem Tod; seine fatale Diagnose sei ihm schon lange bekannt gewesen. Ich verstand, dass sein Nachfragen einen anderen Grund hatte als z.B. das Drängeln ungeduldiger Leser, die auf GP3 warten. Er wollte nicht wissen, wann der ihn betreffende Text erscheint, sondern ob er noch rechtzeitig erscheint, ob er die Würdigung seiner Person noch erleben würde."/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="ce2e2672-15c2-4d20-8b88-b4e5e5c739cf"/>
+            <column name="interview" value="winnie_forster_2011-03"/>
+            <column name="position" valueNumeric="13"/>
+            <column name="prefix" value="Kultpower"/>
+            <column name="text" value="Kennst du eine oder mehrere der entscheidenden Commodore-Persönlichkeiten persönlich? Vielleicht durch deine Recherchen zum Spielemacher-Buch?"/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="cee8646f-25f2-45a8-b6d4-f1606a7d5ead"/>
+            <column name="interview" value="rolf_boyke_2006-05"/>
+            <column name="position" valueNumeric="14"/>
+            <column name="prefix" value="Rolf"/>
+            <column name="text" value="Space-Rat bei der ASM hat viele Fans und ich sehe das auch als Bereicherung der Computer-Comix-Szene. Seine neuer Stil als TIKWA gefällt mir zwar viel besser, aber ich habe immer noch ein altes signiertes Space-Rat-Buch."/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="cfc408c4-5c16-4adb-8abe-9b146d155970"/>
+            <column name="interview" value="winnie_forster_2003-01"/>
+            <column name="position" valueNumeric="26"/>
+            <column name="prefix" value="Winnie"/>
+            <column name="text" value="Für Bücher interessiere ich mich, seitdem ich lese, und habe während der oben genannten Auslandsreisen massig Sekundärliteratur zu Medien, Film, Comic und Musik gesammelt. Da es zu Computer- &amp; Videospielen nichts Vergleichbares gibt -- zumindest nicht in Europa -- war's für mich eine Frage der Zeit, diese Lücke zu füllen. Nach 12 Zeitschriften-Jahren brauchte ich eine Abwechslung, außerdem wurden IMO die Hefte immer gleichförmiger und -- aufgrund ihrer Abhängigkeit zum Anzeigenmarkt -- immer stärker auf kurzfristige Hypes konzentriert und zunehmend schwächer bei der Erläuterung der wirtschaftlichen und technischen Zusammenhänge. An der Geschichte und Kultur der Spiele hat IMO keines der aktuellen Hefte Interesse, den meisten Redaktionen fehlt auch der Mut oder die Kompetenz (meist beides ;-) ), über den Tellerrand hinauszublicken. Mit einem Buch löse ich mich bewusst vom Schema &quot;Heute bejubelt, morgen vergessen&quot; und kann unabhängig von den Interessen der Anzeigenkunden schwafe...äh...berichten."/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="d1122178-1c9d-4923-86aa-ee8b2bfa8dc8"/>
+            <column name="interview" value="rolf_boyke_2006-05"/>
+            <column name="position" valueNumeric="15"/>
+            <column name="prefix" value="Kultpower"/>
+            <column name="text" value="Soweit ich mich erinnere, gab es mindestens einmal ein Foto von dir in der Powerplay zu sehen :-)&#10;Daher die obligatorische Frage: Wirst du in der öffentlichkeit von damaligen Powerplay-Lesern erkannt und angesprochen?"/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="d2c1db8d-f284-4a30-a6ff-3b8bed6a4fa1"/>
+            <column name="interview" value="winnie_forster_2008-12"/>
+            <column name="position" valueNumeric="10"/>
+            <column name="prefix" value="Winnie"/>
+            <column name="text" value="Definieren wir besser, was ein &quot;Spielmacher&quot; im Rahmen des Buchs ist: Ein Mensch der maßgeblich an der Entwicklung, sekundär auch Produktion kommerzieller Konsolen-, Computer- oder Automatenspiele beteiligt ist. Spieldesigner, -programmierer und -produzenten sind &quot;Spielmacher&quot;. GPX stellt auch einige Grafker und Sound-Profis vor, aber der Schwerpunkt liegt auf den drei genannten, übergreifenden Tätigkeiten. Reine Unternehmer (wie z.B. Trip Hawkins) kommen im Lexikon zwar vor, erhielten aber keinen eigenen biografischen Eintrag. Im Gegensatz zu Firmenchefs wie Doug Carlston (Broderbund) oder den Darling-Brüdern (Codemasters) - zu denen gibt’s in GPX eigene Biografien, weil sie nicht nur Spiele verkauften, sondern zu Beginn ihrer Karriere auch selbst &quot;machten&quot;. Die Auswahl der Personen war kniffliger als die der Firmen. Aus einer sechstelligen Zahl von &quot;Spielmachern&quot; musste ein Promille herausgegriffen werden. Auf der Hand lagen die aktiven und unbestrittenen Meister (Miyamoto, Meier, Molyneux, um aus &quot;M&quot; ein paar herauszugreifen). Auch würdigt das Buch die Pioniere, die sich anderer Beschäftigung und Industrie zuwandten und es bei wenigen Fußspuren in der Spielbranche beließen. Einträge erhielten z.B. Atari-Veteranen wie Crockford, Lanier und Robinett, oder Apple-Bauer Wozniak. Dazu kommen aktuelle Stars und Größen, ein paar Genies, die als Technik-Lieferanten hinter den Kulissen wirken sowie eine Handvoll Programmierer, deren Karriere exemplarisch für einen Zeitabschnitt, eine Denk- oder Arbeitsweise stehen. Die britischen Antipoden &quot;Smith, Matthew&quot; und &quot;Evans, Eugene&quot; fanden z.B. ins Buch um konträre Weg zum Game-Design-Ruhm (und wieder heraus) aufzuzeigen."/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="d2f02ab4-64ef-4486-91e9-299e527a2006"/>
+            <column name="interview" value="winnie_forster_2011-03"/>
+            <column name="position" valueNumeric="19"/>
+            <column name="prefix" value="Kultpower"/>
+            <column name="text" value="Welches Buch plant Gameplan als Nächstes?"/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="d3ea7e63-9d13-448c-840a-9549f0382e8c"/>
+            <column name="interview" value="winnie_forster_2003-01"/>
+            <column name="position" valueNumeric="2"/>
+            <column name="prefix" value="Winnie"/>
+            <column name="text" value="Kurz nach dem Abitur (&amp; noch während meines Zivildienstes) fiel mir eine Ausgabe des Spielhefts Powerplay in die Hände, die in einem Wettbewerb nach dem &quot;Besten Spielekenner&quot; suchte. Powerplay war damals gerade von der Beilage des Computer-Magazins &quot;Happy Computer&quot; zum eigenständigen Heft befördert und mir eigentlich nicht besonders sympathisch. Damals fand ich englische Hefte wie ACE oder The One viel cooler, aber der Wettbewerb hat mich gereizt. Letztendlich habe ich dann doch nicht daran teilgenommen, stattdessen die Stellenanzeige in der gleichen Ausgabe beantwortet -- Markt &amp; Technik war damals ein sehr renommierter Verlag, räumlich in meiner Nähe, außerdem wusste ich nicht, was ich nach dem Zivildienst studieren sollte."/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="d4240659-a0f7-4be5-bfcd-fda057bc3642"/>
+            <column name="interview" value="harald_horchler_2006-05"/>
+            <column name="position" valueNumeric="2"/>
+            <column name="prefix" value="Harald"/>
+            <column name="text" value="Ich bin schon seit 2000 mit dem Longplayer (www.longplayer.de) im Retro-Bereich aktiv. Um Inhalte für die Webseite zu finden, habe ich mich intensiv mit den 64'er-Heften, später auch mit Happy Computer, ASM und Power Play beschäftigt. Irgendwann habe ich mich dann gefragt, warum diese interessanten Artikel nicht neu veröffentlicht werden. Dieser Gedanke ist dann im Laufe der Zeit gereift, ich habe Kontakt zur WEKA-Verlagsgruppe aufgenommen und darf nun die Inhalte von 64'er, Happy Computer und Power Play (mit Einschränkungen) wieder herausgeben."/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="d521b59b-6ee2-41fd-ac7f-9d11c856570d"/>
+            <column name="interview" value="winnie_forster_2011-03"/>
+            <column name="position" valueNumeric="15"/>
+            <column name="prefix" value="Kultpower"/>
+            <column name="text" value="Welche besonderen Herausforderungen gab es bei euern Ergänzungen zum Original-Werk? Musstest du für die Fotos deine eigene Sammlung erweitern oder konntest du auf Leihgeräte von Freunden und Bekannten zurückgreifen?"/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="d5692984-bc16-4ea2-94f6-a9c88e576c25"/>
+            <column name="interview" value="winnie_forster_2011-03"/>
+            <column name="position" valueNumeric="4"/>
+            <column name="prefix" value="Winnie"/>
+            <column name="text" value="Boris ist studierter Historiker, der sich seit Jahren hauptsächlich mit IT-Geschichte beschäftigt. Wie Du richtig erwähnst, war er bereits Autor eines Commodore-Buchs, bevor er für Gameplan OtE übersetzte. Boris' Artikel und Reportagen erscheinen auch in Videospiel- und Retro-Computing-Magazinen."/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="d6b7f584-0654-4684-b80b-89c0781e2f7c"/>
+            <column name="interview" value="rolf_boyke_2006-05"/>
+            <column name="position" valueNumeric="21"/>
+            <column name="prefix" value="Kultpower"/>
+            <column name="text" value="In einem Kommentar auf Kultpower.de hat du es bereits angedeutet: Bald wird es neue Starkiller-Strips vom Original-Team geben! (Yeah)&#10;Was habt ihr alles geplant und wie seid ihr auf diese geniale Idee gekommen?"/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="d8b25c96-f087-41c2-a6db-54ca6de16dc7"/>
+            <column name="interview" value="winnie_forster_2005-06"/>
+            <column name="position" valueNumeric="11"/>
+            <column name="prefix" value="Kultpower"/>
+            <column name="text" value="Was ist deine Meinung zu Lesern, die den Preis von 24,80 EUR für eine erweiterte Auflage als zu hoch empfinden?"/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="db4968ff-280c-4dbb-9d47-0622f24e4f9d"/>
+            <column name="interview" value="winnie_forster_2005-06"/>
+            <column name="position" valueNumeric="31"/>
+            <column name="prefix" value="Kultpower"/>
+            <column name="text" value=":-)&#10;Winnie, herzlichen Dank für dieses Interview und weiterhin viel Erfolg mit GAMEplan!&#10;Wir bleiben natürlich am Ball! :-)"/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="dbf2e738-35e7-46f4-88df-12b5af2a4177"/>
+            <column name="interview" value="winnie_forster_2005-06"/>
+            <column name="position" valueNumeric="13"/>
+            <column name="prefix" value="Kultpower"/>
+            <column name="text" value="Die zweite Auflage von &quot;Spielekonsolen und Heim-Computer&quot; ist auch in englisch erschienen. Wie beurteilst Du die Chancen, die Dein Buch im nicht-deutschsprachigen Raum hat? Immerhin ist die Konkurrenz der Bücher über Computerspiele &amp; Co größer als hierzulande."/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="df9273ba-375a-4d65-8830-e1825a3052d7"/>
+            <column name="interview" value="michael_hengst_2001-03"/>
+            <column name="position" valueNumeric="21"/>
+            <column name="prefix" value="Kultpower"/>
+            <column name="text" value="Hat sich die Qualität von Computerspielen in den letzten Jahren Deiner Meinung nach geändert? Siehst Du einen Mangel an innovativen Spielkonzepten?"/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="e295554c-fee6-49b5-beb8-463418a0ab1e"/>
+            <column name="interview" value="michael_hengst_2001-03"/>
+            <column name="position" valueNumeric="2"/>
+            <column name="prefix" value="Michael"/>
+            <column name="text" value="Ich heiße Michael Hengst, bin 1962 geboren (also ein alter Knacker in der Branche), ich bin verheiratet und habe eine Tochter. Zur beruflichen Laufbahn: Bevor ich anfing, meine Brötchen in der Spielebranche zu verdienen, habe ich einen richtig &quot;soliden&quot; Beruf erlernt und ausgeübt &lt;G&gt;. Nach dem Realschul-Abschluss (fürs Abi war ich zu faul) im Jahr 1979 absolvierte ich eine Lehre zum Einzelhandelskaufmann - Schwerpunkt Farben, Tapeten und Bodenbeläge. Danach werkelte ich bei einer großen Baumarktkette als Sachbearbeiter (strunzenlangweilig) und dann vier Jahre in einem Teppichbodenmarkt auf der grünen Wiese... nach dem Motto: &quot;Darf's ein Meter mehr sein?&quot;. In so einem Laden lernt man die Menschen kennen... Unglaublich, aber leider wahr: Da war z.B. der Kunde, der - im Geschäft, wohlgemerkt! - seine Frau verdroschen hat, weil ihm der Teppich nicht gefiel, den sie ausgesucht hat. Oder einen Bankdirektor, der sich darüber aufgeregt hat, daß er bar bezahlen mußte (&quot;Wissen Sie nicht, wer ich bin??&quot;). Naja, nach vier Jahren hatte ich die Nase voll und habe dann neun Monate im Hamburger Softwareladen Spiele verkauft - das war echt Klasse. Denn gespielt habe ich schon immer gern. Seit einer unserer Nachbarn ein Heim-Pong vorm Fernseher stehen hatte..."/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="e36beb24-f9aa-47e6-9d72-f871561c76cb"/>
+            <column name="interview" value="winnie_forster_2003-01"/>
+            <column name="position" valueNumeric="29"/>
+            <column name="prefix" value="Kultpower"/>
+            <column name="text" value="Wer ist für das Buch die Haupt-Zielgruppe?"/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="e3876bc9-0d06-4da6-84a4-991d808fd485"/>
+            <column name="interview" value="rolf_boyke_2006-05"/>
+            <column name="position" valueNumeric="8"/>
+            <column name="prefix" value="Rolf"/>
+            <column name="text" value="Starkiller als Comic-Figur ist eine Schöpfung von Heinrich und Boris, die Optik war mein Beitrag. Mit den Zeichnungen hatte ich reichlich Arbeit und wenn es mir doch zu langweilig wurde konnte ich mich mit Unmengen von Hintergrund-Gags austoben. (Motto: maximal schräge)"/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="e58804a1-b5b9-474b-8697-fa1948e430fa"/>
+            <column name="interview" value="harald_horchler_2006-05"/>
+            <column name="position" valueNumeric="19"/>
+            <column name="prefix" value="Kultpower"/>
+            <column name="text" value="Welche Computer- oder Videospiele haben dich früher am meisten fasziniert? Spielst du heute noch manchmal oder sogar regelmäßig?"/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="e5dbda5e-06ff-49ad-b6a1-b598b3dffb11"/>
+            <column name="interview" value="michael_hengst_2001-03"/>
+            <column name="position" valueNumeric="1"/>
+            <column name="prefix" value="Kultpower"/>
+            <column name="text" value="Hallo Michael. Erstmal vielen Dank dafür, daß Du für Kultpower.de dieses Interview mitmachst! Könntest Du Dich wohl kurz vorstellen und die Stationen Deiner beruflichen Laufbahn nennen?"/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="e6f1284e-6fec-4019-8f8c-bca8c240c7cf"/>
+            <column name="interview" value="winnie_forster_2003-01"/>
+            <column name="position" valueNumeric="32"/>
+            <column name="prefix" value="Kultpower"/>
+            <column name="text" value="Was für Quellen hast du für die ganzen Informationen hauptsächlich verwendet?"/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="e815d1c3-0e07-472a-973c-229be952b115"/>
+            <column name="interview" value="winnie_forster_2011-03"/>
+            <column name="position" valueNumeric="20"/>
+            <column name="prefix" value="Winnie"/>
+            <column name="text" value="Zum einen nahmen wir die Arbeit am Gameplan-Buch mit dem Arbeitstitel &quot;Software&quot; wieder auf, das 30 Computer- und Videospiel-Jahre von der Content-Seite aus betrachtet: Nicht primär die die Hardware präsentiert (wie &quot;Spielkonsolen &amp; Heimcomputer&quot;) oder die Designer und Programmierer (wie &quot;Spielmacher&quot;), sondern die Spiele selbst untersucht. Dieses Buch wird 2012 erscheinen. Zum anderen sollen auf die Commodore-Geschichte auch entsprechende Bücher zu Atari, Nintendo und Sega folgen."/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="e8690659-77cb-464a-a9e4-c3a2cd16f14e"/>
+            <column name="interview" value="winnie_forster_2005-06"/>
+            <column name="position" valueNumeric="26"/>
+            <column name="prefix" value="Winnie"/>
+            <column name="text" value="Die meisten der Spiele in GP3 wurden glücklicherweise bereits durchgespielt; der Rest wird gegenwärtig unter die Lupe genommen, gespielt und analysiert. &#10;Auch deshalb braucht Gameplan die Verstärkung von Profis wie Heini Lenhardt. Er schreibt bei GP3 nicht über irgendwelche Themen, die ihm ein Chefred. mal eben reindrückt, sondern über jene Spiele, über die er schreiben möchte und kann, über Spiele die er bis aufs letzte Bit erforscht, analysiert und bezwungen hat...oder es jetzt endlich mal tun möchte :-)"/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="e9edcb29-3969-4feb-b3fa-5db6b91104b1"/>
+            <column name="interview" value="winnie_forster_2005-06"/>
+            <column name="position" valueNumeric="3"/>
+            <column name="prefix" value="Kultpower"/>
+            <column name="text" value="Wie viele Hinweise hattest Du von Lesern der ersten Auflage bekommen?"/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="ea6bbcf6-fa9e-4d08-99f4-6efb39666be8"/>
+            <column name="interview" value="winnie_forster_2011-03"/>
+            <column name="position" valueNumeric="7"/>
+            <column name="prefix" value="Kultpower"/>
+            <column name="text" value="Auf deiner Webseite steht &quot;Verbesserte und erweiterte Auflage&quot;. Kannst du genau beschreiben, was das bedeutet?"/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="ead7a081-375e-4a60-8763-16651d7b518e"/>
+            <column name="interview" value="michael_hengst_2001-03"/>
+            <column name="position" valueNumeric="23"/>
+            <column name="prefix" value="Kultpower"/>
+            <column name="text" value="Welche Computerspiele spielst Du heutzutage? Bist Du immer noch ein begeisterter Rollenspieler?"/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="eb85a0fe-efbc-4920-a1ab-348ebff1b0cc"/>
+            <column name="interview" value="winnie_forster_2003-01"/>
+            <column name="position" valueNumeric="1"/>
+            <column name="prefix" value="Kultpower"/>
+            <column name="text" value="Hallo Winnie!&#10;Erstmal vielen Dank, dass du für Kultpower.de dieses Interview mitmachst!&#10;Wir fangen mal ganz vorne an: Wie kam es dazu, dass du Ende 1990 Redakteur bei der Powerplay wurdest? Wie lange kanntest du selber die Powerplay bereits?"/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="ebd33d14-ba51-4d43-9598-d5880f4201a4"/>
+            <column name="interview" value="winnie_forster_2003-01"/>
+            <column name="position" valueNumeric="36"/>
+            <column name="prefix" value="Kultpower"/>
+            <column name="text" value="Wie bist du an die ganzen Fotos der Geräte gelangt? Wie viele der abgebildeten Geräte besitzt du selber? Sammelst du generell selber alte Konsolen oder Spiele?"/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="ebe1a7af-8aec-4001-a795-a64d68eaf00a"/>
+            <column name="interview" value="michael_hengst_2001-03"/>
+            <column name="position" valueNumeric="24"/>
+            <column name="prefix" value="Michael"/>
+            <column name="text" value="Ich spiele nicht mehr ganz so viel wie früher - das liegt natürlich auch ein bißchen an der Familie und am Beruf. Meine Tochter ist jetzt 14 Monate alt und beansprucht meine spärliche Freizeit doch erheblich ;-) Ansonsten liebe ich immer noch Rollenspiele (oder Actionrollenspiele) und Strategie/Taktik-Programme wie z.B. &quot;Diablo 2&quot;, &quot;Wizards &amp; Warriors&quot;, &quot;Final Fantasy&quot;, &quot;Commandos&quot;, &quot;Advanced Military Commander 4&quot;."/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="f0991fe0-5b17-4a92-b741-7682ccb6d0f9"/>
+            <column name="interview" value="winnie_forster_2005-06"/>
+            <column name="position" valueNumeric="9"/>
+            <column name="prefix" value="Kultpower"/>
+            <column name="text" value="Kannst du dir vorstellen oder hast du vielleicht sogar geplant, irgendwann weitere erweiterte Auflagen herauszubringen?"/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="f13ad25a-2b02-4d8f-a0c1-1fd72a6b313e"/>
+            <column name="interview" value="winnie_forster_2005-06"/>
+            <column name="position" valueNumeric="7"/>
+            <column name="prefix" value="Kultpower"/>
+            <column name="text" value="Auf welche Art und Weise entstehen die ganzen Screenshots in Deinen Büchern?"/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="f2f052c6-f6f0-4bb8-8ef2-5c2d564e1f5e"/>
+            <column name="interview" value="winnie_forster_2003-01"/>
+            <column name="position" valueNumeric="27"/>
+            <column name="prefix" value="Kultpower"/>
+            <column name="text" value="Wie lange spielst du schon mit dem Gedanken, das Buch zu schreiben? Wie lange hat die Arbeit am Buch gedauert?"/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="f3208576-541a-40e4-b7ea-fb0caf403879"/>
+            <column name="interview" value="winnie_forster_2011-03"/>
+            <column name="position" valueNumeric="28"/>
+            <column name="prefix" value="Winnie"/>
+            <column name="text" value="Mit letzteren hatte ich nie richtig Kontakt und lernte die meisten davon erst Jahre später kennen, z.B. Tet Hara, der nach VG zu Square wechselte und mit dem ich mich ein, zwei Mal in Tokio traf. Die meisten unserer Nachfolger sind Unbekannte für mich geblieben.&#10;Anders sieht's mit der Grundbesatzung aus, die ich bis heute dann und wann (Michael Paul, Ingo Zaborowski, Julian Eggebrecht) oder regelmäßig spreche oder treffe (Martin Gaksch, Andreas Knauf, Heinrich Lenhardt, Anatol Locker). Sind alle noch in der Branche, erstere auf der Industrie-Seite, letztere bis heute Journalisten und Verleger."/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="f3b460a1-d5cd-4151-8f6a-b89f398936c4"/>
+            <column name="interview" value="michael_hengst_2001-03"/>
+            <column name="position" valueNumeric="28"/>
+            <column name="prefix" value="Michael"/>
+            <column name="text" value="Ja! Passiert mir häufiger. Z.B. auf dem Flughafen. Ich hatte schon einen Polizisten an der Passkontrolle, der mich angrinste. Als ich ihn verwirrt fragte, ob mit meinem Ausweis was nicht in Ordnung sei, antwortete er: &quot;Ich kenn Dich noch aus alten Power Play-Tagen&quot;."/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="f4691f05-d240-4c69-b85e-02c4ec6766c1"/>
+            <column name="interview" value="winnie_forster_2003-01"/>
+            <column name="position" valueNumeric="7"/>
+            <column name="prefix" value="Kultpower"/>
+            <column name="text" value="Hat sich dein Spiele-Geschmack mit der Zeit geändert?"/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="f6fed940-71e2-47ac-b0a9-a4ada5f6174a"/>
+            <column name="interview" value="winnie_forster_2008-12"/>
+            <column name="position" valueNumeric="32"/>
+            <column name="prefix" value="Winnie"/>
+            <column name="text" value="Mir machen alle Aspekte der verlegerischen Arbeit Spaß, wegen der Mischung unterschiedlicher Tätigkeiten. Habe ich mich mehrere Tage durch Videospiel-Geschichte und Daten gewurschtelt, bin ich froh mich wieder mit Fragen der Produktion oder des Vertriebs zu beschäftigen. Nach einer Woche der schrifstellerischen Arbeit (die recht einsam ist), brauche ich wieder ein paar Tage der Kooperation mit Textern, Designern oder Fotografen. Das Feedback der Leser ist für mich genauso spannend, wie eine Diskussion mit dem Art Director oder der Austausch mit Handel und Presse. Jede einzelne der Tätigkeiten könnte auf Dauer langweilen; aber alles zusammen, zeitlich flexibel arrangiert, macht Sinn &amp; Spaß."/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="f8db1f04-57f1-43c7-bcbd-73985934102d"/>
+            <column name="interview" value="winnie_forster_2011-03"/>
+            <column name="position" valueNumeric="23"/>
+            <column name="prefix" value="Kultpower"/>
+            <column name="text" value="Wer hatte damals die Idee, neben der Powerplay ein Videogames-Only-Magazin zu gründen und warum hast du dich entschieden, da mitzumachen?"/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="f99ab757-3637-45bb-89c6-bc111521fb5b"/>
+            <column name="interview" value="winnie_forster_2003-01"/>
+            <column name="position" valueNumeric="33"/>
+            <column name="prefix" value="Winnie"/>
+            <column name="text" value="Meist japanische Quellen, in Bezug auf die westliche Szene vor allem 80er-Jahre-Klassiker wie Steven Levys &quot;Hackers&quot; oder das kaum bekannte &quot;Software People&quot; von Doug Carlston; letzteres ein Buch, nach dem ich mehrere Jahre gesucht habe, bis es mir 2001 schließlich durch eine amerikanischen eBay-Auktion in die Hände fiel. Ich habe mit &quot;Ur-Quellen&quot; gearbeitet und kann mit Nacherzählungen wie z.B. Leonard Hermans &quot;Phoenix&quot; nicht so viel anfangen. Wer mehr über meine Quellen erfahren möchte, sollte die letzte Seite der &quot;Gameplan-Bibel&quot; studieren; dort nenne ich Titel, Autor, Verlag und Erscheinungsjahr der für mich wichtigsten Bücher und Periodika."/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="fa6a5796-ee34-4a3b-a0de-69161e90db00"/>
+            <column name="interview" value="michael_hengst_2001-03"/>
+            <column name="position" valueNumeric="5"/>
+            <column name="prefix" value="Kultpower"/>
+            <column name="text" value="Was war damals Deine Motivation dafür, Redakteur einer Spielezeitschrift zu werden? Immerhin kann man nicht gerade behaupten, daß bei der Entstehung der PowerPlay Computerspiele weit verbreitet waren..."/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="faaf91d9-5979-40bf-95f9-abea65afd571"/>
+            <column name="interview" value="harald_horchler_2006-05"/>
+            <column name="position" valueNumeric="13"/>
+            <column name="prefix" value="Kultpower"/>
+            <column name="text" value="Wer ist momentan Inhaber der Urheberrechte an den von dir veröffentlichten Comics? War es schwierig, eine Erlaubnis für die Veröffentlichung zu bekommen?"/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="fc432e44-6968-4a02-9ea0-ff78347221e2"/>
+            <column name="interview" value="winnie_forster_2003-01"/>
+            <column name="position" valueNumeric="8"/>
+            <column name="prefix" value="Winnie"/>
+            <column name="text" value="Ich habe immer alles gespielt was mir in die Hände geriet &amp; bin bereits als Schüler regelmäßig nach England gereist um mich dort mit Bücher, Comics, Games-Workshop-Zeugs, aber auch Computer-Spielen einzudecken. Vom Spectrum stieg ich Ende der 80er-Jahre auf den Amiga um -- letztendlich war mein einziger Flirt mit der Crackerszene eine böse Enttäuschung. Jede Woche ein Dutzend neuer Kopien, aber kaum ein gutes Spiel...seitdem lasse ich die Finger von hand-beschrifteten Disketten. Nur was man sich selbst kauft und teuer bezahlt, macht Spaß. Das gleiche Symptom sehe ich übrigens auch heute bei Leuten die sich via DSL und Flatrate &quot;ihre&quot; Spiele ziehen -- die Jungs wollen alles haben, können den ganzen Schmarrn aber kaum noch spielen. Das wahllose Kopieren verhindert vernünftige Selektion und killt den Spielspaß.&#10;So war ich paradoxerweise an Spielen kaum noch interessiert, als ich 1990 bei der Powerplay anfing. Meine dortige Begegnung mit Mega Drive und PC-Engine hat die alte Leidenschaft jedoch wieder geweckt. "/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="fd71f4d7-c51c-4c00-98b5-93d1dc8a0aee"/>
+            <column name="interview" value="winnie_forster_2005-06"/>
+            <column name="position" valueNumeric="1"/>
+            <column name="prefix" value="Kultpower"/>
+            <column name="text" value="Hallo Winnie!&#10;Die Neuauflage Deines Buchs der &quot;Spielkonsolen und Heimcomputer 1972 - 2005&quot; ist wesentlich fetter als das Original von Ende 2002. Wie lange hast Du an den Erweiterungen gearbeitet?"/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="fef8842d-8a76-4d3f-97e4-a495e75d8bdf"/>
+            <column name="interview" value="michael_hengst_2001-03"/>
+            <column name="position" valueNumeric="16"/>
+            <column name="prefix" value="Michael"/>
+            <column name="text" value="Oh, da gibt's einige: Das Spiel, auf das ich am längsten gewartet habe, war &quot;The Bard's Tale 4&quot; - darauf warte ich nämlich noch heute. Ich hatte das Spiel bei EA vor Ort gesehen, und nach ein paar Monaten haben die es komplett eingestellt."/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="ff06856b-25ba-4b4f-afa2-ab5a5273b17f"/>
+            <column name="interview" value="rolf_boyke_2006-05"/>
+            <column name="position" valueNumeric="19"/>
+            <column name="prefix" value="Kultpower"/>
+            <column name="text" value="Vor einigen Monaten ist der erste Starkiller-Band von Harald Horchler erschienen, vor kurzem dann der zweite und der Sammel- Band. Was ist es für ein Gefühl, die eigenen Comics als Neuveröffentlichung im Buchladen zu sehen?"/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="ff4a04c2-279d-4143-9a8d-22fd1d07accc"/>
+            <column name="interview" value="winnie_forster_2011-03"/>
+            <column name="position" valueNumeric="29"/>
+            <column name="prefix" value="Kultpower"/>
+            <column name="text" value="Welche Ausgaben umfasst deine private Videogames-Sammlung?"/>
+        </insert>
+        <insert tableName="interviewtext">
+            <column name="id" value="fff54d6d-2568-4bb5-9225-645cf0eaef71"/>
+            <column name="interview" value="winnie_forster_2008-12"/>
+            <column name="position" valueNumeric="1"/>
+            <column name="prefix" value="Kultpower"/>
+            <column name="text" value="Dein letztes Buch ist im Jahr 2005 erschienen. Was hast du seitdem beruflich so gemacht?"/>
+        </insert>
+    </changeSet>
+</databaseChangeLog>
