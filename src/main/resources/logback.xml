@@ -4,6 +4,6 @@
     <logger name="org.springframework.web" level="ERROR"/>
     <logger name="org.springframework.orm.jpa" level="TRACE"/>
     <logger name="org.springframework.transaction" level="TRACE"/>
-    <logger name="org.hibernate.type" level="TRACE"/>
+    <logger name="org.hibernate.type" level="ERROR"/>
 
 </configuration>
