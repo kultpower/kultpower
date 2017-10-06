@@ -3,6 +3,7 @@ package org.kultpower.entities;
 import org.apache.commons.lang3.builder.ToStringBuilder;
 import org.apache.commons.lang3.builder.ToStringStyle;
 import org.hibernate.annotations.Type;
+import org.kultpower.LocalDateConverter;
 
 import javax.persistence.*;
 import java.time.LocalDate;
@@ -27,6 +28,7 @@ public class Interview {
 	private String title;
 
 	@Column
+    @Convert(converter = LocalDateConverter.class)
 	private LocalDate datum;
 
 	@OneToMany(mappedBy = "interview", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
