@@ -6,7 +6,7 @@ import org.junit.runner.RunWith;
 import org.kultpower.entities.Ausgabe;
 import org.kultpower.entities.Zeitschrift;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.SpringApplicationConfiguration;
+import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.orm.jpa.JpaTransactionManager;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.transaction.TransactionDefinition;
@@ -23,7 +23,7 @@ import java.util.Map;
  * Created by sebastian on 29.04.16.
  */
 @RunWith(SpringJUnit4ClassRunner.class)
-@SpringApplicationConfiguration(classes = KultpowerApplication.class)
+@SpringBootTest(classes = KultpowerApplication.class)
 //@ActiveProfiles("hsqldb")
 public class DatabaseReadFromCSV {
 

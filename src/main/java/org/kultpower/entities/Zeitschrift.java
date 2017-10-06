@@ -3,10 +3,9 @@ package org.kultpower.entities;
 import org.apache.commons.lang3.builder.ToStringBuilder;
 import org.apache.commons.lang3.builder.ToStringStyle;
 import org.hibernate.envers.Audited;
-import org.joda.time.Chronology;
-import org.joda.time.LocalDate;
 
 import javax.persistence.*;
+import java.time.LocalDate;
 import java.util.*;
 
 /**
@@ -103,7 +102,7 @@ public class Zeitschrift {
 		a.setShortname(shortname);
 		a.setNummer(nummer);
 		a.setCoverfile(coverfile);
-		a.setErscheinungsdatum(new LocalDate(eJahr,eMonat,eTag));
+		a.setErscheinungsdatum(LocalDate.of(eJahr,eMonat,eTag));
 		getAusgaben().add(a);
 	}
 }

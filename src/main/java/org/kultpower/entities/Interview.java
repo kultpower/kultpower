@@ -3,9 +3,9 @@ package org.kultpower.entities;
 import org.apache.commons.lang3.builder.ToStringBuilder;
 import org.apache.commons.lang3.builder.ToStringStyle;
 import org.hibernate.annotations.Type;
-import org.joda.time.LocalDate;
 
 import javax.persistence.*;
+import java.time.LocalDate;
 import java.util.Iterator;
 import java.util.Set;
 import java.util.TreeSet;
@@ -27,7 +27,6 @@ public class Interview {
 	private String title;
 
 	@Column
-	@Type(type = "org.jadira.usertype.dateandtime.joda.PersistentLocalDate")
 	private LocalDate datum;
 
 	@OneToMany(mappedBy = "interview", cascade = CascadeType.ALL, fetch = FetchType.EAGER)

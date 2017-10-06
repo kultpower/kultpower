@@ -9,7 +9,7 @@ import org.kultpower.entities.Interview;
 import org.kultpower.entities.InterviewText;
 import org.kultpower.entities.Zeitschrift;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.SpringApplicationConfiguration;
+import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.test.context.web.WebAppConfiguration;
 
@@ -17,7 +17,7 @@ import java.util.Iterator;
 import java.util.Set;
 
 @RunWith(SpringJUnit4ClassRunner.class)
-@SpringApplicationConfiguration(classes = KultpowerApplication.class)
+@SpringBootTest(classes = KultpowerApplication.class)
 @WebAppConfiguration
 public class InterviewTest {
 
