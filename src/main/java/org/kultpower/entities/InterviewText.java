@@ -8,6 +8,7 @@ import javax.persistence.*;
  * Created by sebastian on 21.02.16.
  */
 @Entity(name="interviewtext")
+@Table(name="interviewtext")
 public class InterviewText {
 
 	@Id
