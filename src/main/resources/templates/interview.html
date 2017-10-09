@@ -3,7 +3,7 @@
 <html lang="de" xmlns="http://www.w3.org/1999/xhtml"
       xmlns:th="http://www.thymeleaf.org">
 
-<head th:include="header :: header" th:with="title=${interview.title + ' (' + interview.getDatum().toString('yyyy') + ')'}, description=${interview.getIntroText()}"></head>
+<head th:include="header :: header" th:with="title=${interview.title + ' (' + #temporals.format(interview.getDatum(), 'dd.MM.yyyy') + ')'}, description=${interview.getIntroText()}"></head>
 
 <body>
 <nav th:replace="navigation :: navigation(URL_INTERVIEWS)"></nav>
@@ -18,7 +18,7 @@
         <!--/*@thymesVar id="datum" type="org.kultpower.entities.Interview"*/-->
     <span
             style="font-size: 50%; font-weight: normal;"
-            th:text="${'Veröffentlicht am ' + interview.getDatum().toString('dd.MM.yyyy')}"
+            th:text="${'Veröffentlicht am ' + #temporals.format(interview.getDatum(), 'dd.MM.yyyy')}"
     >Erschienen am: 1.1.1900</span>
     </h1>
 
