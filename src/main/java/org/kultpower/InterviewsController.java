@@ -28,13 +28,6 @@ public class InterviewsController {
 			Model model) {
 		Interview interview = repository.findOne(interviewId);
 		model.addAttribute("interview", interview);
-		model.addAttribute("disqus",
-				new Disqus(
-						URLConfiguration.getBaseUrl() + URLConfiguration.URLS.INTERVIEWS.value + "/" + interview.getId(),
-						URLConfiguration.URLS.INTERVIEWS.value + "/" + interview.getId(),
-						interview.getTitle()
-				)
-		);
 
 		return "interview";
 	}
