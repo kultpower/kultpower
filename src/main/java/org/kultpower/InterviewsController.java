@@ -26,7 +26,7 @@ public class InterviewsController {
 	public String singleInterview(
 			@PathVariable String interviewId,
 			Model model) {
-		Interview interview = repository.findOne(interviewId);
+		Interview interview = repository.findById(interviewId).get();
 		model.addAttribute("interview", interview);
 
 		return "interview";

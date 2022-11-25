@@ -28,7 +28,7 @@
 
             <span th:if="${text.prefix!=''}">
                 <div class="interviewprefix"><span th:text="${text.prefix + ':'}">Kultpower:</span></div>
-                <div class="interviewtext" th:utext="${#strings.replace(text.text,T(java.lang.System).getProperty('line.separator'),'&lt;br /&gt;')}">text</div>
+                <div class="interviewtext" th:utext="${#strings.replace(text.text, '\n', '&lt;br/&gt;')}">text</div>
             </span>
             <div th:if="${text.prefix==''}" class="interviewother">
                 <span th:text="${text.text}">text</span>

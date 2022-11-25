@@ -1,10 +1,9 @@
 package org.kultpower;
 
 import com.google.common.base.Stopwatch;
-import org.hamcrest.Matchers;
-import org.junit.Assert;
-import org.junit.Test;
-import org.junit.runner.RunWith;
+
+import org.assertj.core.api.Assertions;
+import org.junit.jupiter.api.Test;
 import org.kultpower.entities.Interview;
 import org.kultpower.entities.InterviewText;
 import org.kultpower.entities.Zeitschrift;
@@ -16,7 +15,6 @@ import org.springframework.test.context.web.WebAppConfiguration;
 import java.util.Iterator;
 import java.util.Set;
 
-@RunWith(SpringJUnit4ClassRunner.class)
 @SpringBootTest(classes = KultpowerApplication.class)
 @WebAppConfiguration
 public class InterviewTest {
@@ -29,17 +27,16 @@ public class InterviewTest {
 
 		Stopwatch timer = Stopwatch.createStarted();
 
-		Interview one = interviewRepository.findById("michael_hengst_2001-03");
+		Interview one = interviewRepository.findById("michael_hengst_2001-03").get();
 
 		System.out.println("Method took: " + timer.stop());
 
-		Assert.assertThat("Objekt muss geladen sein", one, Matchers.notNullValue());
+		Assertions.assertThat(one).isNotNull();
 
 		System.out.println(one);
 
 		Set<InterviewText> texte = one.getTexte();
-		Assert.assertThat("Texte dürfen nicht null sein", texte, Matchers.notNullValue());
-		Assert.assertThat("Texte-Anzahl muss > 0 sein", texte.size(), Matchers.greaterThan(0));
+		Assertions.assertThat(texte).isNotNull().isNotEmpty();
 
 		System.out.println(texte);
 

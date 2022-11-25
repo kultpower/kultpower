@@ -1,8 +1,8 @@
 package org.kultpower.entities;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Table;
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Table;
 
 /**
  * Created by sebastian on 11.01.16.
@@ -11,7 +11,7 @@ import javax.persistence.Table;
 @Table(name = "powerplay_testberichte")
 public class PowerplayTestbericht {
 
-	@javax.persistence.Id
+	@jakarta.persistence.Id
 	@Column
 	private Integer id;
 

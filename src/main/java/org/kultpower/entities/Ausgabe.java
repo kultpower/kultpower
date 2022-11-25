@@ -2,9 +2,14 @@ package org.kultpower.entities;
 
 import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
 import org.hibernate.annotations.GenericGenerator;
-import org.hibernate.annotations.Type;
-import org.hibernate.envers.Audited;
-import javax.persistence.*;
+
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.Id;
+import jakarta.persistence.ManyToOne;
+import jakarta.persistence.Table;
+
 import java.time.LocalDate;
 
 /**
@@ -12,7 +17,6 @@ import java.time.LocalDate;
  */
 @Entity
 @Table(name = "ausgabe")
-@Audited
 public class Ausgabe
 //		implements Comparable<Ausgabe>
 {

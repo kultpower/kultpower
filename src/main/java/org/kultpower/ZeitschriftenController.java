@@ -1,13 +1,11 @@
 package org.kultpower;
 
-import org.hibernate.envers.AuditReader;
-import org.hibernate.envers.AuditReaderFactory;
-import org.hibernate.envers.query.AuditEntity;
-import org.hibernate.envers.query.AuditQuery;
+import java.util.Iterator;
+
+
 import org.kultpower.entities.Ausgabe;
 import org.kultpower.entities.Zeitschrift;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.history.Revision;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -16,9 +14,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseStatus;
 
-import javax.persistence.EntityManager;
-import java.util.Iterator;
-import java.util.List;
+import jakarta.persistence.EntityManager;
 
 @Controller
 @RequestMapping(value = "/zeitschriften")
@@ -53,73 +49,16 @@ public class ZeitschriftenController {
 
 	@RequestMapping(value = "/{zeitschriftId}", method = RequestMethod.GET)
 	public String zeigeZeitschrift(@PathVariable String zeitschriftId, Model model) {
-		Zeitschrift one = repo.findById(zeitschriftId);
+		Zeitschrift one = repo.findById(zeitschriftId).get();
 
 		if (one==null) {
 			throw new ZeitschriftNotFoundException();
 		}
 		model.addAttribute("one", one);
 
-		/*
-		System.out.println("calling repo.findRevisions:");
-		List<Revision<Integer, Zeitschrift>> revisionList = repo.findRevisions(zeitschriftId).getContent();
-		System.out.println("finished executing repo.findRevisions");
-		System.out.println(revisionList.size());
-		model.addAttribute("revisionList", revisionList);
-
-		List<Revision<Integer, Zeitschrift>> revisionList2 = new ArrayList<>();
-		for (Revision<Integer, Zeitschrift> rev : revisionList) {
-			System.out.println("calling AuditQuery for revision " + rev.getRevisionNumber() + ":");
-			AuditReader reader = AuditReaderFactory.get(entityManager);
-			AuditQuery query = reader.createQuery()
-					.forEntitiesAtRevision(Zeitschrift.class, rev.getRevisionNumber());
-			Zeitschrift z = (Zeitschrift) query.getSingleResult();
-			System.out.println("finished executing AuditQuery");
-			//System.out.println("calling repo.findById:");
-			//load with all related objects via entity graph:
-			//z = repo.findById(z.getId());
-			//System.out.println("finished executing repo.findById");
-			Revision<Integer, Zeitschrift> newRevision = new Revision<>(rev.getMetadata(), z);
-			revisionList2.add(newRevision);
-		}
-		model.addAttribute("revisionList2", revisionList2);
-
-		model.addAttribute("this", this);
-		*/
 		return "zeitschrift";
 	}
 
-	@RequestMapping(value = "/{zeitschriftId}/revisions", method = RequestMethod.GET)
-	public String zeigeZeitschriftRevisions(
-			@PathVariable String zeitschriftId,
-			Model model) {
-
-		List<Revision<Integer, Zeitschrift>> revisionList = repo.findRevisions(zeitschriftId).getContent();
-		model.addAttribute("revisionList", revisionList);
-
-		return "zeitschrift_revisions";
-	}
-
-	@RequestMapping(value = "/{zeitschriftId}/revisions/{revision}", method = RequestMethod.GET)
-	public String zeigeZeitschriftNachRevision(
-			@PathVariable String zeitschriftId,
-			@PathVariable Integer revision,
-			Model model) {
-
-		AuditReader reader = AuditReaderFactory.get(entityManager);
-		AuditQuery query = reader.createQuery()
-				.forEntitiesAtRevision(Zeitschrift.class, revision);
-		query.add(AuditEntity.property("id").eq(zeitschriftId));
-
-		Zeitschrift z = (Zeitschrift) query.getSingleResult();
-
-		if (z==null) {
-			throw new ZeitschriftNotFoundException();
-		}
-		model.addAttribute("one", z);
-
-		return "zeitschrift";
-	}
 
 	@RequestMapping(value = "/{zeitschriftId}/{ausgabeShortname}", method = RequestMethod.GET)
 	public String zeigeAusgabe(
@@ -128,7 +67,7 @@ public class ZeitschriftenController {
 			Model model) {
 
 		model.addAttribute("ausgabeId", ausgabeShortname);
-		Zeitschrift zeitschrift = repo.findOne(zeitschriftId);
+		Zeitschrift zeitschrift = repo.findById(zeitschriftId).get();
 
 		model.addAttribute("zeitschrift", zeitschrift);
 

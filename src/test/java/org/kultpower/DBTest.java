@@ -1,10 +1,9 @@
 package org.kultpower;
 
 import com.google.common.base.Stopwatch;
-import org.hamcrest.Matchers;
-import org.junit.Assert;
-import org.junit.Test;
-import org.junit.runner.RunWith;
+
+import org.assertj.core.api.Assertions;
+import org.junit.jupiter.api.Test;
 import org.kultpower.entities.Zeitschrift;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -13,7 +12,6 @@ import org.springframework.test.context.web.WebAppConfiguration;
 
 import java.util.Iterator;
 
-@RunWith(SpringJUnit4ClassRunner.class)
 @SpringBootTest(classes = KultpowerApplication.class)
 @WebAppConfiguration
 public class DBTest {
@@ -26,13 +24,12 @@ public class DBTest {
 
 		Stopwatch timer = Stopwatch.createStarted();
 
-		Zeitschrift powerplay = zeitschriftenRepository.findById("powerplay");
+		Zeitschrift powerplay = zeitschriftenRepository.findById("powerplay").get();
 
 		System.out.println("Method took: " + timer.stop());
 
-		Assert.assertThat("Zeitschrift-Objekt muss geladen sein", powerplay, Matchers.notNullValue());
-		Assert.assertThat("Ausgaben-Set darf nicht null sein", powerplay.getAusgaben(), Matchers.notNullValue());
-		Assert.assertThat("mindestens eine Ausgabe", powerplay.getAusgaben().size(), Matchers.greaterThan(0));
+		Assertions.assertThat(powerplay).isNotNull();
+		Assertions.assertThat(powerplay.getAusgaben()).isNotNull().isNotEmpty();
 
 		System.out.println(powerplay);
 
@@ -51,7 +48,7 @@ public class DBTest {
 
 	private void performanceLoad(String z) {
 		Stopwatch timer = Stopwatch.createStarted();
-		zeitschriftenRepository.findOne(z);
+		zeitschriftenRepository.findById(z).get();
 		System.out.println(z + ": Method took " + timer.stop());
 	}
 
@@ -70,9 +67,8 @@ public class DBTest {
 		Iterator<Zeitschrift> zeitschriftIterator = all.iterator();
 		while (zeitschriftIterator.hasNext()) {
 			Zeitschrift zeitschrift = zeitschriftIterator.next();
-			Assert.assertThat("Zeitschrift-Objekt muss geladen sein", zeitschrift, Matchers.notNullValue());
-			Assert.assertThat("Ausgaben-Set darf nicht null sein " + zeitschrift.getName(), zeitschrift.getAusgaben(), Matchers.notNullValue());
-			Assert.assertThat("mindestens eine Ausgabe " + zeitschrift.getName(), zeitschrift.getAusgaben().size(), Matchers.greaterThan(0));
+			Assertions.assertThat(zeitschrift).isNotNull();
+			Assertions.assertThat(zeitschrift.getAusgaben()).isNotNull().isNotEmpty();
 
 		}
 

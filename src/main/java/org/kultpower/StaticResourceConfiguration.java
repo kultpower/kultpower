@@ -8,14 +8,16 @@ import org.springframework.web.servlet.HandlerInterceptor;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
-import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+
+
 
 @Configuration
 @Component
-public class StaticResourceConfiguration extends WebMvcConfigurerAdapter {
+public class StaticResourceConfiguration implements WebMvcConfigurer {
 
     @Value("${app.resources}")
     private String staticResources;
@@ -28,8 +30,6 @@ public class StaticResourceConfiguration extends WebMvcConfigurerAdapter {
 
         registry.addResourceHandler("/ext/**")
                 .addResourceLocations("file:" + staticResources);
-
-        super.addResourceHandlers(registry);
 
 
     }
@@ -59,7 +59,6 @@ public class StaticResourceConfiguration extends WebMvcConfigurerAdapter {
             public void afterCompletion(HttpServletRequest request, HttpServletResponse response, Object handler, Exception ex) throws Exception {
             }
         });
-        super.addInterceptors(registry);
     }
 
     public String getStaticResources() {

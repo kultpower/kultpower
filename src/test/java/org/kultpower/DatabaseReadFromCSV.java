@@ -1,8 +1,8 @@
 package org.kultpower;
 
 import au.com.bytecode.opencsv.CSVReader;
-import org.junit.Test;
-import org.junit.runner.RunWith;
+
+import org.junit.jupiter.api.Test;
 import org.kultpower.entities.Ausgabe;
 import org.kultpower.entities.Zeitschrift;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,7 +22,6 @@ import java.util.Map;
 /**
  * Created by sebastian on 29.04.16.
  */
-@RunWith(SpringJUnit4ClassRunner.class)
 @SpringBootTest(classes = KultpowerApplication.class)
 //@ActiveProfiles("hsqldb")
 public class DatabaseReadFromCSV {

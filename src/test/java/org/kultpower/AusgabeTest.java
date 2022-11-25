@@ -1,18 +1,14 @@
 package org.kultpower;
 
-import org.hamcrest.Matchers;
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
-import org.junit.runner.RunWith;
+import org.assertj.core.api.Assertions;
+import org.junit.jupiter.api.Test;
 import org.kultpower.entities.Ausgabe;
 import org.kultpower.entities.Zeitschrift;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.test.context.web.WebAppConfiguration;
 
-@RunWith(SpringJUnit4ClassRunner.class)
+
 @SpringBootTest(classes = KultpowerApplication.class)
 @WebAppConfiguration
 public class AusgabeTest {
@@ -24,22 +20,23 @@ public class AusgabeTest {
 	ZeitschriftenRepository zeitschriftenRepository;
 
 	@Test
-	@Ignore
 	public void lesen() {
 
 		Iterable<Ausgabe> all = repository.findAll();
 
-		Assert.assertThat(all, Matchers.notNullValue());
-	}
+		Assertions.assertThat(all)
+			.isNotNull()
+			.isNotEmpty();
+		}
 
 
 	@Test
 	public void lesen2() {
-		Zeitschrift powerplay = zeitschriftenRepository.findOne("powerplay");
+		Zeitschrift powerplay = zeitschriftenRepository.findById("powerplay").get();
 		Ausgabe ausgabe = repository.findByZeitschriftAndShortname(powerplay, "1990-12");
 
-		Assert.assertThat(ausgabe, Matchers.notNullValue());
-
-		System.out.println(ausgabe);
+		Assertions.assertThat(ausgabe)
+			.isNotNull()
+			;
 	}
 }

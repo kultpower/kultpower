@@ -2,7 +2,7 @@ package org.kultpower.entities;
 
 import org.hibernate.annotations.GenericGenerator;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 
 /**
  * Created by sebastian on 21.02.16.

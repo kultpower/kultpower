@@ -2,10 +2,9 @@ package org.kultpower.entities;
 
 import org.apache.commons.lang3.builder.ToStringBuilder;
 import org.apache.commons.lang3.builder.ToStringStyle;
-import org.hibernate.annotations.Type;
 import org.kultpower.LocalDateConverter;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 import java.time.LocalDate;
 import java.util.Iterator;
 import java.util.Set;

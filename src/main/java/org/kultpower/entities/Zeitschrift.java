@@ -2,9 +2,8 @@ package org.kultpower.entities;
 
 import org.apache.commons.lang3.builder.ToStringBuilder;
 import org.apache.commons.lang3.builder.ToStringStyle;
-import org.hibernate.envers.Audited;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 import java.time.LocalDate;
 import java.util.*;
 
@@ -12,14 +11,13 @@ import java.util.*;
  * Created by sebastian on 28.01.16.
  */
 @Entity
-@Audited
 @Table(name = "zeitschrift")
 @NamedEntityGraph(name = "Zeitschrift.ausgaben",
 		attributeNodes = @NamedAttributeNode("ausgaben"))
 public class Zeitschrift {
 
 	@Column
-	@javax.persistence.Id
+	@jakarta.persistence.Id
 	private String id;
 
 	@Column

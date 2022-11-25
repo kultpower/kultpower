@@ -81,3 +81,8 @@ fabric.properties
 
 .target
 /target
+/bin/
+.classpath
+.project
+.settings
+.vscode
