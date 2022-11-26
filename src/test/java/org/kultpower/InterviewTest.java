@@ -3,6 +3,7 @@ package org.kultpower;
 import com.google.common.base.Stopwatch;
 
 import org.assertj.core.api.Assertions;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.kultpower.entities.Interview;
 import org.kultpower.entities.InterviewText;
@@ -17,6 +18,7 @@ import java.util.Set;
 
 @SpringBootTest(classes = KultpowerApplication.class)
 @WebAppConfiguration
+@Disabled
 public class InterviewTest {
 
 	@Autowired

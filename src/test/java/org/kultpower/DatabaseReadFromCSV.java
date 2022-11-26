@@ -2,6 +2,7 @@ package org.kultpower;
 
 import au.com.bytecode.opencsv.CSVReader;
 
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.kultpower.entities.Ausgabe;
 import org.kultpower.entities.Zeitschrift;
@@ -24,6 +25,7 @@ import java.util.Map;
  */
 @SpringBootTest(classes = KultpowerApplication.class)
 //@ActiveProfiles("hsqldb")
+@Disabled
 public class DatabaseReadFromCSV {
 
 	@Autowired
